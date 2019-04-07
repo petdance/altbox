@@ -1,58 +1,48 @@
 <div style="float: right">
-    <table>
+    <dl>
         {% if page.alternativeto %}
-        <tr>
-            <th>
+            <dt>
                 Alternative to
-            </th>
-            <td>
+            </dt>
+            <dd>
                 {{ page.alternativeto }}
-            </td>
-        </tr>
+            </dd>
         {% endif %}
 
         {% if page.website %}
-        <tr>
-            <th>
+            <dt>
                 Website
-            </th>
-            <td>
+            </dt>
+            <dd>
                 <a href="{{ page.website }}">{{ page.website }}</a>
-            </td>
-        </tr>
+            </dd>
         {% endif %}
 
         {% if page.project %}
-        <tr>
-            <th>
+            <dt>
                 Project page
-            </th>
-            <td>
+            </dt>
+            <dd>
                 <a href="{{ page.project }}">{{ page.project }}</a>
-            </td>
-        </tr>
+            </dd>
         {% endif %}
 
         {% if page.author %}
-        <tr>
-            <th>
+            <dt>
                 Author
-            </th>
-            <td>
+            </dt>
+            <dd>
                 {{ page.author }}
-            </td>
-        </tr>
+            </dd>
         {% endif %}
 
         {% if page.language %}
-        <tr>
-            <th>
+            <dt>
                 Language
-            </th>
-            <td>
+            </dt>
+            <dd>
                 {{ page.language }}
-            </td>
-        </tr>
+            </dd>
         {% endif %}
-    </table>
+    </dl>
 </div>
