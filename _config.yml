@@ -29,19 +29,15 @@ theme: just-the-docs
 plugins:
     - jekyll-feed
 
-search_enabled: false
+defaults:
+    - scope:
+        path: "assets/img"
+      values:
+        image: true
+    - scope:
+        path: "" # an empty string here means all files in the project
+      values:
+        layout: "tool"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-#
 exclude:
     - t/
