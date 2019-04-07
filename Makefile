@@ -6,6 +6,9 @@ build:
 watch:
 	jekyll build --incremental --watch
 
+serve:
+	jekyll serve
+
 clean:
 	rm -fr _site
 
