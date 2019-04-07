@@ -4,7 +4,7 @@ tool: ss
 website:
 project:
 language: C
-standardtool: netstat
+alternativeto: netstat
 layout: tool
 ---
 

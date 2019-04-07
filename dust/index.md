@@ -6,7 +6,7 @@ author: "Andy Boot"
 website:
 project: https://github.com/bootandy/dust
 language: Rust
-standardtool: du
+alternativeto: du
 layout: tool
 ---
 

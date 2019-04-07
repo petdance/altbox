@@ -6,8 +6,12 @@ author: "Andy Lester"
 website: https://beyondgrep.com/
 project: https://github.com/beyondgrep/ack2/
 language: Perl
-standardtool: grep
+alternativeto: grep
 layout: tool
 ---
 
-ack is an alternative to grep
+* Better search for programmers than plain grep
+* Highly portable
+* Automatically ignores VCS directories
+* Search based on filetypes, not just extensions
+* Define your own filetypes

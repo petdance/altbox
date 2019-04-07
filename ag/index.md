@@ -6,7 +6,7 @@ author: "Geoff Greer"
 website: https://geoff.greer.fm/ag/
 project: https://github.com/ggreer/the_silver_searcher
 language: C
-standardtool: grep
+alternativeto: grep
 layout: tool
 ---
 

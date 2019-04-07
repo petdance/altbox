@@ -6,7 +6,7 @@ author: "Folkert van Heusden"
 website: https://www.vanheusden.com/multitail/
 project: https://github.com/flok99/multitail
 language: C
-standardtool: tail
+alternativeto: tail
 layout: tool
 ---
 

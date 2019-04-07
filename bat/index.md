@@ -6,7 +6,7 @@ author: "David Peter"
 website:
 project: https://github.com/sharkdp/bat
 language: Rust
-standardtool: cat
+alternativeto: cat
 layout: tool
 ---
 

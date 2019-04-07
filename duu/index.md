@@ -6,7 +6,7 @@ author: "John Taylor"
 website:
 project: https://github.com/jftuga/duu
 language: Python
-standardtool: du
+alternativeto: du
 layout: tool
 ---
 

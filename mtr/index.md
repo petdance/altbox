@@ -8,7 +8,7 @@ author:
 website: https://www.bitwizard.nl/mtr/
 project: https://github.com/traviscross/mtr
 language: C
-standardtool:
+alternativeto:
     - traceroute
     - ping
 layout: tool

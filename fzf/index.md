@@ -3,7 +3,7 @@ title: "fzf"
 tool: fzf
 description: "A general-purpose command-line fuzzy finder"
 author: "Junegunn Choi"
-standardtool: find
+alternativeto: find
 website:
 project: https://github.com/junegunn/fzf
 language: Go

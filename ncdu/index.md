@@ -6,7 +6,7 @@ author: "Yoran Heling"
 website: https://dev.yorhel.nl/ncdu
 project: https://g.blicky.net/ncdu.git/
 language: C
-standardtool: du
+alternativeto: du
 layout: tool
 ---
 

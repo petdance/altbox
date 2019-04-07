@@ -6,7 +6,7 @@ author: "Sindre Sorhus"
 website:
 project: https://github.com/sindresorhus/fkill-cli
 language: Node
-standardtool: kill
+alternativeto: kill
 layout: tool
 ---
 

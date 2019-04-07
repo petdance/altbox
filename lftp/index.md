@@ -6,6 +6,6 @@ author: "Alexander V. Lukyanov"
 website: https://lftp.tech/
 project: https://github.com/lavv17/lftp
 language: C
-standardtool: ftp
+alternativeto: ftp
 layout: tool
 ---

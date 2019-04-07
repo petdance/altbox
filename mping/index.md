@@ -5,7 +5,7 @@ subtitle: "Multiple and dynamic ping with color status"
 website:
 project: https://github.com/xsgb/mping
 language: Shell
-standardtool: ping
+alternativeto: ping
 layout: tool
 ---
 

@@ -6,7 +6,7 @@ author: "Vanessa McHale"
 website:
 project: https://github.com/vmchale/tin-summer
 language: Rust
-standardtool: du
+alternativeto: du
 layout: tool
 ---
 

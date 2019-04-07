@@ -6,7 +6,7 @@ author: "Nicholas Marriott"
 website: https://tmux.github.io/
 project: https://github.com/tmux/tmux
 languages: C
-standardtool: screen
+alternativeto: screen
 layout: tool
 ---
 

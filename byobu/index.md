@@ -6,7 +6,7 @@ author: "Dustin Kirkland"
 website: http://byobu.org/
 project: https://launchpad.net/byobu
 language: Python
-standardtool: screen
+alternativeto: screen
 layout: tool
 ---
 

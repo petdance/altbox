@@ -6,7 +6,7 @@ author: "Benjamin Sago"
 website: https://the.exa.website/
 project: https://github.com/ogham/exa
 language: Rust
-standardtool: ls
+alternativeto: ls
 layout: tool
 ---
 

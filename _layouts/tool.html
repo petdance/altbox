@@ -14,51 +14,9 @@ layout: default
             {{ page.description }}
         </p>
 
-        <table>
-            {% if page.website %}
-                <tr>
-                    <th>
-                        Website
-                    </th>
-                    <td>
-                        <a href="{{ page.website }}">{{ page.website }}</a>
-                    </td>
-                </tr>
-            {% endif %}
-
-            {% if page.project %}
-                <tr>
-                    <th>
-                        Project page
-                    </th>
-                    <td>
-                        <a href="{{ page.project }}">{{ page.project }}</a>
-                    </td>
-                </tr>
-            {% endif %}
-
-            {% if page.author %}
-                <tr>
-                    <th>
-                        Author
-                    </th>
-                    <td>
-                        {{ page.author }}
-                    </td>
-                </tr>
-            {% endif %}
-
-            {% if page.language %}
-                <tr>
-                    <th>
-                        Language
-                    </th>
-                    <td>
-                        {{ page.language }}
-                    </td>
-                </tr>
-            {% endif %}
-        </table>
+        <div>
+            {% include infobox.html %}
+        </div>
         {{ content }}
     </body>
 </html>

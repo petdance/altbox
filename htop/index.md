@@ -6,7 +6,7 @@ author: "Hisham Muhammad"
 website: https://hisham.hm/htop/
 project: https://github.com/hishamhm/htop
 language: C
-standardtool: top
+alternativeto: top
 layout: tool
 ---
 

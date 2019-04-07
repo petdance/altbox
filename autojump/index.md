@@ -6,6 +6,6 @@ author: "William Ting"
 website:
 project: https://github.com/wting/autojump
 language: Python
-standardtool: cd
+alternativeto: cd
 layout: tool
 ---

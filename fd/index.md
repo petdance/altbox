@@ -6,7 +6,7 @@ author: "David Peter"
 website:
 project: https://github.com/sharkdp/fd
 language: Rust
-standardtool: find
+alternativeto: find
 layout: tool
 ---
 
