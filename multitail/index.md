@@ -10,5 +10,4 @@ standardtool: tail
 layout: tool
 ---
 
-ack is an alternative to grep
-
+![Screenshot](screenshot.png)
