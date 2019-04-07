@@ -10,8 +10,6 @@ standardtool: cat
 layout: tool
 ---
 
-bat calls itself "a cat clone with wings".
-
 ## Syntax highlighting
 
 `bat` supports syntax highlighting for a large number of programming and markup
