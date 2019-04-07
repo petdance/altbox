@@ -34,3 +34,5 @@ alternate shells
 
 hexyl
 https://github.com/sharkdp/hexyl
+
+https://www.vanheusden.com/httping/
