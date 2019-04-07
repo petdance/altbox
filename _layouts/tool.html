@@ -8,15 +8,15 @@ layout: default
         <title>{{ page.tool }} -- An alternative to the standard {{ page.standardtool }} utility</title>
     </head>
     <body>
-        <h1>{{ page.tool }} -- An alternative to {{ page.standardtool }}</h1>
-
-        <p>
-            {{ page.description }}
-        </p>
-
         <div>
             {% include infobox.html %}
         </div>
+
+        <h1>{{ page.tool }}</h1>
+        {% if page.description %}
+            <h2>{{ page.description }}</h2>
+        {% endif %}
+
         {{ content }}
     </body>
 </html>
