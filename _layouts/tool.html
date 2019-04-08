@@ -10,13 +10,14 @@ layout: default
     <body>
         <div>
             {% include infobox.html %}
+            <h1>{{ page.tool }}</h1>
+            {% if page.description %}
+                <h2>{{ page.description }}</h2>
+            {% endif %}
         </div>
 
-        <h1>{{ page.tool }}</h1>
-        {% if page.description %}
-            <h2>{{ page.description }}</h2>
-        {% endif %}
-
-        {{ content }}
+        <div style="clear:both">
+            {{ content }}
+        </div>
     </body>
 </html>
