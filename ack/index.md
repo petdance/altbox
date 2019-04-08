@@ -6,7 +6,9 @@ author: "Andy Lester"
 website: https://beyondgrep.com/
 project: https://github.com/beyondgrep/ack2/
 language: Perl
-alternativeto: grep
+alternativeto:
+    - grep
+    - find
 layout: tool
 ---
 
