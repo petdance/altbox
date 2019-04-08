@@ -1,6 +1,6 @@
 ---
 title: "fd"
-tool: find
+tool: fd
 description: "Simple, fast and user-friendly alternative to find"
 author: "David Peter"
 website:
