@@ -1,2 +1,3 @@
 # altbox
-Website for altbox.dev, the alternative toolbox for developers
+
+Website for [altbox.dev](https://altbox.dev), the alternative toolbox for developers.
