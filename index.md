@@ -1,7 +1,8 @@
 ---
 layout: home
-title: altbox.dev - A collection of power tools for the Linux/Unix/macOS command line
-nav_exclude: true
+title: "altbox.dev - A collection of power tools for the Linux/Unix/macOS command line"
+description: "Every programmer should know the standard Unix tools, but there are plenty of tools that go beyond them."
+card_image: /assets/img/logo-200px.png
 ---
 
 # {{ page.title }}
