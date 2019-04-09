@@ -10,10 +10,6 @@ language: Go
 layout: tool
 ---
 
-fzf is a general-purpose command-line fuzzy finder.
-
-![Screenshot](fzf-preview.png)
-
 It's an interactive Unix filter for command-line that can be used with any
 list; files, command history, processes, hostnames, bookmarks, git commits,
 etc.
@@ -23,3 +19,6 @@ etc.
 * The most comprehensive feature set
 * Flexible layout
 * Vim/Neovim plugin, key bindings and fuzzy auto-completion
+
+![Screenshot](fzf-preview.png)
+

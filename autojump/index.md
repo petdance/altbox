@@ -9,3 +9,7 @@ language: Python
 alternativeto: cd
 layout: tool
 ---
+
+`autojump` is a faster way to navigate your filesystem. It works by
+maintaining a database of the directories you use the most from the command
+line.

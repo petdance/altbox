@@ -1,7 +1,7 @@
 ---
 title: "bat"
 tool: bat
-description: "A cat clone with wings"
+description: "A cat(1) clone with syntax highlighting and Git integration."
 author: "David Peter"
 website:
 project: https://github.com/sharkdp/bat
@@ -10,21 +10,25 @@ alternativeto: cat
 layout: tool
 ---
 
-## Syntax highlighting
+### Automatic paging
+
+`bat` can pipe its own output to `less` if the output is too large for one screen.
+
+### Syntax highlighting
 
 `bat` supports syntax highlighting for a large number of programming and markup
 languages:
 
 ![Syntax highlighting example](https://imgur.com/rGsdnDe.png)
 
-## Git integration
+### Git integration
 
 `bat` communicates with `git` to show modifications with respect to the index
 (see left side bar):
 
 ![Git integration example](https://i.imgur.com/2lSW4RE.png)
 
-## Show non-printable characters
+### Show non-printable characters
 
 You can use the `-A`/`--show-all` option to show and highlight non-printable
 characters:

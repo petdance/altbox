@@ -10,6 +10,14 @@ alternativeto: du
 layout: tool
 ---
 
+If you do a significant amount of programming, you'll probably end up with
+build artifacts scattered about. `sn` is a tool to help you find those
+artifacts.
+
+`sn` is also a replacement for `du`. It has nicer output, saner commands
+and defaults, and it even runs faster on big directories thanks to
+multithreading.
+
 
 * Faster on large directories
 * Uses regex for exclusions, making it dramatically faster than du when used with the --exclude flag.
