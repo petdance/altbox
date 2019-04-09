@@ -31,4 +31,4 @@ Follow us on Twitter at
 
 ## Articles about alternative tools
 
-* https://remysharp.com/2018/08/23/cli-improved
+* [CLI: improved](https://remysharp.com/2018/08/23/cli-improved), by Remy Sharp
