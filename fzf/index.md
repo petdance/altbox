@@ -8,6 +8,7 @@ website:
 project: https://github.com/junegunn/fzf
 language: Go
 layout: tool
+card_image: /fzf/fzf-preview.png
 ---
 
 It's an interactive Unix filter for command-line that can be used with any

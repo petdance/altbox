@@ -8,6 +8,7 @@ project: https://github.com/BurntSushi/ripgrep
 language: Rust
 alternativeto: grep
 layout: tool
+card_image: /ripgrep/screenshot.png
 ---
 
 ripgrep is a line-oriented search tool that recursively searches your

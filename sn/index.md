@@ -8,6 +8,7 @@ project: https://github.com/vmchale/tin-summer
 language: Rust
 alternativeto: du
 layout: tool
+card_image: /sn/screnshot.png
 ---
 
 If you do a significant amount of programming, you'll probably end up with

@@ -8,6 +8,7 @@ project: https://github.com/ogham/exa
 language: Rust
 alternativeto: ls
 layout: tool
+card_image: /exa/screenshot.png
 ---
 
 `exa` is a modern replacement for the command-line program `ls` that ships

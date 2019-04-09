@@ -8,6 +8,7 @@ project: https://github.com/beyondgrep/ack2/
 language: Perl
 alternativeto: grep
 layout: tool
+card_image: /ack/screenshot.png
 ---
 
 * Better search for programmers than plain grep

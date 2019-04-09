@@ -27,4 +27,24 @@ ga('send', 'pageview');
     <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- https://coderwall.com/p/oiyq8w/template-for-open-graph-headers -->
+    <!-- https://cards-dev.twitter.com/validator -->
+    {% if page.tool %}
+        <meta name="twitter:title" content="{{ page.tool }}, an alternative to {{ page.alternativeto }}">
+        {% if page.card_image %}
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:image" content="{{ page.card_image | absolute_url }}">
+        {% else %}
+            <meta name="twitter:card" content="summary">
+        {% endif %}
+
+        <meta name="twitter:description" content="{{ page.excerpt }}">
+        <meta name="og:description" content="{{ page.excerpt }}">
+
+        <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+        <meta name="twitter:creator" content="@altboxdev">
+        <meta name="og:url" content="{{ page.url | absolute_url }}">
+        <meta name="og:site_name" content="altbox.dev">
+    {% endif %}
 </head>

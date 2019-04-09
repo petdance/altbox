@@ -8,6 +8,7 @@ project: https://g.blicky.net/ncdu.git/
 language: C
 alternativeto: du
 layout: tool
+card_image: /ncdu/ncdudone-2.png
 ---
 
 `ncdu` (for **NC**urses **D**isk **U**sage) is a disk usage analyzer with an ncurses

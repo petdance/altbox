@@ -10,6 +10,7 @@ project: https://github.com/traviscross/mtr
 language: C
 alternativeto: traceroute and ping
 layout: tool
+card_image: /mtr/screenshot.gif
 ---
 
 mtr combines the functionality of the `traceroute` and `ping` programs in a

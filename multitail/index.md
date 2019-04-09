@@ -8,6 +8,7 @@ project: https://github.com/flok99/multitail
 language: C
 alternativeto: tail
 layout: tool
+card_image: /multitail/screenshot.png
 ---
 
 ![Screenshot](screenshot.png)

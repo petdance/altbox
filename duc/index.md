@@ -8,6 +8,7 @@ project: https://github.com/zevv/duc
 language: C
 alternativeto: du
 layout: tool
+card_image: /duc/screenshot.png
 ---
 
 Duc is a collection of tools for indexing, inspecting and visualizing disk
