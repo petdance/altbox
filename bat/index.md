@@ -8,6 +8,7 @@ project: https://github.com/sharkdp/bat
 language: Rust
 alternativeto: cat
 layout: tool
+card_image: /bat/syntax-highlighting.png
 ---
 
 ### Automatic paging
@@ -19,18 +20,18 @@ layout: tool
 `bat` supports syntax highlighting for a large number of programming and markup
 languages:
 
-![Syntax highlighting example](https://imgur.com/rGsdnDe.png)
+![Syntax highlighting example](syntax-highlighting.png)
 
 ### Git integration
 
 `bat` communicates with `git` to show modifications with respect to the index
 (see left side bar):
 
-![Git integration example](https://i.imgur.com/2lSW4RE.png)
+![Git integration example](git-integration.png)
 
 ### Show non-printable characters
 
 You can use the `-A`/`--show-all` option to show and highlight non-printable
 characters:
 
-![Non-printable character example](https://i.imgur.com/WndGp9H.png)
+![Non-printable character example](non-printing-characters.png)
