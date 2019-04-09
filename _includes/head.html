@@ -1,8 +1,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
     {% if page.description %}
         <meta name="Description" content="{{ page.description }}">
+        <meta name="twitter:description" content="{{ page.description }}">
+        <meta name="og:description" content="{{ page.description }}">
     {% endif %}
 
     <title>
@@ -38,9 +41,6 @@ ga('send', 'pageview');
         {% else %}
             <meta name="twitter:card" content="summary">
         {% endif %}
-
-        <meta name="twitter:description" content="{{ page.excerpt }}">
-        <meta name="og:description" content="{{ page.excerpt }}">
 
         <meta name="twitter:url" content="{{ page.url | absolute_url }}">
         <meta name="twitter:creator" content="@altboxdev">
