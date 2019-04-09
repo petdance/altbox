@@ -6,9 +6,7 @@ tool: rg
 website:
 project: https://github.com/BurntSushi/ripgrep
 language: Rust
-alternativeto:
-    - grep
-    - find
+alternativeto: grep
 layout: tool
 ---
 
