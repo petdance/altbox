@@ -1,7 +1,7 @@
 ---
 title: "fkill"
 tool: fkill
-description: "Interactively kill processes"
+description: "kill processes by pid, name, port, or interactively"
 author: "Sindre Sorhus"
 website:
 project: https://github.com/sindresorhus/fkill-cli
@@ -10,6 +10,9 @@ alternativeto: kill
 layout: tool
 ---
 
-Interactively kills processes.
+
+### Interactive UI
+
+Run fkill without arguments to launch the interactive UI.
 
 ![Screenshot](screenshot.svg)

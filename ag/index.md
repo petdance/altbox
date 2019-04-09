@@ -11,3 +11,7 @@ layout: tool
 ---
 
 A code searching tool similar to [ack](/ack/), with a focus on speed.
+
+`ag` is a tool for searching code. It started off as a clone of `ack`, but
+their feature sets have since diverged slightly. In typical usage, `ag` is
+5-10x faster than `ack`.
