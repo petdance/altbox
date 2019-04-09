@@ -1,0 +1,95 @@
+[
+  {
+    "alt": "cd",
+    "tools": [
+      "autojump"
+    ]
+  },
+  {
+    "alt": "grep",
+    "tools": [
+      "ack",
+      "ag",
+      "ripgrep"
+    ]
+  },
+  {
+    "alt": "du",
+    "tools": [
+      "duc",
+      "dust",
+      "duu",
+      "ncdu",
+      "sn"
+    ]
+  },
+  {
+    "alt": "cat",
+    "tools": [
+      "bat"
+    ],
+  },
+  {
+    "alt": "ls",
+    "tools": [
+      "exa"
+    ],
+  },
+  {
+    "alt": "find",
+    "tools": [
+      "fd",
+      "fzf"
+    ],
+  },
+  {
+    "alt": "top",
+    "tools": [
+      "htop"
+    ],
+  },
+  {
+    "alt": "ftp",
+    "tools": [
+      "lftp",
+    ],
+  },
+  {
+    "alt": "screen",
+    "tools": [
+      "tmux",
+      "byobu"
+    ],
+  },
+  {
+    "alt": "kill",
+    "tools": [
+      "fkill"
+    ],
+  },
+  {
+    "alt": "ping",
+    "tools": [
+      "mping",
+      "mtr"
+    ],
+  },
+  {
+    "alt": "traceroute",
+    "tools": [
+      "mtr"
+    ],
+  },
+  {
+    "alt": "tail",
+    "tools": [
+      "multitail"
+    ],
+  },
+  {
+    "alt": "netstat",
+    "tools": [
+      "ss"
+    ],
+  }
+]
