@@ -17,3 +17,5 @@ layout: tool
 * Automatically ignores VCS directories
 * Search based on filetypes, not just extensions
 * Define your own filetypes
+
+![Screenshot](screenshot.png)
