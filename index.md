@@ -27,8 +27,7 @@ issue on our GitHub page:
 
 ## Twitter
 
-Keep up on updates by following us on Twitter at
-<a href="https://twitter.com/altboxdev"><img src="/assets/img/twitter-logo.png" height="20" width="20" />@altboxdev</a>
+Keep up on updates by following us on Twitter at {% include twitter-link.html %}
 
 ## Articles about alternative tools
 

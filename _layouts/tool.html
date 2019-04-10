@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
     {% include head.html %}
     <body>
-
         <div class="page-wrap">
             <div class="side-bar">
                 <a href="/" class="site-title fs-6 lh-tight">altbox.dev</a>
@@ -11,11 +9,7 @@
                 <div class="navigation main-nav js-main-nav">
                     {% include nav.html %}
                 </div>
-                <footer role="contentinfo" class="site-footer">
-                    <p class="text-small text-grey-dk-000 mb-0">
-                    <a href="https://twitter.com/altboxdev"><img src="/assets/img/twitter-logo.png" height="20" width="20" />@altboxdev</a>
-                    </p>
-                </footer>
+                {% include sidebar-footer.html %}
             </div>
             <div class="main-content-wrap js-main-content" tabindex="0">
                 <div class="main-content">
