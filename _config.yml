@@ -28,6 +28,8 @@ markdown: kramdown
 theme: just-the-docs
 plugins:
     - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-last-modified-at
 
 defaults:
     - scope:
