@@ -21,12 +21,13 @@ If you've got comments or feedback, email Andy Lester at andy@petdance.com.
 
 ## Additions and errata
 
-If you have a favorite tool that isn't here, email Andy or submit an issue on
-the site's GitHub page: [https://github.com/petdance/altbox](https://github.com/petdance/altbox)
+If you have a favorite tool that isn't here, please email Andy or submit an
+issue on our GitHub page:
+[https://github.com/petdance/altbox](https://github.com/petdance/altbox)
 
 ## Twitter
 
-Follow us on Twitter at
+Keep up on updates by following us on Twitter at
 <a href="https://twitter.com/altboxdev"><img src="/assets/img/twitter-logo.png" height="20" width="20" />@altboxdev</a>
 
 ## Articles about alternative tools
