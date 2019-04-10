@@ -9,6 +9,8 @@ language: Rust
 alternativeto: cat
 layout: tool
 card_image: /bat/syntax-highlighting.png
+tweets:
+    - https://twitter.com/altboxdev/status/1115683899345199104
 ---
 
 ### Automatic paging
