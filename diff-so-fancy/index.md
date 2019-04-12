@@ -1,7 +1,7 @@
 ---
 title: "diff-so-fancy"
 tool: diff-so-fancy
-description: "A tool to makes more human-readable"
+description: "A tool to make diffs more human-readable"
 author:
 website:
 project: https://github.com/so-fancy/diff-so-fancy
