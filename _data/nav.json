@@ -1,17 +1,21 @@
 [
   {
+    "alt": "cat",
+    "tools": [
+      "bat"
+    ],
+  },
+  {
     "alt": "cd",
     "tools": [
       "autojump"
     ]
   },
   {
-    "alt": "grep",
+    "alt": "diff",
     "tools": [
-      "ack",
-      "ag",
-      "ripgrep"
-    ]
+      "diff-so-fancy"
+    ],
   },
   {
     "alt": "du",
@@ -24,28 +28,10 @@
     ]
   },
   {
-    "alt": "cat",
-    "tools": [
-      "bat"
-    ],
-  },
-  {
-    "alt": "ls",
-    "tools": [
-      "exa"
-    ],
-  },
-  {
     "alt": "find",
     "tools": [
       "fd",
       "fzf"
-    ],
-  },
-  {
-    "alt": "top",
-    "tools": [
-      "htop"
     ],
   },
   {
@@ -55,16 +41,29 @@
     ],
   },
   {
-    "alt": "screen",
+    "alt": "grep",
     "tools": [
-      "tmux",
-      "byobu"
-    ],
+      "ack",
+      "ag",
+      "ripgrep"
+    ]
   },
   {
     "alt": "kill",
     "tools": [
       "fkill"
+    ],
+  },
+  {
+    "alt": "ls",
+    "tools": [
+      "exa"
+    ],
+  },
+  {
+    "alt": "netstat",
+    "tools": [
+      "ss"
     ],
   },
   {
@@ -75,9 +74,10 @@
     ],
   },
   {
-    "alt": "traceroute",
+    "alt": "screen",
     "tools": [
-      "mtr"
+      "tmux",
+      "byobu"
     ],
   },
   {
@@ -87,9 +87,15 @@
     ],
   },
   {
-    "alt": "netstat",
+    "alt": "top",
     "tools": [
-      "ss"
+      "htop"
     ],
-  }
+  },
+  {
+    "alt": "traceroute",
+    "tools": [
+      "mtr"
+    ],
+  },
 ]
