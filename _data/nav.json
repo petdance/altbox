@@ -3,7 +3,7 @@
     "alt": "cat",
     "tools": [
       "bat"
-    ],
+    ]
   },
   {
     "alt": "cd",
@@ -15,7 +15,7 @@
     "alt": "diff",
     "tools": [
       "diff-so-fancy"
-    ],
+    ]
   },
   {
     "alt": "du",
@@ -32,13 +32,13 @@
     "tools": [
       "fd",
       "fzf"
-    ],
+    ]
   },
   {
     "alt": "ftp",
     "tools": [
-      "lftp",
-    ],
+      "lftp"
+    ]
   },
   {
     "alt": "grep",
@@ -52,50 +52,50 @@
     "alt": "kill",
     "tools": [
       "fkill"
-    ],
+    ]
   },
   {
     "alt": "ls",
     "tools": [
       "exa"
-    ],
+    ]
   },
   {
     "alt": "netstat",
     "tools": [
       "ss"
-    ],
+    ]
   },
   {
     "alt": "ping",
     "tools": [
       "mping",
       "mtr"
-    ],
+    ]
   },
   {
     "alt": "screen",
     "tools": [
       "tmux",
       "byobu"
-    ],
+    ]
   },
   {
     "alt": "tail",
     "tools": [
       "multitail"
-    ],
+    ]
   },
   {
     "alt": "top",
     "tools": [
       "htop"
-    ],
+    ]
   },
   {
     "alt": "traceroute",
     "tools": [
       "mtr"
-    ],
-  },
+    ]
+  }
 ]
