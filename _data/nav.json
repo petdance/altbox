@@ -70,7 +70,8 @@
     "alt": "ping",
     "tools": [
       "mping",
-      "mtr"
+      "mtr",
+      "prettyping"
     ]
   },
   {
