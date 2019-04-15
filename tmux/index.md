@@ -16,3 +16,7 @@ detached from a screen and continue running in the background, then later
 reattached.
 
 Book: [tmux 2: Productive Mouse-Free Development](https://pragprog.com/book/bhtmux2/tmux-2), by Brian Hogan
+
+# Articles
+
+* [Testing Environment with Tmux](https://mojolicious.io/blog/2019/04/15/testing-environment-with-tmux/), by Doug Bell
