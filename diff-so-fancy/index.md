@@ -8,7 +8,7 @@ project: https://github.com/so-fancy/diff-so-fancy
 language: Perl
 alternativeto: diff
 layout: tool
-card_image: /diff-so-fancy/screenshot.png
+card_image: /diff-so-fancy/comparison.png
 ---
 
 `diff-so-fancy` strives to make your diffs human-readable instead of
