@@ -90,6 +90,7 @@
   {
     "alt": "top",
     "tools": [
+      "atop",
       "htop"
     ]
   },
