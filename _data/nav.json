@@ -61,12 +61,6 @@
     ]
   },
   {
-    "alt": "netstat",
-    "tools": [
-      "ss"
-    ]
-  },
-  {
     "alt": "ping",
     "tools": [
       "mping",
