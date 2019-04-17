@@ -21,3 +21,30 @@ dl {
     background-color: inherit;
     padding: 0;
 }
+
+/* Magic resizing logos */
+
+/* 500px */
+@media (min-width: 0) {
+    .logo {
+        transition: all .25s linear;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/**745px **/
+@media (min-width: 46.25rem) {
+    .logo {
+        transition: all .25s linear;
+        width: 200px;
+        height: 200px;
+    }
+    .side-bar {
+        padding-top: 0;
+    }
+    .site-title {
+        position: relative;
+        height: auto;
+    }
+}
