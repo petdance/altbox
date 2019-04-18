@@ -4,7 +4,6 @@ require 'html-proofer'
 # https://github.com/gjtorikian/html-proofer
 task :test do
     options = {
-        :garaglsjkdf => 1,
         :check_opengraph => true,
         :check_html      => true,
         :check_img_http  => true,
