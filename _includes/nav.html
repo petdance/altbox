@@ -8,7 +8,7 @@
                 <ul>
                     {% for tool in tools %}
                         <li class="navigation-list-item" {% if tool == page.tool %} active{% endif %}>
-                            <a href="{{ "/{{ tool }}/" | absolute_url }}" class="navigation-list-link{% if tool == page.tool %} active{% endif %}">
+                            <a href="/{{ tool }}/" class="navigation-list-link{% if tool == page.tool %} active{% endif %}">
                                 {{ tool }}
                             </a>
                         </li>
