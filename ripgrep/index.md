@@ -16,6 +16,6 @@ current directory for a regex pattern. By default, `rg` will respect
 your `.gitignore` and automatically skip hidden files/directories and binary
 files. ripgrep has first class support on Windows, macOS and Linux, with
 binary downloads available for every release. ripgrep is similar to other
-popular search tools like [ack](/ack) and [ag](/ag).
+popular search tools like [ack](/ack/) and [ag](/ag/).
 
 ![Screenshot](screenshot.png)
