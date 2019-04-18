@@ -11,7 +11,7 @@ description: "Every programmer should know the standard Unix tools, but there ar
 The standard Unix tools have lasted us for decades.  Every programmer
 should know them, but there are plenty of tools that add on to the standard
 tools.  For example, `grep` works fine for finding text, but tools like
-[`ack`](/ack) and [`ripgrep`](/ripgrep) are designed for today's modern
+[`ack`](/ack/) and [`ripgrep`](/ripgrep/) are designed for today's modern
 programmer working with large trees of heterogeneous source code.
 
 ## Feedback
