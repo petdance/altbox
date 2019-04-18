@@ -2,6 +2,7 @@ require 'html-proofer'
 
 # https://www.supertechcrew.com/jekyll-check-for-broken-links/
 # https://github.com/gjtorikian/html-proofer
+# HTMLProofer's cache is in tmp/.htmlproofer/cache.log
 task :test do
     options = {
         :check_opengraph => true,
