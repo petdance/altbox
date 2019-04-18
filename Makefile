@@ -18,7 +18,3 @@ rsync:
 
 test:
 	prove t/html.t
-
-# https://www.supertechcrew.com/jekyll-check-for-broken-links/
-check:
-	bundle exec htmlproofer ./_site
