@@ -9,6 +9,8 @@ language: Perl
 alternativeto: diff
 layout: tool
 card_image: /diff-so-fancy/comparison.png
+tweets:
+    - https://twitter.com/altboxdev/status/1117825553598439426
 ---
 
 `diff-so-fancy` strives to make your diffs human-readable instead of
