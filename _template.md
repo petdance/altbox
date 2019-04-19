@@ -9,4 +9,5 @@ language:
 alternativeto:
 layout:
 card_image:
+tweets:
 ---
