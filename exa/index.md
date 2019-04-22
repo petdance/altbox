@@ -10,6 +10,7 @@ alternativeto: ls
 layout: tool
 card_image: /exa/screenshot-black.png
 tweets:
+---
 
 `exa` is a modern replacement for the command-line program `ls` that ships
 with Unix and Linux operating systems, with more features and better
