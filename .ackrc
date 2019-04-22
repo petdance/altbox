@@ -1,3 +1,4 @@
 --ignore-directory=is:_site
 --ignore-directory=is:.sass-cache
 --ignore-directory=is:.jekyll-metadata
+--ignore-directory=is:tmp
