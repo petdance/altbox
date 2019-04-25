@@ -24,3 +24,7 @@ more featureful, more user-friendly version of `ls`.
 
 ![Screenshot: black](screenshot-black.png)
 ![Screenshot: white](screenshot-white.png)
+
+## Articles
+
+* https://www.cyberciti.biz/open-source/command-line-hacks/exa-a-modern-replacement-for-ls-written-in-rust-for-linuxunix/
