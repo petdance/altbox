@@ -27,7 +27,11 @@ While it does not seek to mirror all of `find`'s powerful functionality, it prov
 * Unicode-awareness.
 * Parallel command execution with a syntax similar to GNU Parallel.
 
-### Demo
+## Demo
 
 ![Demo](screencast.svg)
 
+
+## Articles
+
+* [A Friendly Alternative to find](https://opensource.com/article/18/6/friendly-alternative-find)
