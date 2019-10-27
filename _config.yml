@@ -19,15 +19,14 @@ description: >- # this means to ignore newlines until "baseurl:"
     A toolbox of alternatives to standard Unix/Linux tools.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://altbox.dev" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: altboxdev
-github_username:  petdance
+twitter_username: "@altboxdev"
+github_username:  "@petdance"
 ga_tracking: UA-631706-15
 
 # Build settings
 markdown: kramdown
 theme: just-the-docs
 plugins:
-    - jekyll-feed
     - jekyll-sitemap
     - jekyll-last-modified-at
 
@@ -44,3 +43,6 @@ defaults:
 exclude:
     - t/
     - README.md
+    - Gemfile*
+    - Makefile
+    - Rakefile
