@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "altbox.dev - A collection of power tools for the Linux/Unix/macOS command line"
 description: "Every programmer should know the standard Unix tools, but there are plenty of tools that go beyond them."
 ---
