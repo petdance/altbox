@@ -1,13 +1,13 @@
 default: build
 
 build:
-	jekyll build
+	bundle exec jekyll build
 
 watch:
-	jekyll build --incremental --watch
+	bundle exec jekyll build --incremental --watch
 
 serve:
-	jekyll serve
+	bundle exec jekyll serve
 
 clean:
 	rm -fr _site
