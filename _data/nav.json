@@ -58,7 +58,8 @@
     "alt": "ls",
     "tools": [
       "exa",
-      "ls++"
+      "ls++",
+      "lsd"
     ]
   },
   {
