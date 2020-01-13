@@ -33,7 +33,11 @@
           {% endif %}
         {% endunless %}
         <div id="main-content" class="page-content" role="main">
-          {{ content }}
+          {% if site.heading_anchors != false %}
+            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#link\"></use></svg>" anchorClass="anchor-heading" %}
+          {% else %}
+            {{ content }}
+          {% endif %}
 
           {% if page.has_children == true and page.has_toc != false %}
             <hr>

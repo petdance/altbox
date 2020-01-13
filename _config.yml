@@ -22,6 +22,7 @@ url: "https://altbox.dev" # the base hostname & protocol for your site, e.g. htt
 twitter_username: "@altboxdev"
 github_username:  "@petdance"
 ga_tracking: UA-631706-15
+heading_anchors: false
 
 # Build settings
 markdown: kramdown
