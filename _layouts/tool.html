@@ -15,16 +15,18 @@
             </div>
             <div class="main-content-wrap js-main-content" tabindex="0">
                 <div class="main-content">
-                    <div id="main-content" class="page-content" role="main">
-                        <div>
-                            {% include infobox.html %}
-                            <h1>{{ page.tool }}</h1>
-                            {% if page.description %}
-                                <h2>{{ page.description }}</h2>
-                            {% endif %}
-                        </div>
-                        <div style="clear:both">
-                            {{ content }}
+                    <div class="page">
+                        <div id="main-content" class="page-content" role="main">
+                            <div>
+                                {% include infobox.html %}
+                                <h1>{{ page.tool }}</h1>
+                                {% if page.description %}
+                                    <h2>{{ page.description }}</h2>
+                                {% endif %}
+                            </div>
+                            <div style="clear:both">
+                                {{ content }}
+                            </div>
                         </div>
                     </div>
                 </div>
