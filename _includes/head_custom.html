@@ -1,0 +1,46 @@
+<!-- https://coderwall.com/p/oiyq8w/template-for-open-graph-headers -->
+<!-- https://cards-dev.twitter.com/validator -->
+<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+<meta name="og:url" content="{{ page.url | absolute_url }}">
+<meta name="og:site_name" content="altbox.dev">
+
+{% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="og:description" content="{{ page.description }}">
+{% endif %}
+
+{% if page.card_image %}
+    {% if page.tool %}
+        <meta name="twitter:card" content="summary_large_image">
+    {% else %}
+        <meta name="twitter:card" content="summary">
+    {% endif %}
+    <meta name="twitter:image" content="{{ page.card_image | absolute_url }}">
+{% else %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ "/assets/img/altbox-box-logo.png" | absolute_url }}">
+{% endif %}
+
+{% if page.tool %}
+    <meta name="twitter:title" content="{{ page.tool }}, an alternative to {{ page.alternativeto }}">
+{% else %}
+    <meta name="twitter:title" content="{{ page.title }}">
+{% endif %}
+<meta name="twitter:creator" content="@altboxdev">
+
+{% if site.ga_tracking != nil %}
+    <!-- Google Analytics -->
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', '{{ site.ga_tracking }}', 'auto');
+ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+{% endif %}
+
+<!-- Validation for Bing -->
+<meta name="msvalidate.01" content="546111A68635D672890CCD91D4B834DA" />
