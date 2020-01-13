@@ -44,7 +44,8 @@ dl {
         padding-top: 0;
     }
     .site-header {
-        position: relative;
-        height: auto;
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
     }
 }
