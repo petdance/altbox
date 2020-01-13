@@ -35,6 +35,10 @@ dl {
 
 /**745px **/
 @media (min-width: 46.25rem) {
+    /* Don't display the menu button on desktop. */
+    .fs-3 {
+        display: none;
+    }
     .logo {
         transition: all .25s linear;
         width: 200px;
