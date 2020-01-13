@@ -12,7 +12,7 @@ source "https://rubygems.org"
 gem "jekyll", ">= 3.8.5"
 gem "liquid-c"  # From https://forestry.io/blog/how-i-reduced-my-jekyll-build-time-by-61/
 
-gem "just-the-docs"
+gem "just-the-docs", ">= 0.2.7"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
