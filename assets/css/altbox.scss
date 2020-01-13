@@ -41,15 +41,22 @@ dl {
     }
     .logo {
         transition: all .25s linear;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
     .side-bar {
         padding-top: 0;
     }
     .site-header {
-        height: 200px;
-        min-height: 200px;
-        max-height: 200px;
+        height: 100px;
+        min-height: 100px;
+        max-height: 100px;
+    }
+    .site-header a {
+        text-align: center;
+        margin: 0 auto;
+        background-image: inherit;
+        display: block;
+        width: 100%;
     }
 }
