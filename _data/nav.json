@@ -2,7 +2,8 @@
   {
     "alt": "cat",
     "tools": [
-      "bat"
+      "bat",
+      "mdcat"
     ]
   },
   {
