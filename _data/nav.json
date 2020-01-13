@@ -3,6 +3,7 @@
     "alt": "cat",
     "tools": [
       "bat",
+      "glow",
       "mdcat"
     ]
   },
