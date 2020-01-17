@@ -1,7 +1,7 @@
 ---
 title: "lsd"
 tool: lsd
-description: "Colorized ls on steroids"
+description: "The next generation ls command"
 author: "Magnus Woldrich"
 website:
 project: https://github.com/Peltoche/lsd
