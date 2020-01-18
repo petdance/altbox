@@ -1,7 +1,7 @@
 default: build
 
 build:
-	bundle exec jekyll build
+	bundle exec jekyll build --strict_front_matter
 
 watch:
 	bundle exec jekyll build --incremental --watch
