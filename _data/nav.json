@@ -14,6 +14,12 @@
     ]
   },
   {
+    "alt": "df",
+    "tools": [
+      "duf"
+    ]
+  },
+  {
     "alt": "diff",
     "tools": [
       "diff-so-fancy"
@@ -23,6 +29,7 @@
     "alt": "du",
     "tools": [
       "duc",
+      "duf",
       "dust",
       "duu",
       "ncdu",
