@@ -9,10 +9,13 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "jekyll", ">= 3.8.5"
+gem "jekyll", ">= 4.2.1"
 gem "liquid-c"  # From https://forestry.io/blog/how-i-reduced-my-jekyll-build-time-by-61/
 
-gem "just-the-docs", "= 0.2.5"
+gem "just-the-docs", ">= 0.2.5"
+gem "kramdown", ">= 2.3.1"
+gem "addressable", ">= 2.8.0"
+gem "nokogiri", ">= 1.11.4"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
