@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}.css";
+@import "{{ site.theme }}-{{ site.color_scheme }}.css";
 
 .navigation {
     padding-top: 1rem;
