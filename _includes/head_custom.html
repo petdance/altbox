@@ -28,17 +28,5 @@
 {% endif %}
 <meta name="twitter:creator" content="@altboxdev">
 
-{% if site.ga_tracking != nil %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking }}"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '{{ site.ga_tracking }}');
-        </script>
-    <!-- End Google Analytics -->
-{% endif %}
-
 <!-- Validation for Bing -->
 <meta name="msvalidate.01" content="546111A68635D672890CCD91D4B834DA" />
