@@ -105,7 +105,7 @@ DEPENDENCIES
   jekyll-last-modified-at
   jekyll-seo-tag
   jekyll-sitemap
-  just-the-docs (>= 0.2.5)
+  just-the-docs (>= 0.3.3)
   kramdown (>= 2.3.1)
   liquid-c
   nokogiri (>= 1.12.5)

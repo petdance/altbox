@@ -12,7 +12,7 @@ source "https://rubygems.org"
 gem "jekyll", ">= 4.2.1"
 gem "liquid-c"  # From https://forestry.io/blog/how-i-reduced-my-jekyll-build-time-by-61/
 
-gem "just-the-docs", ">= 0.2.5"
+gem "just-the-docs", ">= 0.3.3"
 gem "kramdown", ">= 2.3.1"
 gem "addressable", ">= 2.8.0"
 gem "nokogiri", ">= 1.12.5"
