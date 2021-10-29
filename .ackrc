@@ -2,3 +2,6 @@
 --ignore-directory=is:.sass-cache
 --ignore-directory=is:.jekyll-metadata
 --ignore-directory=is:tmp
+--ignore-directory=is:.bundle/
+--ignore-directory=is:vendor/
+--ignore-directory=is:.jekyll-cache/

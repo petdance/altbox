@@ -4,3 +4,4 @@ _site
 tmp
 .bundle/
 vendor/
+.jekyll-cache/
