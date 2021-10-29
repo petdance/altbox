@@ -15,7 +15,7 @@ gem "liquid-c"  # From https://forestry.io/blog/how-i-reduced-my-jekyll-build-ti
 gem "just-the-docs", ">= 0.2.5"
 gem "kramdown", ">= 2.3.1"
 gem "addressable", ">= 2.8.0"
-gem "nokogiri", ">= 1.11.4"
+gem "nokogiri", ">= 1.12.5"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
