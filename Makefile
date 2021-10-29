@@ -1,6 +1,7 @@
 default: build
 
 build:
+	rm -fr .jekyll-cache
 	bundle exec jekyll build --strict_front_matter
 
 watch:
