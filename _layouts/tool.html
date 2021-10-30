@@ -8,24 +8,24 @@
                     <a href="/"><img src="/assets/img/altbox-box-logo.png" class="logo" alt="Link to altbox.dev homepage" /></a>
                     <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
                 </div>
-                <div class="navigation main-nav js-main-nav">
-                    {% include nav.html %}
-                </div>
+                {% include nav.html %}
                 {% include sidebar-footer.html %}
             </div>
-            <div class="main js-main-content" tabindex="0">
-                <div class="main-content">
-                    <div class="page">
-                        <div id="main-content" class="page-content" role="main">
-                            <div>
-                                {% include infobox.html %}
-                                <h1>{{ page.tool }}</h1>
-                                {% if page.description %}
-                                    <h2>{{ page.description }}</h2>
-                                {% endif %}
-                            </div>
-                            <div style="clear:both">
-                                {{ content }}
+            <div class="main" id="top">
+                <div class="main-content-wrap js-main-content" id="main-content-wrap">
+                    <div class="main-content" id="main-content" role="main">
+                        <div class="page">
+                            <div id="main-content" class="page-content" role="main">
+                                <div>
+                                    {% include infobox.html %}
+                                    <h1>{{ page.tool }}</h1>
+                                    {% if page.description %}
+                                        <h2>{{ page.description }}</h2>
+                                    {% endif %}
+                                </div>
+                                <div style="clear:both">
+                                    {{ content }}
+                                </div>
                             </div>
                         </div>
                     </div>
