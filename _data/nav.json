@@ -101,6 +101,7 @@
   {
     "alt": "top",
     "tools": [
+      "bottom",
       "atop",
       "htop"
     ]
