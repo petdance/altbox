@@ -43,10 +43,6 @@ defaults:
         path: "assets/img"
       values:
         image: true
-    - scope:
-        path: "" # an empty string here means all files in the project
-      values:
-        layout: "tool"
 
 exclude:
     - t/
