@@ -7,6 +7,7 @@ build:
 	bundle exec jekyll clean
 	bundle exec jekyll doctor
 	bundle exec jekyll build --strict_front_matter --safe --trace
+	find _site -name '*.map' | xargs rm
 
 watch:
 	bundle exec jekyll build --incremental --watch
