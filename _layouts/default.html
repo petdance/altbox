@@ -6,10 +6,7 @@
 
         <div class="page-wrap">
             <div class="side-bar">
-                <div class="site-header">
-                    <a href="/"><img src="/assets/img/altbox-box-logo.png" class="logo" alt="Link to altbox.dev homepage" /></a>
-                    <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
-                </div>
+                {% include site-header.html %}
                 {% include nav.html %}
                 {% include sidebar-footer.html %}
             </div>
@@ -32,6 +29,5 @@
                 </div>
             </div>
         </div>
-
     </body>
 </html>
