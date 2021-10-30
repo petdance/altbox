@@ -1,70 +1,37 @@
 <!DOCTYPE html>
 
 <html lang="{{ site.lang | default: "en-US" }}">
-{% include head.html %}
-<body>
+    {% include head.html %}
+    <body>
 
-  <div class="page-wrap">
-    <div class="side-bar">
-      <div class="site-header">
-        <a href="/"><img src="/assets/img/altbox-box-logo.png" class="logo" alt="Link to altbox.dev homepage" /></a>
-        <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
-      </div>
-      <div class="navigation main-nav js-main-nav">
-        {% include nav.html %}
-      </div>
-      {% include sidebar-footer.html %}
-    </div>
-    <div class="main-content-wrap js-main-content" tabindex="0">
-      <div class="main-content">
-        {% unless page.url == "/" %}
-          {% if page.parent %}
-            <nav class="breadcrumb-nav">
-              <ol class="breadcrumb-nav-list">
-                {% if page.grand_parent %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
-                  <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
-                {% else %}
-                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
-                {% endif %}
-                <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
-              </ol>
-            </nav>
-          {% endif %}
-        {% endunless %}
-        <div class="page">
-          <div id="main-content" class="page-content" role="main">
-            {% if site.heading_anchors != false %}
-              {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#link\"></use></svg>" anchorClass="anchor-heading" %}
-            {% else %}
-              {{ content }}
-            {% endif %}
+        <div class="page-wrap">
+            <div class="side-bar">
+                <div class="site-header">
+                    <a href="/"><img src="/assets/img/altbox-box-logo.png" class="logo" alt="Link to altbox.dev homepage" /></a>
+                    <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+                </div>
+                {% include nav.html %}
+                {% include sidebar-footer.html %}
+            </div>
+            <div class="main" id="top">
+                <div class="main-content-wrap js-main-content" tabindex="0">
+                    <div class="main-content">
+                        <div class="page">
+                            <div id="main-content" class="page-content" role="main">
+                                {{ content }}
 
-            {% if page.has_children == true and page.has_toc != false %}
-              <hr>
-              <h2 class="text-delta">Table of contents</h2>
-              {% assign children_list = site.pages | sort:"nav_order" %}
-              <ul>
-                {% for child in children_list %}
-                  {% if child.parent == page.title and child.title != page.title %}
-                  <li>
-                    <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary }}{% endif %}
-                  </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            {% endif %}
-            {% if site.footer_content != nil %}
-              <hr>
-              <footer role="contentinfo">
-                <p class="text-small text-grey-dk-000 mb-0">{{ site.footer_content }}</p>
-              </footer>
-            {% endif %}
-          </div>
+                                {% if site.footer_content != nil %}
+                                    <hr>
+                                    <footer role="contentinfo">
+                                        <p class="text-small text-grey-dk-000 mb-0">{{ site.footer_content }}</p>
+                                    </footer>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-</body>
+    </body>
 </html>
