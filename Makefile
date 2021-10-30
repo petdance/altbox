@@ -1,5 +1,8 @@
 default: build
 
+clean:
+	bundle exec jekyll clean
+
 build:
 	bundle exec jekyll clean
 	bundle exec jekyll doctor
