@@ -22,7 +22,7 @@ url: "https://altbox.dev" # the base hostname & protocol for your site, e.g. htt
 twitter:
     username: "@altboxdev"
 github_username:  "@petdance"
-ga_tracking: UA-631706-15
+ga_tracking: G-FMB5JMFYJP
 heading_anchors: false
 logo: "/assets/img/altbox-box-logo.png"
 search_enabled: false
