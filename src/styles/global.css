@@ -159,24 +159,6 @@ pre code {
     font-family: var(--font-mono);
 }
 
-/* Metadata block */
-.meta {
-    background: var(--sidebar-bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1.75rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.5rem;
-}
-
-.meta-item {
-    font-size: 0.875rem;
-    color: var(--muted);
-}
-
-.meta-item strong { color: var(--text); }
 
 /* Tool cards (listing pages) */
 .tool-list {
@@ -241,6 +223,15 @@ figure.screenshot figcaption {
     font-size: 0.85rem;
     color: var(--muted);
     font-style: italic;
+}
+
+/* Page footer */
+.page-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--muted);
 }
 
 /* Page header */
