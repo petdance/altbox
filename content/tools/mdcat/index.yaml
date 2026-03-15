@@ -1,0 +1,22 @@
+---
+name: mdcat
+author: Sebastian Wiesner
+website:
+project: https://github.com/lunaryorn/mdcat
+language: Rust
+license: MPL-2.0
+alternativeto: cat
+description: Renders Markdown to the terminal with syntax highlighting and inline images.
+last_updated: 2026-03-15
+screenshots:
+    - file: mdcat.png
+      caption: mdcat rendering Markdown in the terminal
+body: |
+    `mdcat` renders Markdown to the terminal.
+
+    {{screenshot: mdcat.png, mdcat rendering Markdown in the terminal}}
+
+    - Nicely renders all basic [CommonMark](https://commonmark.org/) syntax (no tables or footnotes though)
+    - Highlights code blocks with [syntect](https://github.com/trishume/syntect)
+    - Shows links and images inline in supported terminals
+    - Adds jump marks for headings in iTerm2 (jump forwards and backwards with ⇧⌘↓ and ⇧⌘↑)

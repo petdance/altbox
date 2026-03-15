@@ -1,0 +1,19 @@
+---
+name: diff-so-fancy
+author:
+website:
+project: https://github.com/so-fancy/diff-so-fancy
+language: Perl
+license: MIT
+alternativeto: diff
+description: Makes diffs human-readable instead of machine-readable, to help spot defects faster.
+last_updated: 2026-03-15
+screenshots:
+    - file: comparison.png
+      caption: diff-so-fancy vs standard diff
+body: |
+    `diff-so-fancy` strives to make your diffs human-readable instead of
+    machine-readable. This helps improve code quality and helps you spot defects
+    faster.
+
+    {{screenshot: comparison.png, diff-so-fancy vs standard diff}}

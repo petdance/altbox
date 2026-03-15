@@ -7,3 +7,6 @@ dist/
 # npm stuff
 package-lock.json
 node_modules/
+
+# Generated from content/tools/ at build time
+public/tool/

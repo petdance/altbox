@@ -1,0 +1,16 @@
+---
+name: trash
+author: Sindre Sorhus
+website:
+project: https://github.com/sindresorhus/trash-cli
+language: Node.js
+license: MIT
+alternativeto: rm
+description: Moves files to the trash safely and reversibly, instead of permanently deleting them.
+last_updated: 2026-03-15
+screenshots: []
+body: |
+    ![Logo](logo.svg)
+
+    In contrast to `rm`, which is dangerous and permanently deletes files,
+    `trash` only moves them to the trash, which is much safer and reversible.

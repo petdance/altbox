@@ -1,0 +1,17 @@
+---
+name: htop
+author: Hisham Muhammad
+website: https://hisham.hm/htop/
+project: https://github.com/hishamhm/htop
+language: C
+license: GPL-2.0
+alternativeto: top
+description: An interactive process viewer with a full-screen, colour display and mouse support.
+last_updated: 2026-03-15
+screenshots:
+    - file: screenshot.png
+      caption: htop process viewer
+body: |
+    `htop` is an interactive process viewer, an alternative to `top`.
+
+    {{screenshot: screenshot.png, htop process viewer}}

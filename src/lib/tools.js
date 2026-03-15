@@ -7,13 +7,39 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const toolsDir = join(__dirname, '../../content/tools')
 
 export function getAllTools() {
-    const files = readdirSync(toolsDir).filter(f => f.endsWith('.yaml'))
-    return files
-        .map(file => {
-            const tool = yaml.load(readFileSync(join(toolsDir, file), 'utf8'))
+    const dirs = readdirSync(toolsDir, { withFileTypes: true })
+        .filter(d => d.isDirectory())
+    return dirs
+        .map(dir => {
+            const slug = dir.name
+            const indexPath = join(toolsDir, slug, 'index.yaml')
+            const tool = yaml.load(readFileSync(indexPath, 'utf8'))
+
             if (!Array.isArray(tool.alternativeto)) {
                 tool.alternativeto = [tool.alternativeto]
             }
+
+            // Resolve screenshot file paths to web-accessible URLs
+            if (tool.screenshots) {
+                tool.screenshots = tool.screenshots.map(s => ({
+                    ...s,
+                    file: `tool/${slug}/${s.file}`,
+                }))
+            }
+
+            // Resolve paths in body: {{screenshot: file, ...}} and ![alt](file)
+            if (tool.body) {
+                tool.body = tool.body
+                    .replace(
+                        /\{\{screenshot:\s*([^/,][^,]*),/g,
+                        `{{screenshot: tool/${slug}/$1,`
+                    )
+                    .replace(
+                        /!\[([^\]]*)\]\(([^/h][^)]*)\)/g,
+                        (_, alt, src) => `![${alt}](/tool/${slug}/${src})`
+                    )
+            }
+
             return tool
         })
         .sort((a, b) => a.name.localeCompare(b.name))

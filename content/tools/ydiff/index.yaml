@@ -1,0 +1,20 @@
+---
+name: ydiff
+author:
+website:
+project: https://github.com/ymattw/ydiff
+language: Python
+license: BSD-3
+alternativeto: diff
+description: View colored, incremental diff in workspace or from stdin, side by side and auto paged.
+last_updated: 2026-03-15
+screenshots:
+    - file: darkbg-side-by-side-default.png
+      caption: ydiff in action
+body: |
+    `ydiff` is a terminal-based tool to view colored, incremental diffs in
+    a version-controlled workspace or from stdin, in side-by-side (similar
+    to diff -y) or unified mode, and auto-paged. It only requires Python >=
+    3.3 without external dependencies and `less` as a pager.
+
+    {{screenshot: darkbg-side-by-side-default.png, ydiff in action}}
