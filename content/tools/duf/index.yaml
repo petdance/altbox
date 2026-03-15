@@ -24,3 +24,7 @@ body: |
     - JSON output support
 
     {{screenshot: screenshot.png, duf showing disk usage}}
+
+    ## Articles:
+
+    - [How to Check Disk Usage on Linux With duf](https://www.makeuseof.com/check-disk-usage-linux-with-duf/)
