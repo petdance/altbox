@@ -41,7 +41,7 @@ npm run build
 Output goes to `dist/`. Deploy by rsyncing that directory to the server:
 
 ``` bash
-rsync -av --delete dist/ user@altbox.dev:/path/to/webroot/
+make rsync
 ```
 
 ## Directory structure
