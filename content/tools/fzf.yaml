@@ -1,0 +1,24 @@
+---
+name: fzf
+author: Junegunn Choi
+website:
+project: https://github.com/junegunn/fzf
+language: Go
+license: MIT
+alternativeto: find
+description: A general-purpose command-line fuzzy finder for files, history, processes, and more.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/fzf/fzf-preview.png
+      caption: fzf fuzzy finder in action
+body: |
+    `fzf` is an interactive Unix filter for the command line that can be used with any
+    list: files, command history, processes, hostnames, bookmarks, git commits, etc.
+
+    - Portable, no dependencies
+    - Blazingly fast
+    - The most comprehensive feature set
+    - Flexible layout
+    - Vim/Neovim plugin, key bindings and fuzzy auto-completion
+
+    {{screenshot: tool/fzf/fzf-preview.png, fzf fuzzy finder in action}}

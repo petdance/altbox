@@ -1,0 +1,26 @@
+---
+name: duf
+author: Christian Muehlhaeuser
+website: https://github.com/muesli/duf
+project: https://github.com/muesli/duf
+language: Go
+license: MIT
+alternativeto:
+    - du
+    - df
+description: Disk usage/free utility with user-friendly, colorful output for Linux, BSD, macOS and Windows.
+last_updated: 2021-10-28
+screenshots:
+    - file: tool/duf/screenshot.png
+      caption: duf showing disk usage
+body: |
+    `duf` is a modern alternative to `df` with user-friendly, colorful output.
+    It works on Linux, BSD, macOS, and Windows.
+
+    - User-friendly, colorful output
+    - Adapts to your terminal's theme and width
+    - Sortable results
+    - Device grouping and filtering
+    - JSON output support
+
+    {{screenshot: tool/duf/screenshot.png, duf showing disk usage}}

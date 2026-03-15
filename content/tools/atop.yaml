@@ -1,0 +1,25 @@
+---
+name: atop
+author: Gerlof Langeveld
+website:
+project: https://github.com/Atoptool/atop
+language: C
+license: GPL-2.0
+alternativeto: top
+description: Linux performance monitor that tracks CPU, disk, memory, and network usage per process.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/atop/screenshot.png
+      caption: atop showing system resource usage
+body: |
+    - Shows network, disk, processor and memory usage and load
+    - Can sort processes by most load/bottleneck, whether CPU, disk or memory
+    - Highlights critical resources
+    - Shows resource consumption by individual threads
+    - Tracks network activity per process
+
+    {{screenshot: tool/atop/screenshot.png, atop showing system resource usage}}
+
+    ## Articles
+
+    - [How to Perform Load Monitoring in Linux Using atop](https://www.maketecheasier.com/load-monitoring-linux-atop/)

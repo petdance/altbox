@@ -1,0 +1,24 @@
+---
+name: tmux
+author: Nicholas Marriott
+website: https://tmux.github.io/
+project: https://github.com/tmux/tmux
+language: C
+license: ISC
+alternativeto: screen
+description: Terminal multiplexer — run multiple terminals from a single screen, detach and reattach sessions.
+last_updated: 2026-03-15
+screenshots: []
+body: |
+    tmux is a terminal multiplexer: it enables a number of terminals to be
+    created, accessed, and controlled from a single screen. tmux may be
+    detached from a screen and continue running in the background, then later
+    reattached.
+
+    ## Books about tmux
+
+    - [tmux 3: Productive Mouse-Free Development](https://www.tmuxbook.com/), by Brian Hogan
+
+    ## Articles about tmux
+
+    - [Testing Environment with Tmux](https://mojolicious.io/blog/2019/04/15/testing-environment-with-tmux/), by Doug Bell

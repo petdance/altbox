@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getAllTools } from '../../lib/tools.js'
+import { renderMarkdown } from '../../lib/renderMarkdown.js'
+
+export async function getStaticPaths() {
+    const tools = getAllTools()
+    return tools.map(tool => ({
+        params: { name: tool.name },
+        props: { tool },
+    }))
+}
+
+const { tool } = Astro.props
+const bodyHtml = await renderMarkdown(tool.body || '')
+const lastUpdated = tool.last_updated instanceof Date
+    ? tool.last_updated.toISOString().slice(0, 10)
+    : String(tool.last_updated)
+---
+
+<Layout title={tool.name}>
+    <h1>{tool.name}</h1>
+
+    <div class="tool-links">
+        {tool.website && <div><strong>Website:</strong> <a href={tool.website}>{tool.website}</a></div>}
+        {tool.project && tool.project !== tool.website && <div><strong>Project:</strong> <a href={tool.project}>{tool.project}</a></div>}
+        {tool.author && <div><strong>Author:</strong> {tool.author}</div>}
+    </div>
+
+    <div class="meta">
+        <div class="meta-item">
+            <strong>Alternative to:</strong>{' '}
+            {tool.alternativeto.map((alt, i) => (
+                <>{i > 0 ? ', ' : ''}<a href={`/alternative-to/${alt}`}>{alt}</a></>
+            ))}
+        </div>
+        <div class="meta-item">
+            <strong>License:</strong>{' '}
+            <a href={`/license/${tool.license.toLowerCase()}`}>{tool.license}</a>
+        </div>
+        <div class="meta-item">
+            <strong>Language:</strong>{' '}
+            <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>
+        </div>
+        <div class="meta-item">
+            <strong>Page updated:</strong> {lastUpdated}
+        </div>
+    </div>
+
+    <div class="body" set:html={bodyHtml} />
+</Layout>

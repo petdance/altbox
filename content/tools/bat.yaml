@@ -1,0 +1,40 @@
+---
+name: bat
+author: David Peter
+website:
+project: https://github.com/sharkdp/bat
+language: Rust
+license: MIT
+alternativeto: cat
+description: A cat clone with syntax highlighting, Git integration, and automatic paging.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/bat/syntax-highlighting.png
+      caption: bat syntax highlighting
+    - file: tool/bat/git-integration.png
+      caption: bat Git integration
+    - file: tool/bat/non-printing-characters.png
+      caption: bat showing non-printable characters
+body: |
+    ## Automatic paging
+
+    `bat` can pipe its own output to `less` if the output is too large for one screen.
+
+    ## Syntax highlighting
+
+    `bat` supports syntax highlighting for a large number of programming and markup languages:
+
+    {{screenshot: tool/bat/syntax-highlighting.png, bat syntax highlighting}}
+
+    ## Git integration
+
+    `bat` communicates with `git` to show modifications with respect to the index
+    (see left side bar):
+
+    {{screenshot: tool/bat/git-integration.png, bat Git integration}}
+
+    ## Show non-printable characters
+
+    You can use the `-A`/`--show-all` option to show and highlight non-printable characters:
+
+    {{screenshot: tool/bat/non-printing-characters.png, bat showing non-printable characters}}

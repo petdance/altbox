@@ -1,4 +1,9 @@
-_site
-.sass-cache
-.jekyll-metadata
-tmp
+# Astro's internal cache
+.astro/
+
+# Generated output from Astro
+dist/
+
+# npm stuff
+package-lock.json
+node_modules/

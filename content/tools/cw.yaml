@@ -1,0 +1,20 @@
+---
+name: cw
+author: Thomas Hurst
+website:
+project: https://github.com/Freaky/cw
+language: Rust
+license: MIT
+alternativeto: wc
+description: A fast replacement for wc that counts words, lines, characters and bytes, with multi-threaded support.
+last_updated: 2026-03-15
+screenshots: []
+body: |
+    `cw` is a fast replacement for `wc` that counts word, line, character and byte counts.
+    Counts of multiple files may be accelerated with the `--threads` option.
+
+    ```
+    'xargs <files cw --threads=12' ran
+      2.01 ± 0.03 times faster than 'xargs <files cw --threads=4'
+     11.55 ± 0.15 times faster than 'xargs <files wc'
+    ```

@@ -1,0 +1,18 @@
+---
+name: glow
+author: Christian Muehlhaeuser, Toby Padilla, Christian Rocha
+website:
+project: https://github.com/charmbracelet/glow
+language: Go
+license: MIT
+alternativeto: cat
+description: Render Markdown on the CLI, with pizzazz! Can also fetch Markdown documents from the web.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/glow/glow.png
+      caption: glow rendering Markdown in the terminal
+body: |
+    `glow` renders Markdown to the terminal. It can also fetch Markdown
+    documents from the web.
+
+    {{screenshot: tool/glow/glow.png, glow rendering Markdown in the terminal}}

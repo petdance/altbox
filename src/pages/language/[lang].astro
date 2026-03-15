@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { getAllTools } from '../../lib/tools.js'
+
+export function getStaticPaths() {
+    const tools = getAllTools()
+    const langs = [...new Set(tools.map(t => t.language.toLowerCase()))]
+    return langs.map(lang => ({
+        params: { lang },
+        props: {
+            lang,
+            displayName: tools.find(t => t.language.toLowerCase() === lang).language,
+            tools: tools.filter(t => t.language.toLowerCase() === lang),
+        },
+    }))
+}
+
+const { lang, displayName, tools } = Astro.props
+---
+
+<Layout title={`${displayName} tools`}>
+    <div class="page-header">
+        <h1>Tools written in {displayName}</h1>
+    </div>
+
+    <ul class="tool-list">
+        {tools.map(tool => (
+            <li class="tool-card">
+                <h2><a href={`/tool/${tool.name}`}>{tool.name}</a></h2>
+                <p class="description">{tool.description}</p>
+                <div class="badges">
+                    {tool.alternativeto.map(alt => (
+                        <a class="badge" href={`/alternative-to/${alt}`}>alternative to {alt}</a>
+                    ))}
+                    <a class="badge" href={`/license/${tool.license.toLowerCase()}`}>{tool.license} license</a>
+                </div>
+            </li>
+        ))}
+    </ul>
+</Layout>

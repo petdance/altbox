@@ -1,0 +1,17 @@
+---
+name: ls++
+author: Magnus Woldrich
+website:
+project: https://github.com/trapd00r/ls--
+language: Perl
+license: GPL-2.0
+alternativeto: ls
+description: Colorized ls on steroids — a wrapper that lets you reorganize the order of columns.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/ls++/ls++.png
+      caption: ls++ colorized output
+body: |
+    Wrapper around `ls` that lets you reorganize the order of the columns.
+
+    {{screenshot: tool/ls++/ls++.png, ls++ colorized output}}

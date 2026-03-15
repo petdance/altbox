@@ -1,0 +1,13 @@
+---
+name: lftp
+author: Alexander V. Lukyanov
+project: https://github.com/lavv17/lftp
+language: C
+license: GPL-3.0
+alternativeto: ftp
+description: A sophisticated file transfer program supporting ftp, http, sftp, fish, torrent and more.
+last_updated: 2026-03-15
+screenshots: []
+body: |
+    `lftp` is a sophisticated file transfer program supporting a number of
+    network protocols including ftp, http, sftp, fish, and torrent.

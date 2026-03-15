@@ -1,20 +1,18 @@
 default: build
 
 build:
-	bundle exec jekyll build
-
-watch:
-	bundle exec jekyll build --incremental --watch
+	npm run build
+	npx js-beautify --type html -r dist/**/*.html
 
 serve:
-	bundle exec jekyll serve
+	npm run dev
 
 clean:
-	rm -fr _site
+	rm -fr dist
 
 rsync:
 	rsync -azu -e ssh --delete -v \
-	    ~/altbox/_site/ andy@alex.petdance.com:/srv/altbox
+	    ~/altbox/dist/ andy@diper.petdance.com:/srv/altbox/
 
 test:
 	prove t/html.t

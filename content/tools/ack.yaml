@@ -1,0 +1,36 @@
+---
+name: ack
+author: Andy Lester
+website: https://beyondgrep.com
+project: https://github.com/beyondgrep/ack3
+language: Perl
+license: Artistic
+alternativeto: grep
+description: A grep-like tool optimized for searching source code, skipping VCS dirs and binaries by default.
+last_updated: 2026-03-01
+screenshots:
+    - file: tool/ack/screenshot.png
+      caption: ack searching a codebase
+body: |
+    `ack` is a tool designed as a replacement for 99% of the uses of `grep`.
+    It is faster, more portable, and friendlier to the programmer. By default,
+    ack only searches source files — skipping `.git`, binary files, and other
+    clutter you never want to search anyway.
+
+    ## Why ack?
+
+    - Searches only relevant source files by default
+    - No need to specify file extensions — ack knows what source code looks like
+    - Perl-compatible regular expressions
+    - Readable output with file names and line numbers grouped together
+
+    {{screenshot: tool/ack/screenshot.png, ack searching a codebase}}
+
+    ## Basic usage
+
+    ```
+    ack pattern
+    ack --perl pattern      # search only Perl files
+    ack -l pattern          # list only matching filenames
+    ack -i pattern          # case-insensitive search
+    ```

@@ -1,0 +1,17 @@
+---
+name: lsd
+author: Magnus Woldrich
+website:
+project: https://github.com/Peltoche/lsd
+language: Rust
+license: Apache-2.0
+alternativeto: ls
+description: The next generation ls command, with colour coding and special font icons.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/lsd/lsd.png
+      caption: lsd listing files with icons and colour
+body: |
+    Improved `ls` with color coding and special font icons.
+
+    {{screenshot: tool/lsd/lsd.png, lsd listing files with icons and colour}}

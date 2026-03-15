@@ -1,0 +1,26 @@
+---
+name: mtr
+author: Matt Kimball and Roger Wolff
+website: https://www.bitwizard.nl/mtr/
+project: https://github.com/traviscross/mtr
+language: C
+license: GPL-2.0
+alternativeto:
+    - traceroute
+    - ping
+description: Network diagnostic tool that combines traceroute and ping in a single live display.
+last_updated: 2026-03-15
+screenshots:
+    - file: tool/mtr/screenshot.gif
+      caption: mtr showing network hops and packet loss
+body: |
+    mtr combines the functionality of the `traceroute` and `ping` programs in a
+    single network diagnostic tool.
+
+    As mtr starts, it investigates the network connection between the host mtr
+    runs on and a user-specified destination host. After it determines the
+    address of each network hop between the machines, it sends a sequence of ICMP
+    ECHO requests to each one to determine the quality of the link to each
+    machine. As it does this, it prints running statistics about each machine.
+
+    {{screenshot: tool/mtr/screenshot.gif, mtr showing network hops and packet loss}}
