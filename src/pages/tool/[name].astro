@@ -22,8 +22,8 @@ const lastUpdated = tool.last_updated instanceof Date
     <h1>{tool.name}</h1>
 
     <div class="tool-links">
-        {tool.website && <div>Website: <a href={tool.website}>{tool.website}</a></div>}
-        {tool.project && tool.project !== tool.website && <div>Project: <a href={tool.project}>{tool.project}</a></div>}
+        {tool.website && <div>Website: <a href={tool.website} target="_blank" rel="noopener noreferrer">{tool.website}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
+        {tool.project && tool.project !== tool.website && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
         {tool.author && <div>Author: {tool.author}</div>}
         <div>
             Alternative to:{' '}
@@ -38,7 +38,7 @@ const lastUpdated = tool.last_updated instanceof Date
             <div>
                 Works with:{' '}
                 {tool.workswith.map((w, i) => (
-                    <>{i > 0 ? ', ' : ''}<a href={`/works-with/${w}`}>{w}</a></>
+                    <>{i > 0 ? ', ' : ''}<a href={`/works-with/${w.toLowerCase()}`}>{w}</a></>
                 ))}
             </div>
         )}

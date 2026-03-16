@@ -2,7 +2,7 @@
 name: lsd
 author: Magnus Woldrich
 website:
-project: https://github.com/Peltoche/lsd
+project: https://github.com/lsd-rs/lsd
 language: Rust
 license: Apache-2.0
 alternativeto: ls

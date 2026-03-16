@@ -6,7 +6,7 @@ export function getStaticPaths() {
     const tools = getAllTools()
     const slugs = [...new Set(tools.flatMap(t => t.workswith))]
     return slugs.map(slug => ({
-        params: { tool: slug },
+        params: { tool: slug.toLowerCase() },
         props: { slug, tools: tools.filter(t => t.workswith.includes(slug)) },
     }))
 }
@@ -28,7 +28,7 @@ const { slug, tools } = Astro.props
                     <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>
                     <a class="badge" href={`/license/${tool.license.toLowerCase()}`}>{tool.license} license</a>
                     {tool.workswith.map(w => (
-                        <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
+                        <a class="badge" href={`/works-with/${w.toLowerCase()}`}>Works with {w}</a>
                     ))}
                 </div>
             </li>

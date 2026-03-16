@@ -7,16 +7,15 @@ const tools = getAllTools()
 
 <Layout>
     <div class="page-header">
-        <h1>altbox.dev — A collection of power tools for the Linux/Unix/macOS command line</h1>
+        <h1>altbox.dev — A catalog of {tools.length} alternative power tools for the Linux/Unix/macOS command line</h1>
     </div>
 
-    <h2>Alternative tools</h2>
-
-    <p>The standard Unix tools have lasted us for decades. Every programmer
-    should know them, but there are plenty of tools that add on to the standard
-    tools. For example, <code>grep</code> works fine for finding text, but tools like
-    <a href="/tool/ack">ack</a> and <a href="/tool/ripgrep">ripgrep</a> are designed for today's modern
-    programmer working with large trees of heterogeneous source code.</p>
+    <p>
+        The standard Unix tools have lasted us for decades. Every programmer should know them, but there are plenty of
+        tools that add on to the standard tools. For example, <code>grep</code> works fine for finding text, but tools
+        like <a href="/tool/ack">ack</a> and <a href="/tool/ripgrep">ripgrep</a> are designed for today's modern
+        programmer working with large trees of heterogeneous source code.
+    </p>
 
     <h2>Feedback</h2>
 
@@ -34,7 +33,7 @@ const tools = getAllTools()
         <li><a href="https://remysharp.com/2018/08/23/cli-improved">CLI: improved</a>, by Remy Sharp</li>
     </ul>
 
-    <h2>Tools</h2>
+    <h2>All {tools.length} tools</h2>
 
     <ul class="tool-list">
         {tools.map(tool => (
@@ -43,12 +42,12 @@ const tools = getAllTools()
                 <p class="description">{tool.description}</p>
                 <div class="badges">
                     {tool.alternativeto.map(alt => (
-                        <a class="badge" href={`/alternative-to/${alt}`}>alternative to {alt}</a>
+                        <a class="badge" href={`/alternative-to/${alt}`}>Alternative to {alt}</a>
                     ))}
                     <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>
                     <a class="badge" href={`/license/${tool.license.toLowerCase()}`}>{tool.license} license</a>
                     {tool.workswith.map(w => (
-                        <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
+                        <a class="badge" href={`/works-with/${w.toLowerCase()}`}>Works with {w}</a>
                     ))}
                 </div>
             </li>

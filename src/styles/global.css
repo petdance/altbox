@@ -159,6 +159,13 @@ pre code {
     font-family: var(--font-mono);
 }
 
+.ext-icon {
+    display: inline-block;
+    margin-left: 0.25em;
+    font-size: 1em;
+    opacity: 0.6;
+}
+
 
 /* Tool cards (listing pages) */
 .tool-list {

@@ -30,7 +30,7 @@ const { license, displayName, tools } = Astro.props
                 <p class="description">{tool.description}</p>
                 <div class="badges">
                     {tool.alternativeto.map(alt => (
-                        <a class="badge" href={`/alternative-to/${alt}`}>alternative to {alt}</a>
+                        <a class="badge" href={`/alternative-to/${alt}`}>Alternative to {alt}</a>
                     ))}
                     <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>
                     {tool.workswith.map(w => (
