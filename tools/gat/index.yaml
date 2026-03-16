@@ -1,0 +1,33 @@
+---
+name: gat
+description: cat clone written in Go
+alternativeto: cat
+workswith:
+  - Markdown
+  - JPEG
+  - GIF
+  - PNG
+author: Koki Sato
+website:
+project: https://github.com/koki-develop/gat
+language: Go
+license: MIT
+last_updated: 2026-03-15
+screenshots:
+    - file: demo.gif
+      caption: gat in action
+    - file: image.png
+      caption: Printing image with gat
+body: |
+    Features include:
+    - Syntax highlighting
+    - Color theming
+    - Masking of secrets
+    - Display of non-printing characters, tabs, line ends
+    - Renders Markdown
+
+    {{screenshot: demo.gif, gat in action}}
+
+    If your terminal supports Sixel, you can print images.
+
+    {{screenshot: image.png, Printing image with gat}}
