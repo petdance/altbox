@@ -1,0 +1,26 @@
+---
+name: nat
+description: ls with colors and more
+alternativeto: ls
+workswith:
+author: Will
+website:
+project: https://github.com/willdoescode/nat
+language: C
+license: MIT
+last_updated: 2026-03-15
+screenshots:
+    - file: example.png
+      caption: nat in action
+body: |
+    nat is an alternative ls with
+
+    - Showing file permissions
+    - Showing file size
+    - Showing the date that the file was modified last
+    - Showing the user that the file belongs to
+    - Showing the group that the file belongs to
+    - An easy to use file search
+    - A splash of color to distinguish between files and folders and other file types
+
+    {{screenshot: example.png, nat in action}}
