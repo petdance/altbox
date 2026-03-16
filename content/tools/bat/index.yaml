@@ -4,6 +4,10 @@ author: David Peter
 website:
 project: https://github.com/sharkdp/bat
 language: Rust
+workswith:
+  - JSON
+  - Markdown
+  - YAML
 license: MIT
 alternativeto: cat
 description: A cat clone with syntax highlighting, Git integration, and automatic paging.

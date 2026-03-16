@@ -4,19 +4,19 @@ import { getAllTools } from '../../lib/tools.js'
 
 export function getStaticPaths() {
     const tools = getAllTools()
-    const slugs = [...new Set(tools.flatMap(t => t.alternativeto))]
+    const slugs = [...new Set(tools.flatMap(t => t.workswith))]
     return slugs.map(slug => ({
         params: { tool: slug },
-        props: { slug, tools: tools.filter(t => t.alternativeto.includes(slug)) },
+        props: { slug, tools: tools.filter(t => t.workswith.includes(slug)) },
     }))
 }
 
 const { slug, tools } = Astro.props
 ---
 
-<Layout title={`${slug} alternatives`}>
+<Layout title={`Works with ${slug}`}>
     <div class="page-header">
-        <h1>Alternatives to <code>{slug}</code></h1>
+        <h1>Works with <code>{slug}</code></h1>
     </div>
 
     <ul class="tool-list">

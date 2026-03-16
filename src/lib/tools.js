@@ -19,6 +19,12 @@ export function getAllTools() {
                 tool.alternativeto = [tool.alternativeto]
             }
 
+            if (tool.workswith && !Array.isArray(tool.workswith)) {
+                tool.workswith = [tool.workswith]
+            } else if (!tool.workswith) {
+                tool.workswith = []
+            }
+
             // Resolve screenshot file paths to web-accessible URLs
             if (tool.screenshots) {
                 tool.screenshots = tool.screenshots.map(s => ({
@@ -60,5 +66,11 @@ export function getSidebarLanguages(tools) {
 export function getSidebarLicenses(tools) {
     const counts = {}
     tools.forEach(t => { counts[t.license] = (counts[t.license] || 0) + 1 })
+    return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }))
+}
+
+export function getSidebarWorksWith(tools) {
+    const counts = {}
+    tools.flatMap(t => t.workswith).forEach(w => { counts[w] = (counts[w] || 0) + 1 })
     return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }))
 }
