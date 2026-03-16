@@ -1,0 +1,27 @@
+---
+name: hwatch
+description: hwatch is a alternative watch that records the result of command execution and can display it history and diffs.
+alternativeto: watch
+workswith:
+author: blacknon
+website:
+project: https://github.com/blacknon/hwatch
+language: C
+license: MIT
+last_updated: 2026-03-15
+screenshots:
+    - file: hwatch.gif
+      caption: hwatch in action
+body: |
+    hwatch is an alternative watch command that records the result of command execution and can display it history and diffs.
+
+    - Can keep the history when the difference, occurs and check it later.
+    - Can check the difference in the history. The display method can be changed in real time.
+    - Can output the execution result as log (json format).
+    - Custom keymaps are available.
+    - Support ANSI color code.
+    - Execution result can be scroll.
+    - Not only as a TUI application, but also to have the differences output as standard output.
+    - If a difference occurs, you can have the specified command additionally executed.
+
+    {{screenshot: hwatch.gif, hwatch in action}}
