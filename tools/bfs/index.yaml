@@ -1,0 +1,18 @@
+---
+name: bfs
+description: Breadth-first search for your files
+alternativeto: find
+workswith:
+author: Tavian Barnes
+website: https://tavianator.com/projects/bfs.html
+project: https://github.com/tavianator/bfs
+language: C
+license: BSD Zero Clause
+last_updated: 2026-03-15
+screenshots:
+    - file: bfs.svg
+      caption: bfs in action
+body: |
+    bfs is a variant of the UNIX find command that operates breadth-first rather than depth-first. It is otherwise compatible with many versions of find
+
+    {{screenshot: bfs.svg, gat in action}}
