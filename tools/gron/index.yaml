@@ -1,0 +1,41 @@
+---
+name: gron
+author: Tom Hudson
+website:
+project: https://github.com/tomnomnom/gron
+language: Go
+license: BSD-3
+alternativeto: grep
+workswith: JSON
+description: Makes JSON greppable
+last_updated: 2026-03-26
+body: |
+    `gron` transforms JSON into discrete assignments to make it easier to
+    grep for what you want and see the absolute 'path' to it. It eases the
+    exploration of APIs that return large blobs of JSON but have terrible
+    documentation.
+
+    ``` console
+    $ gron "https://api.github.com/repos/tomnomnom/gron/commits?per_page=1" | fgrep "commit.author"
+    json[0].commit.author = {};
+    json[0].commit.author.date = "2016-07-02T10:51:21Z";
+    json[0].commit.author.email = "mail@tomnomnom.com";
+    json[0].commit.author.name = "Tom Hudson";
+    ```
+
+    gron can work backwards too, enabling you to turn your filtered data back into JSON:
+
+    ``` console
+    $ gron "https://api.github.com/repos/tomnomnom/gron/commits?per_page=1" | fgrep "commit.author" | gron --ungron
+    [
+      {
+        "commit": {
+          "author": {
+            "date": "2016-07-02T10:51:21Z",
+            "email": "mail@tomnomnom.com",
+            "name": "Tom Hudson"
+          }
+        }
+      }
+    ]
+    ```
