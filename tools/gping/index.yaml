@@ -1,0 +1,21 @@
+---
+name: gping
+description: ping, but with a graph
+alternativeto: ping
+author: Tom Forbes
+website:
+project: https://github.com/orf/gping
+language: Rust
+license: MIT
+last_updated: 2026-03-15
+screenshots:
+    - file: readme-example.gif
+      caption: gping in action
+body: |
+    Comes with the following super-powers:
+    - Graph the ping time for multiple hosts
+    - Graph the execution time for commands via the --cmd flag
+    - Custom colours
+    - Windows, Mac and Linux support
+
+    {{screenshot: readme-example.gif, gping in action}}
