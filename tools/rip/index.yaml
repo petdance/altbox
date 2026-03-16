@@ -1,0 +1,25 @@
+---
+name: rip
+description: Command-line deletion tool focused on safety, ergonomics, and performance.
+alternativeto: rm
+workswith:
+author: Kevin Liu
+website:
+project: https://github.com/nivekuil/rip/
+language: Rust
+license: GPL-3.0
+last_updated: 2026-03-15
+screenshots:
+body: |
+    `rip` is a command-line deletion tool focused on safety, ergonomics,
+    and performance. It favors a simple interface, and does not implement
+    the xdg-trash spec or attempt to achieve the same goals.
+
+    Deleted files get sent to the graveyard (/tmp/graveyard-$USER by
+    default, see notes on changing this) under their absolute path, giving
+    you a chance to recover them. No data is overwritten. If files that
+    share the same path are deleted, they will be renamed as numbered
+    backups.
+
+    `rip` is made for lazy people. If any part of the interface could be more
+    intuitive, please open an issue or pull request.
