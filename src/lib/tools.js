@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url'
 import yaml from 'js-yaml'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const toolsDir = join(__dirname, '../../content/tools')
+const toolsDir = join(__dirname, '../../tools')
 
 export function getAllTools() {
     const dirs = readdirSync(toolsDir, { withFileTypes: true })

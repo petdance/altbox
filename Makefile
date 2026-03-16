@@ -1,9 +1,9 @@
 default: build
 
 build:
-	rsync -a --exclude='*.yaml' content/tools/ public/tool/
+	rsync -a --exclude='*.yaml' tools/ public/tool/
 	npm run build
-	npx js-beautify --type html -r dist/**/*.html
+	#npx js-beautify --type html -r dist/**/*.html
 
 serve:
 	npm run dev

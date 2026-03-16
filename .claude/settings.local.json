@@ -3,7 +3,8 @@
     "allow": [
       "Bash(grep:*)",
       "Bash(ls:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git mv:*)"
     ]
   }
 }
