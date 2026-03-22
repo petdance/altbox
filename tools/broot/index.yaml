@@ -1,0 +1,32 @@
+---
+name: broot
+description: Broot is a better way to navigate directories, find files, and launch commands.
+project: https://github.com/Canop/broot
+website: https://dystroy.org/broot/
+alternativeto:
+  - cd
+  - ls
+  - tree
+author: Denys Séguret
+language: Rust
+license: MIT
+screenshots:
+  - file: screenshot.png
+    caption: broot in action
+last_updated: 2026-03-22
+body: |
+    Broot is a better way to navigate directories, find files, and launch commands.
+
+    {{screenshot: screenshot.png, broot in action}}
+
+    It shows directory trees in a compact, readable way and lets you fuzzy-search across a whole tree with just a few
+    keystrokes -- unlike [tree](/alternative-to/tree), which dumps everything, or [cd](/alternative-to/cd)/[ls](/alternative-to/ls) cycling.
+
+    Key features:
+    - Fuzzy search that filters the tree as you type
+    - File preview (including images in Kitty/WezTerm)
+    - Multi-panel mode for copy/move/delete operations
+    - Git status integration
+    - Disk usage "whale spotting" mode
+    - Content search with regex
+    - Highly customizable verbs and keybindings
