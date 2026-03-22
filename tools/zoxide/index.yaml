@@ -11,7 +11,7 @@ last_updated: 2026-03-22
 screenshots:
   - file: tutorial.webp
 body: |
-    zoxide is a smarter cd command, inspired by `z` and [autojump](/tool/autojump).
+    zoxide is a smarter cd command, inspired by [z](/tool/z) and [autojump](/tool/autojump).
 
     It remembers which directories you use most frequently, so you can "jump" to them in just a few keystrokes.
     zoxide works on all major shells.
