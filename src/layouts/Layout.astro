@@ -30,7 +30,7 @@ const workswith = getSidebarWorksWith(tools)
                         <h2>Works with</h2>
                         <ul>
                             {workswith.map(item => (
-                                <li><a href={`/works-with/${item.name}`}><strong>{item.name}</strong> ({item.count})</a></li>
+                                <li><a href={`/works-with/${item.name.toLowerCase()}`}><strong>{item.name}</strong> ({item.count})</a></li>
                             ))}
                         </ul>
                     </>
