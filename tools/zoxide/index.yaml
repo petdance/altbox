@@ -1,0 +1,23 @@
+---
+name: zoxide
+author: Ajeet D'Souza
+website:
+project: https://github.com/ajeetdsouza/zoxide
+language: Rust
+license: MIT
+alternativeto: cd
+description: zoxide is a smarter cd command, inspired by z and autojump.
+last_updated: 2026-03-22
+screenshots:
+  - file: tutorial.webp
+body: |
+    zoxide is a smarter cd command, inspired by `z` and [autojump](/tool/autojump).
+
+    It remembers which directories you use most frequently, so you can "jump" to them in just a few keystrokes.
+    zoxide works on all major shells.
+
+    {{screenshot: tutorial.webp, Zoxide tutorial}}
+
+    ## Articles
+
+    - [Say good bye to cd and hello Zoxide - the better and smarter cd command!](https://dev.to/luxcih/say-good-bye-to-cd-and-hello-zoxide-the-better-and-smarter-cd-command-828)

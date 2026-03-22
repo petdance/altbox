@@ -1,0 +1,14 @@
+---
+name: ccdiff
+author: H.Merijn Brand
+website: https://metacpan.org/pod/App::ccdiff
+project: https://github.com/Tux/App-ccdiff
+language: Perl
+license: Artistic-2.0
+alternativeto: diff
+description: A colored diff that also colors inside changed lines
+last_updated: 2026-03-22
+body: |
+    Show the diff between two files on a character by character base. In contrast to the standard diff tools, this tool
+    uses the diff algorithm horizontally for each line in the vertical diff, highlighting the changes. This is very
+    handy in hard to spot changes like `O` to `0`, `I` to `l` or `1` and whitespace.
