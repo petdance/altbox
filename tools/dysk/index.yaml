@@ -1,0 +1,28 @@
+---
+name: dysk
+description: Graphical tool for listing your filesystems
+project: https://github.com/Canop/dysk
+website: https://dystroy.org/dysk/
+alternativeto: df
+author: Denys Séguret
+language: Rust
+license: MIT
+screenshots:
+  - file: screenshot1.png
+    caption: dysk in action
+  - file: screenshot2.png
+    caption: dysk JSON output
+last_updated: 2026-03-22
+body: |
+  dysk is an alternative to df that shows filesystem/disk information in a more readable, customizable format.
+
+  Key features:
+
+  - Customizable columns
+  - Filtering and sorting
+  - Multiple output formats: table, JSON, CSV
+  - Usable as a library via the lfs-core Rust crate
+
+  {{screenshot: screenshot1.png, dysk in action}}
+
+  {{screenshot: screenshot2.png, dysk JSON output}}
