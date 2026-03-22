@@ -1,0 +1,22 @@
+---
+name: hstr
+author: Martin Dvorak
+website:
+project: https://github.com/nicolargo/glances
+language: C
+license: Apache-2.0
+alternativeto: history
+description: Easily view, navigate and search your command history with shell history TUI suggest box for bash and zsh.
+last_updated: 2026-03-22
+screenshots:
+  - file: screenshot.gif
+    caption: hstr in action
+body: |
+    HSTR (HiSToRy) is a command line utility that brings improved bash/zsh command completion from the history. It aims
+    to make completion easier and more efficient than Ctrl-r.
+
+    HSTR can also manage your command history (for instance you can remove commands that are obsolete or contain a piece
+    of sensitive information) or bookmark your favorite commands.
+
+    {{screenshot: screenshot.gif, hstr in action}}
+
