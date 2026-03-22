@@ -25,6 +25,12 @@ const workswith = getSidebarWorksWith(tools)
                 <a class="sidebar-home" href="/">
                     <img src="/assets/img/altbox-box-logo.png" alt="altbox" class="sidebar-logo" />
                 </a>
+                <h2>Alternative to</h2>
+                <ul>
+                    {sidebarItems.map(item => (
+                        <li><a href={`/alternative-to/${item.name}`}><strong>{item.name}</strong> ({item.count})</a></li>
+                    ))}
+                </ul>
                 {workswith.length > 0 && (
                     <>
                         <h2>Works with</h2>
@@ -35,12 +41,6 @@ const workswith = getSidebarWorksWith(tools)
                         </ul>
                     </>
                 )}
-                <h2>Alternative to</h2>
-                <ul>
-                    {sidebarItems.map(item => (
-                        <li><a href={`/alternative-to/${item.name}`}><strong>{item.name}</strong> ({item.count})</a></li>
-                    ))}
-                </ul>
                 <h2>Language</h2>
                 <ul>
                     {languages.map(lang => (

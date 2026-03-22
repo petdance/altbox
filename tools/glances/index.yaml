@@ -1,0 +1,37 @@
+---
+name: glances
+author: Nicolas Hennion
+website:
+project: https://github.com/nicolargo/glances
+language: Python
+license: GPL-3
+alternativeto: top
+description: Cross-platform extensible monitoring tool
+last_updated: 2026-03-22
+screenshots:
+  - file: screenshot.png
+    caption: Glances in action
+body: |
+    Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of
+
+    - CPU, memory, disk, network usage
+    - Running processes and logged in users
+    - Temperatures, votages and fan speeds
+    - Containers through Docker and LXC
+
+    {{screenshot: screenshot.png, Glances in action}}
+
+    The information is presented in an easy to read dashboard and can also be used for remote monitoring of systems via
+    a web interface or command line interface. It is easy to install and use and can be customized to show only the
+    information that you are interested in.
+
+    Stats can also be exported to files or external time/value databases, CSV, JSON or direct output to STDOUT.
+
+    - files: CSV and JSON
+    - databases: InfluxDB, ElasticSearch, PostgreSQL/TimeScale, Cassandra, CouchDB, OpenTSDB, Prometheus, StatsD, Riemann and Graphite
+    - brokers: RabbitMQ/ActiveMQ, NATS, ZeroMQ and Kafka
+
+    AI assistants (Claude, Cursor, …) can query Glances directly through the built-in MCP server.
+
+    Glances is written in Python and uses libraries to grab information from your system. It is based on an open
+    architecture where developers can add new plugins or exports modules.

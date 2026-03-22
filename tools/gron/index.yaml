@@ -8,7 +8,7 @@ license: BSD-3
 alternativeto: grep
 workswith: JSON
 description: Makes JSON greppable
-last_updated: 2026-03-26
+last_updated: 2026-03-16
 body: |
     `gron` transforms JSON into discrete assignments to make it easier to
     grep for what you want and see the absolute 'path' to it. It eases the
