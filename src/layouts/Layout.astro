@@ -16,6 +16,13 @@ const workswith = getSidebarWorksWith(tools)
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title ? `${title} — altbox` : 'altbox — alternative CLI tools'}</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMB5JMFYJP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FMB5JMFYJP');
+        </script>
     </head>
     <body>
         <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">&#9776;</button>
