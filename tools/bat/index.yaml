@@ -42,3 +42,5 @@ body: |
     You can use the `-A`/`--show-all` option to show and highlight non-printable characters:
 
     {{screenshot: non-printing-characters.png, bat showing non-printable characters}}
+
+    bat is from the same author as [fd](/tool/fd) and [diskus](/tool/diskus).

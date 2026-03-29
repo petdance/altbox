@@ -83,6 +83,21 @@ tools.
 - Repo: <https://github.com/petdance/altbox>
 - Issues: <https://github.com/petdance/altbox/issues> — issues labeled "tool" are candidates for addition to the site
 
+## Optional body sections
+
+The `body` field can include an `## Articles` section at the end with links to
+blog posts, tutorials, or other external writeups about the tool. Example:
+
+```yaml
+body: |
+    ...
+
+    ## Articles
+
+    - [How to use foo on Linux](https://example.com/foo)
+    - [foo vs bar: a comparison](https://example.com/foo-vs-bar)
+```
+
 ## Code style
 
 - 4-space indentation in all files
