@@ -1,0 +1,38 @@
+---
+name: klondiff
+author: Piers Titus van der Torren
+project: https://github.com/pierstitus/klondiff
+language: Python
+license: Unknown
+alternativeto: diff
+description: An improved diff tool that prioritizes readability by reducing noise from whitespace and short lines.
+last_updated: 2021-11-09
+screenshots:
+    - file: screenshot.png
+      caption: Comparison of klondiff output versus standard diff
+body: |
+    klondiff is an enhanced diff tool designed to prioritize readability over
+    minimal diff size. It builds upon the Patience diff algorithm but improves it
+    by significantly reducing the influence of whitespace changes and repeated
+    characters (such as `=========`), which typically clutter standard diff output
+    and make it harder to identify actual changes.
+
+    One of klondiff's key strengths is its intelligent line-matching algorithm that
+    neglects short lines, preventing incorrect line matches that often occur with
+    brackets or other minimal content. The tool also interleaves blocks with changes
+    to make line differences more visually apparent and easier to comprehend.
+
+    {{screenshot: screenshot.png, Comparison of klondiff output versus standard diff}}
+
+    For visual clarity, klondiff provides color-coded highlighting: unchanged
+    portions of modified lines are displayed in gold, and indentation changes are
+    highlighted with colored backgrounds. This layered visual approach helps users
+    quickly identify which specific parts of a line have changed versus which remain
+    the same.
+
+    ## Basic usage
+
+    ```
+    klondiff file1.txt file2.txt
+    git diff | klondiff
+    ```
