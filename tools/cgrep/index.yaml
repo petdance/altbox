@@ -1,0 +1,51 @@
+name: cgrep
+author: Nicola Bonelli
+website: https://awgn.github.io/cgrep/
+project: https://github.com/awgn/cgrep
+language: Haskell
+license: GPL-2.0
+alternativeto: grep
+workswith:
+  - JSON
+description: Context-aware grep for source code with semantic pattern matching and language awareness.
+last_updated: 2026-03-29
+body: |
+    CGrep extends traditional grep with deep semantic understanding of source code, allowing developers to search not
+    just for text patterns but for code structure and context across 50+ programming languages. cgrep understands the
+    difference between code, comments, and string literals, letting you search within specific contexts.
+
+    The tool's semantic pattern matching uses wildcards like `_`, `ANY`, `KEY`, `STR`, and
+    `NUM` to match code structures rather than literal text. This enables 
+    queries like finding all function calls, variable assignments, or specific patterns regardless
+    of variable names. CGrep automatically detects and filters test code across 27+ programming
+    languages, and performs 75% faster than grep for standard token searches and 39% faster
+    for semantic searches. Multi-line pattern matching enables searching across code blocks,
+    and recursive directory searching supports language-specific filtering, directory pruning,
+    and configuration files.
+
+    The tool integrates directly with editors, supporting vim integration and JSON output
+    for scripting. Automatic color highlighting makes results easy to read on terminals, and
+    support for global and local configuration files (cgreprc) allows fine-tuning behavior per
+    project or system-wide.
+
+    ## Basic usage
+
+    ```bash
+    # Search for a token within code only (not comments or strings).
+    cgrep --code 'token' files...
+
+    # Search only within comments.
+    cgrep --comment 'TODO' files...
+
+    # Search using semantic patterns (match any two-parameter function call).
+    cgrep --pattern 'KEY(_,_)' files...
+
+    # Filter test files automatically (exclude test code).
+    cgrep --no-test 'function_name' files...
+
+    # Open matches in vim for editing.
+    cgrep -v 'pattern' files...
+
+    # Exclude directories from recursive search.
+    cgrep --prune-dir 'node_modules' 'pattern' .
+    ```
