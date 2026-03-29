@@ -1,0 +1,30 @@
+---
+name: tiptop
+author: Nico Schlömer
+project: https://github.com/nschloe/tiptop
+language: Python
+license: MIT
+alternativeto: top
+description: A command-line system monitor that displays CPU, memory, network, and disk stats with real-time graphs in a modern terminal UI.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: tiptop showing system resource graphs in the terminal
+body: |
+    tiptop is a modern system monitor in the spirit of `top`, built with the
+    Textual framework for a rich terminal UI. Rather than rows of numbers, it
+    presents CPU, memory, network, and disk activity as live graphs that update
+    in place, giving an immediate visual sense of system load over time.
+
+    {{screenshot: screenshot.png, tiptop showing system resource graphs in the terminal}}
+
+    It works on Linux, macOS, and Windows, and uses psutil under the hood for
+    cross-platform system data. The `--net` flag lets you specify which network
+    interface to monitor.
+
+    ## Basic usage
+
+    ```bash
+    tiptop                   # launch the monitor
+    tiptop --net eth0        # monitor a specific network interface
+    ```
