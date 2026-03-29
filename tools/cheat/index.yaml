@@ -1,0 +1,49 @@
+name: cheat
+author: Chris Allen Lane
+project: https://github.com/cheat/cheat
+language: Go
+license: MIT
+alternativeto:
+  - man
+  - info
+description: A command-line tool for creating and viewing interactive cheatsheets.
+last_updated: 2026-03-29
+body: |
+    cheat allows you to create and view interactive cheatsheets directly from the command line.
+
+    Each cheatsheet is stored as a simple plain-text file, making them easy to create, edit, and share. You can create
+    personal cheatsheets for your most-used commands, and optionally include YAML frontmatter for syntax highlighting
+    and tagging. Cheatsheets are stored in cheatpaths (directories like ~/.cheat/), and you can have multiple cheatpaths
+    with read-only protection options. The tool supports nested organization (e.g., foo/bar), directory-scoped
+    cheatsheets (discoverable .cheat folders like .git), and powerful search functionality to find cheatsheets by phrase
+    or regex pattern.
+
+    Beyond viewing, cheat makes it simple to create and edit cheatsheets with the `-e` flag, list available sheets, and
+    filter by tags. The tool includes shell completion for bash, zsh, fish, and PowerShell, and JSON output support for
+    programmatic integration.
+
+    ## Basic usage
+
+    ```bash
+    # View a cheatsheet for a command.
+    cheat tar
+
+    # Create or edit a cheatsheet.
+    cheat -e tar
+
+    # Search for cheatsheets containing a pattern.
+    cheat -s 'search term'
+
+    # List all available cheatsheets.
+    cheat -l
+
+    # View cheatsheet with detailed descriptions.
+    cheat -d tar
+
+    # Filter by tag.
+    cheat --tag 'compression'
+    ```
+
+    ## Articles:
+
+    - [The only Linux command you need to know](https://opensource.com/article/22/6/linux-cheat-command)
