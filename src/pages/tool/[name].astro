@@ -33,7 +33,6 @@ const lastUpdated = tool.last_updated instanceof Date
         </div>
         <div>License: <a href={`/license/${tool.license.toLowerCase()}`}>{tool.license}</a></div>
         <div>Language: <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a></div>
-        <div>Page updated: {lastUpdated}</div>
         {tool.workswith.length > 0 && (
             <div>
                 Works with:{' '}
@@ -42,6 +41,7 @@ const lastUpdated = tool.last_updated instanceof Date
                 ))}
             </div>
         )}
+        <div>This page last updated: {lastUpdated}</div>
     </div>
 
     <div class="body" set:html={bodyHtml} />
