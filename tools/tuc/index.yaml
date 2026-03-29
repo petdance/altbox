@@ -1,0 +1,39 @@
+---
+name: tuc
+author: Riccardo Attilio Galli
+project: https://github.com/riquito/tuc
+language: Rust
+license: GPL-3.0
+alternativeto: cut
+description: A more powerful field cutter with regex delimiters, negative indexes, and flexible output formatting.
+last_updated: 2026-03-29
+screenshots:
+    - file: screencast.svg
+      caption: tuc cutting and reformatting fields from stdin
+body: |
+    tuc extends the familiar `cut` command with capabilities that the POSIX
+    original lacks. It supports positive and negative field indexes, ranges,
+    field reordering, and multi-character or regex delimiters — all things that
+    make `cut` awkward or impossible for real-world data.
+
+    {{screenshot: screencast.svg, tuc cutting and reformatting fields from stdin}}
+
+    Output formatting goes beyond simple field extraction. You can join selected
+    fields with a custom delimiter, replace the original delimiter in the output,
+    emit fields as a JSON array, or use `{}` placeholder syntax to construct
+    arbitrary output strings from named fields.
+
+    tuc can cut by fields, bytes, characters, or lines, and handles UTF-8
+    correctly throughout. It also supports memory-mapped files for efficient
+    processing of large inputs and NUL-terminated input for working with
+    null-delimited data streams.
+
+    ## Basic usage
+
+    ```bash
+    echo "foo bar baz" | tuc -d ' ' -f 3,2,1    # reorder fields: baz bar foo
+    echo "foo bar baz" | tuc -d ' ' -f '{1}, {2} and {3}'  # format output
+    echo "foo bar baz" | tuc -d ' ' --json        # emit as JSON array
+    echo "a,b, c"     | tuc -e '[, ]+' -f 1,3    # regex delimiter
+    printf "a\nb\nc\nd\ne" | tuc -l 2:-2          # cut lines with negative index
+    ```
