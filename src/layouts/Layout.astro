@@ -1,5 +1,6 @@
 ---
 import { getAllTools, getSidebarItems, getSidebarLanguages, getSidebarLicenses, getSidebarWorksWith } from '../lib/tools.js'
+import Sidebar from '../components/Sidebar.astro'
 import '../styles/global.css'
 
 const { title } = Astro.props
@@ -28,39 +29,12 @@ const workswith = getSidebarWorksWith(tools)
         <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">&#9776;</button>
         <div class="menu-overlay" id="menu-overlay"></div>
         <div class="layout">
-            <nav class="sidebar" id="sidebar">
-                <a class="sidebar-home" href="/">
-                    <img src="/assets/img/altbox-box-logo.png" alt="altbox" class="sidebar-logo" />
-                </a>
-                <h2>Alternative to</h2>
-                <ul>
-                    {sidebarItems.map(item => (
-                        <li><a href={`/alternative-to/${item.name}`}><strong>{item.name}</strong> ({item.count})</a></li>
-                    ))}
-                </ul>
-                {workswith.length > 0 && (
-                    <>
-                        <h2>Works with</h2>
-                        <ul>
-                            {workswith.map(item => (
-                                <li><a href={`/works-with/${item.name.toLowerCase()}`}><strong>{item.name}</strong> ({item.count})</a></li>
-                            ))}
-                        </ul>
-                    </>
-                )}
-                <h2>Language</h2>
-                <ul>
-                    {languages.map(lang => (
-                        <li><a href={`/language/${lang.name.toLowerCase()}`}><strong>{lang.name}</strong> ({lang.count})</a></li>
-                    ))}
-                </ul>
-                <h2>License</h2>
-                <ul>
-                    {licenses.map(license => (
-                        <li><a href={`/license/${license.name.toLowerCase()}`}><strong>{license.name}</strong> ({license.count})</a></li>
-                    ))}
-                </ul>
-            </nav>
+            <Sidebar
+                sidebarItems={sidebarItems}
+                languages={languages}
+                licenses={licenses}
+                workswith={workswith}
+            />
             <main class="content">
                 <slot />
                 <div class="page-footer">

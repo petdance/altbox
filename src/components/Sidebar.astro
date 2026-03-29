@@ -1,0 +1,44 @@
+---
+interface Props {
+    sidebarItems: any[]
+    languages: any[]
+    licenses: any[]
+    workswith: any[]
+}
+
+const { sidebarItems, languages, licenses, workswith } = Astro.props
+---
+
+<nav class="sidebar" id="sidebar">
+    <a class="sidebar-home" href="/">
+        <img src="/assets/img/altbox-box-logo.png" alt="altbox" class="sidebar-logo" />
+    </a>
+    <h2>Alternative to</h2>
+    <ul>
+        {sidebarItems.map(item => (
+            <li><a href={`/alternative-to/${item.name}`}><strong>{item.name}</strong> ({item.count})</a></li>
+        ))}
+    </ul>
+    {workswith.length > 0 && (
+        <>
+            <h2>Works with</h2>
+            <ul>
+                {workswith.map(item => (
+                    <li><a href={`/works-with/${item.name.toLowerCase()}`}><strong>{item.name}</strong> ({item.count})</a></li>
+                ))}
+            </ul>
+        </>
+    )}
+    <h2>Language</h2>
+    <ul>
+        {languages.map(lang => (
+            <li><a href={`/language/${lang.name.toLowerCase()}`}><strong>{lang.name}</strong> ({lang.count})</a></li>
+        ))}
+    </ul>
+    <h2>License</h2>
+    <ul>
+        {licenses.map(license => (
+            <li><a href={`/license/${license.name.toLowerCase()}`}><strong>{license.name}</strong> ({license.count})</a></li>
+        ))}
+    </ul>
+</nav>
