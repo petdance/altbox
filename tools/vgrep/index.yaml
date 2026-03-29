@@ -1,0 +1,49 @@
+---
+name: vgrep
+author: Valentin Rothberg
+project: https://github.com/vrothberg/vgrep
+language: Go
+license: GPL-3.0
+alternativeto: grep
+workswith:
+  - grep
+  - git-grep
+  - ripgrep
+  - fzf
+description: A user-friendly pager and interactive front-end for grep, git-grep, and ripgrep with editor integration.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: vgrep displaying indexed search results in the terminal
+body: |
+    vgrep wraps grep, git-grep, or ripgrep and presents results as a numbered,
+    scrollable list. Each match gets an index so you can open any result
+    directly in your editor — just type the number and vgrep launches
+    `$EDITOR` at the right file and line.
+
+    {{screenshot: screenshot.png, vgrep displaying indexed search results in the terminal}}
+
+    After a search, vgrep drops into an interactive shell where you can
+    refine results with a new regex, display surrounding context lines,
+    view a directory tree of match counts, filter down to specific indexes,
+    or run a fresh grep — all without leaving the tool. Results are cached
+    so you can re-examine a previous search instantly.
+
+    vgrep also integrates with [fzf](/tool/fzf) via shell functions for
+    Bash and Fish, enabling fuzzy selection over search results for an even
+    faster workflow.
+
+    ## Basic usage
+
+    ```bash
+    grep -rn "pattern" .  | vgrep   # pipe grep output into vgrep
+    git grep "pattern"    | vgrep   # works with git grep
+    rg "pattern"          | vgrep   # works with ripgrep
+
+    # Interactive shell commands
+    context 5             # show 5 lines of context around each match
+    refine <regex>        # filter current results by a new pattern
+    tree                  # show match counts grouped by directory
+    files                 # show total matches per file
+    3                     # open result #3 in $EDITOR
+    ```

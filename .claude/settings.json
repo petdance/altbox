@@ -1,13 +1,19 @@
 {
   "permissions": {
     "allow": [
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(gh issue:*)",
+      "Bash(git mv:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
       "Bash(mkdir:*)",
-      "Bash(git mv:*)",
-      "Bash(gh issue:*)",
+      "Bash(shuf:)",
+      "WebFetch(domain:api.github.com)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:difftastic.wilfred.me.uk)"
+      "WebFetch(domain:lib.rs)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebSearch"
     ]
   }
 }
