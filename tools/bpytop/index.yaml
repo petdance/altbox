@@ -1,0 +1,37 @@
+---
+name: bpytop
+author: Jakob P. Liljenberg
+project: https://github.com/aristocratos/bpytop
+language: Python
+license: Apache-2.0
+alternativeto: top
+description: A Python-based resource monitor with real-time graphs for CPU, memory, disk, network, and processes.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: bpytop in mini mode showing condensed system stats
+body: |
+    bpytop is a Python resource monitor with a game-inspired terminal UI and
+    full mouse support. It displays live graphs for CPU, memory, disk, and
+    network alongside a sortable, filterable process list — all in a single
+    interactive screen.
+
+    {{screenshot: screenshot.png, bpytop in mini mode showing condensed system stats}}
+
+    The process list supports filtering, sorting by multiple criteria, and
+    sending signals (SIGTERM, SIGKILL, SIGINT) directly from the interface.
+    Network graphs auto-scale, disk read/write speeds are tracked in real
+    time, and temperature monitoring is available via psutil or lm-sensors.
+    All configuration is done from within the UI and stored in
+    `~/.config/bpytop/`.
+
+    bpytop is the middle entry in a trilogy by the same author: it succeeded
+    the Bash original [bashtop](/tool/bashtop) and was itself succeeded by
+    the C++ rewrite [btop](/tool/btop).
+
+    ## Basic usage
+
+    ```bash
+    bpytop          # Launch the monitor.
+    bpytop --help   # Show command-line options.
+    ```

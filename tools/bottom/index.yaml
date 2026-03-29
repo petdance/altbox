@@ -1,0 +1,39 @@
+---
+name: bottom
+author: Clement Tsang
+project: https://github.com/ClementTsang/bottom
+language: Rust
+license: MIT
+alternativeto: top
+description: A customizable, graphical process and system monitor for the terminal with widgets for CPU, memory, network, disk, and more.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.gif
+      caption: bottom showing CPU, memory, network, disk, and process widgets
+body: |
+    bottom (`btm`) replaces `top` with a full graphical terminal UI built
+    around resizable, configurable widgets. At a glance you get CPU usage
+    (overall and per-core), RAM and swap, network I/O, disk capacity,
+    temperature sensors, and a process list — all updating live and laid out
+    in a customizable grid.
+
+    {{screenshot: screenshot.gif, bottom showing CPU, memory, network, disk, and process widgets}}
+
+    The process table supports searching by name or regex, sorting by any
+    column, tree view for parent/child relationships, and sending signals
+    directly from the UI. Individual widgets can be expanded to fill the
+    whole screen for a closer look.
+
+    bottom is extensively themeable: colors, borders, widget layout, and
+    default behaviors are all configurable via a TOML file. It runs on
+    Linux, macOS, and Windows.
+
+    ## Basic usage
+
+    ```bash
+    btm                  # Launch bottom.
+    btm -h               # Show quick help.
+    btm --help           # Show detailed help.
+    ```
+
+    Press `?` inside bottom to view all key and mouse bindings.

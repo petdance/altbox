@@ -1,0 +1,36 @@
+---
+name: gtop
+author: Can Güney Aksakalli
+project: https://github.com/aksakalli/gtop
+language: JavaScript
+license: MIT
+alternativeto: top
+description: A Node.js system monitoring dashboard for the terminal with real-time graphs for CPU, memory, and network.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.gif
+      caption: gtop showing CPU, memory, network, and process stats
+body: |
+    gtop is a terminal system monitor built on Node.js. It displays CPU
+    usage, memory consumption, disk I/O, and network statistics as live
+    graphs alongside an interactive process table — all in a single
+    dashboard view.
+
+    {{screenshot: screenshot.gif, gtop showing CPU, memory, network, and process stats}}
+
+    The process table can be sorted interactively by PID, CPU usage, or
+    memory consumption using single-key shortcuts. gtop runs on Linux,
+    macOS, and Windows (with partial support), and can also be run via
+    Docker without a local Node.js install.
+
+    ## Basic usage
+
+    ```bash
+    gtop        # Launch the monitor.
+    q           # Quit (or Ctrl+C).
+
+    # Sort the process table:
+    p           # Sort by PID.
+    c           # Sort by CPU usage.
+    m           # Sort by memory usage.
+    ```
