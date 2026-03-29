@@ -1,0 +1,55 @@
+---
+name: delta
+author: Dan Davison
+website: https://dandavison.github.io/delta/
+project: https://github.com/dandavison/delta
+language: Rust
+license: MIT
+alternativeto: diff
+workswith: git
+description: Syntax-highlighting pager for git, diff, grep, and blame output.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: delta showing a side-by-side diff with syntax highlighting
+body: |
+    delta is a pager for git and diff output that adds syntax highlighting,
+    word-level diff highlighting, line numbers, and configurable color themes.
+    It integrates with git as a drop-in pager replacement, transforming
+    `git diff`, `git log`, `git show`, and `git blame` output into a more
+    readable format.
+
+    {{screenshot: screenshot.png, delta showing a side-by-side diff with syntax highlighting}}
+
+    Features include side-by-side diff mode, word-level change highlighting
+    for precise visualization of what changed within a line, improved merge
+    conflict display, and integration with grep output. Delta ships with
+    20+ built-in syntax themes including Dracula and GitHub Light variants.
+
+    ## Basic usage
+
+    ```bash
+    # Configure git to use delta as its pager.
+    git config --global core.pager delta
+
+    # Enable side-by-side view in ~/.gitconfig.
+    git config --global delta.side-by-side true
+
+    # Use directly on a diff file.
+    delta < file.diff
+    ```
+
+    ## gitconfig setup
+
+    ```ini
+    [core]
+        pager = delta
+
+    [interactive]
+        diffFilter = delta --color-only
+
+    [delta]
+        navigate = true
+        side-by-side = true
+        line-numbers = true
+    ```
