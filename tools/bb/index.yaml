@@ -1,0 +1,39 @@
+---
+name: bb
+author: Manos Pitsidianakis
+website: https://nessuent.net/bb.html
+project: https://github.com/epilys/bb
+language: Rust
+license: GPL-3.0
+alternativeto: top
+description: Lightweight terminal process viewer without visual artifacts during screen redraws.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: bb showing process list with CPU and memory usage
+body: |
+    bb is a minimalist process viewer written in Rust that delivers performance
+    comparable to [htop](/tool/htop) without the visual artifacts that can occur
+    during screen redraws. It provides a clean, efficient interface for monitoring
+    system processes with a focus on simplicity and correctness.
+
+    {{screenshot: screenshot.png, bb showing process list with CPU and memory usage}}
+
+    Key features include a toggleable process tree view, multi-column sorting by
+    username, memory, CPU, and command line, and the ability to search and filter
+    processes. You can also follow and highlight specific processes, terminate
+    processes, and freeze/unfreeze the process list for stable viewing.
+
+    ## Basic usage
+
+    ```session
+    # Launch bb.
+    bb
+
+    # Keyboard shortcuts
+    # t — toggle process tree view
+    # f — freeze/unfreeze updates
+    # / — search/filter processes
+    # k — kill selected process
+    # s — sort by column
+    ```
