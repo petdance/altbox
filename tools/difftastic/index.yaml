@@ -1,0 +1,46 @@
+---
+name: difftastic
+author: Wilfred Hughes
+website: https://difftastic.wilfred.me.uk/
+project: https://github.com/Wilfred/difftastic
+language: Rust
+license: MIT
+alternativeto: diff
+description: A structural diff tool that understands code syntax and shows what actually changed, not just which lines changed.
+last_updated: 2026-03-16
+screenshots:
+    - file: screenshot.png
+      caption: difftastic showing a Rust syntax diff
+body: |
+    difftastic (`dtf`) parses source code using tree-sitter and diffs the
+    syntax tree rather than raw text. This means it understands the structure
+    of code rather than treating files as sequences of lines.
+
+    The practical result: difftastic ignores reformatting. If code is
+    reflowed across lines, or whitespace is adjusted, difftastic sees through
+    that and shows you the semantically meaningful changes. When a file type
+    isn't recognized, it falls back to line-oriented diff with word
+    highlighting.
+
+    {{screenshot: screenshot.png, difftastic showing a Rust syntax diff}}
+
+    ## Git integration
+
+    Configure difftastic as your git difftool:
+
+    ```
+    git config --global diff.tool difftastic
+    git config --global difftool.difftastic.cmd 'difft "$LOCAL" "$REMOTE"'
+    git difftool HEAD~1
+    ```
+
+    ## Basic usage
+
+    ```
+    difft file1.js file2.js
+    difft --check-only --exit-code before.py after.py   # check without output
+    difft file_with_conflicts.js                        # understand merge conflicts
+    ```
+
+    difftastic supports over 30 languages including C, C++, Go, Haskell,
+    Java, JavaScript, Python, Ruby, Rust, TypeScript, and more.
