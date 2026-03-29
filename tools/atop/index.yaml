@@ -1,7 +1,7 @@
 ---
 name: atop
 author: Gerlof Langeveld
-website:
+homepage:
 project: https://github.com/Atoptool/atop
 language: C
 license: GPL-2.0

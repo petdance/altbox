@@ -1,7 +1,7 @@
 ---
 name: prettyping
 author: Denilson Sá Maia
-website: http://denilson.sa.nom.br/prettyping/
+homepage: http://denilson.sa.nom.br/prettyping/
 project: https://github.com/denilsonsa/prettyping
 language: Bash + awk
 license: MIT

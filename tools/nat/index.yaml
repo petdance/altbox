@@ -4,7 +4,7 @@ description: ls with colors and more
 alternativeto: ls
 workswith:
 author: Will
-website:
+homepage:
 project: https://github.com/willdoescode/nat
 language: C
 license: MIT

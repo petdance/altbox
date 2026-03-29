@@ -1,7 +1,7 @@
 ---
 name: glow
 author: Christian Muehlhaeuser, Toby Padilla, Christian Rocha
-website:
+homepage:
 project: https://github.com/charmbracelet/glow
 language: Go
 license: MIT

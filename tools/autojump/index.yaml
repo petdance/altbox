@@ -1,7 +1,7 @@
 ---
 name: autojump
 author: William Ting
-website:
+homepage:
 project: https://github.com/wting/autojump
 language: Python
 license: GPL-3.0

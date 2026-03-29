@@ -1,7 +1,7 @@
 ---
 name: bb
 author: Manos Pitsidianakis
-website: https://nessuent.net/bb.html
+homepage: https://nessuent.net/bb.html
 project: https://github.com/epilys/bb
 language: Rust
 license: GPL-3.0

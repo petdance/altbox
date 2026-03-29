@@ -1,7 +1,7 @@
 ---
 name: fd
 author: David Peter
-website:
+homepage:
 project: https://github.com/sharkdp/fd
 language: Rust
 license: MIT

@@ -1,7 +1,7 @@
 ---
 name: ack
 author: Andy Lester
-website: https://beyondgrep.com
+homepage: https://beyondgrep.com
 project: https://github.com/beyondgrep/ack3
 language: Perl
 license: Artistic

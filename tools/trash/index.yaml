@@ -1,7 +1,7 @@
 ---
 name: trash
 author: Sindre Sorhus
-website:
+homepage:
 project: https://github.com/sindresorhus/trash-cli
 language: Node.js
 license: MIT

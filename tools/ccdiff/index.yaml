@@ -1,7 +1,7 @@
 ---
 name: ccdiff
 author: H.Merijn Brand
-website: https://metacpan.org/pod/App::ccdiff
+homepage: https://metacpan.org/pod/App::ccdiff
 project: https://github.com/Tux/App-ccdiff
 language: Perl
 license: Artistic-2.0

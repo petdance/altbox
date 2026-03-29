@@ -1,7 +1,7 @@
 ---
 name: colordiff
 author: Dave Ewart
-website: https://www.colordiff.org/
+homepage: https://www.colordiff.org/
 project: https://github.com/daveewart/colordiff
 language: Perl
 license: GPL-2.0

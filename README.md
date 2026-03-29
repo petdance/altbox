@@ -78,7 +78,7 @@ name doesn't matter; the `name` field is used for the URL slug. Example:
 ---
 name: fd
 author: David Peter
-website: https://github.com/sharkdp/fd
+homepage: https://github.com/sharkdp/fd
 project: https://github.com/sharkdp/fd
 language: Rust
 license: MIT
@@ -122,8 +122,8 @@ The tool will automatically appear on:
 - `alternativeto` is a plain string for one value, a YAML list for multiple
 - `alternativeto` values should be lowercase
 - `last_updated` format is `YYYY-MM-DD`
-- Leave `website:` blank (not omitted) if the tool has no separate website
-- If `website` and `project` are the same URL, only `project` is needed — the tool page deduplicates them
+- Leave `homepage:` blank (not omitted) if the tool has no separate homepage
+- If `homepage` and `project` are the same URL, only `project` is needed — the tool page deduplicates them
 
 ## Screenshots
 

@@ -1,7 +1,7 @@
 ---
 name: difftastic
 author: Wilfred Hughes
-website: https://difftastic.wilfred.me.uk/
+homepage: https://difftastic.wilfred.me.uk/
 project: https://github.com/Wilfred/difftastic
 language: Rust
 license: MIT

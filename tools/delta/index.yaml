@@ -1,7 +1,7 @@
 ---
 name: delta
 author: Dan Davison
-website: https://dandavison.github.io/delta/
+homepage: https://dandavison.github.io/delta/
 project: https://github.com/dandavison/delta
 language: Rust
 license: MIT

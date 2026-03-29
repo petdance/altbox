@@ -45,8 +45,8 @@ alternatives to standard Unix tools. All content lives in
 ```yaml
 name: ripgrep
 author: Andrew Gallant
-website: https://...
-project: https://...       # Only if different from website
+homepage: https://...
+project: https://...       # Only if different from homepage
 language: Rust
 license: MIT
 alternativeto: grep        # or list; lowercase; drives /alternative-to/ routes

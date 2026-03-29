@@ -1,7 +1,7 @@
 ---
 name: ag
 author: Geoff Greer
-website: https://geoff.greer.fm/ag/
+homepage: https://geoff.greer.fm/ag/
 project: https://github.com/ggreer/the_silver_searcher
 language: C
 license: Apache-2.0

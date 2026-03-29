@@ -3,7 +3,7 @@ name: gping
 description: ping, but with a graph
 alternativeto: ping
 author: Tom Forbes
-website:
+homepage:
 project: https://github.com/orf/gping
 language: Rust
 license: MIT

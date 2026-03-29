@@ -1,7 +1,7 @@
 ---
 name: byobu
 author: Dustin Kirkland
-website: http://byobu.org/
+homepage: http://byobu.org/
 project: https://launchpad.net/byobu
 language: Python
 license: GPL-3.0

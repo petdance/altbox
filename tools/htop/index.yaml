@@ -1,7 +1,7 @@
 ---
 name: htop
 author: Hisham Muhammad
-website: https://htop.dev
+homepage: https://htop.dev
 project: https://github.com/htop-dev/htop
 language: C
 license: GPL-2.0

@@ -1,7 +1,7 @@
 ---
 name: fkill
 author: Sindre Sorhus
-website:
+homepage:
 project: https://github.com/sindresorhus/fkill-cli
 language: Node.js
 license: MIT

@@ -2,7 +2,7 @@
 name: dysk
 description: Graphical tool for listing your filesystems
 project: https://github.com/Canop/dysk
-website: https://dystroy.org/dysk/
+homepage: https://dystroy.org/dysk/
 alternativeto: df
 author: Denys Séguret
 language: Rust

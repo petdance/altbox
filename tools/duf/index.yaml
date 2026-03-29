@@ -1,7 +1,7 @@
 ---
 name: duf
 author: Christian Muehlhaeuser
-website: https://github.com/muesli/duf
+homepage: https://github.com/muesli/duf
 project: https://github.com/muesli/duf
 language: Go
 license: MIT

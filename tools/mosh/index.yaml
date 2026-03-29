@@ -1,7 +1,7 @@
 name: mosh
 author: Keith Winstein
 project: https://github.com/mobile-shell/mosh
-website: https://mosh.org/
+homepage: https://mosh.org/
 language: C++
 license: GPLv3+
 alternativeto: ssh

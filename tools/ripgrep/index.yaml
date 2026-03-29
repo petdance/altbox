@@ -1,7 +1,7 @@
 ---
 name: ripgrep
 author: Andrew Gallant
-website: https://github.com/BurntSushi/ripgrep
+homepage: https://github.com/BurntSushi/ripgrep
 project: https://github.com/BurntSushi/ripgrep
 language: Rust
 license: MIT

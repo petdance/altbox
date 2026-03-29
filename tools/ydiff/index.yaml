@@ -1,7 +1,7 @@
 ---
 name: ydiff
 author:
-website:
+homepage:
 project: https://github.com/ymattw/ydiff
 language: Python
 license: BSD-3

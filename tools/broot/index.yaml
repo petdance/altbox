@@ -2,7 +2,7 @@
 name: broot
 description: Broot is a better way to navigate directories, find files, and launch commands.
 project: https://github.com/Canop/broot
-website: https://dystroy.org/broot/
+homepage: https://dystroy.org/broot/
 alternativeto:
   - cd
   - ls

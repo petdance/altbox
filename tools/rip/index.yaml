@@ -4,7 +4,7 @@ description: Command-line deletion tool focused on safety, ergonomics, and perfo
 alternativeto: rm
 workswith:
 author: Kevin Liu
-website:
+homepage:
 project: https://github.com/nivekuil/rip/
 language: Rust
 license: GPL-3.0

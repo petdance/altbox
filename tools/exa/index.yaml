@@ -1,7 +1,7 @@
 ---
 name: exa
 author: Benjamin Sago
-website:
+homepage:
 project:
 language: Rust
 license: MIT

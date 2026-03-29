@@ -1,7 +1,7 @@
 name: tig
 author: Jonas Fonseca
 project: https://github.com/jonas/tig
-website: https://jonas.github.io/tig/
+homepage: https://jonas.github.io/tig/
 language: C
 license: GPL-2.0
 alternativeto: git

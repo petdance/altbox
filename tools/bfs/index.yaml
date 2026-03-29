@@ -4,7 +4,7 @@ description: Breadth-first search for your files
 alternativeto: find
 workswith:
 author: Tavian Barnes
-website: https://tavianator.com/projects/bfs.html
+homepage: https://tavianator.com/projects/bfs.html
 project: https://github.com/tavianator/bfs
 language: C
 license: BSD Zero Clause

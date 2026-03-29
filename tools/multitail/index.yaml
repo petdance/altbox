@@ -1,7 +1,7 @@
 ---
 name: multitail
 author: Folkert van Heusden
-website: https://www.vanheusden.com/multitail/
+homepage: https://www.vanheusden.com/multitail/
 project: https://github.com/folkertvanheusden/multitail/
 language: C
 license: GPL-2.0

@@ -4,7 +4,7 @@ description: hwatch is a alternative watch that records the result of command ex
 alternativeto: watch
 workswith:
 author: blacknon
-website:
+homepage:
 project: https://github.com/blacknon/hwatch
 language: C
 license: MIT

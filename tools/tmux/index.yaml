@@ -1,7 +1,7 @@
 ---
 name: tmux
 author: Nicholas Marriott
-website: https://tmux.github.io/
+homepage: https://tmux.github.io/
 project: https://github.com/tmux/tmux
 language: C
 license: ISC

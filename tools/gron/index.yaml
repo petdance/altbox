@@ -1,7 +1,7 @@
 ---
 name: gron
 author: Tom Hudson
-website:
+homepage:
 project: https://github.com/tomnomnom/gron
 language: Go
 license: BSD-3

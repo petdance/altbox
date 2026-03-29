@@ -8,7 +8,7 @@ workswith:
   - GIF
   - PNG
 author: Koki Sato
-website:
+homepage:
 project: https://github.com/koki-develop/gat
 language: Go
 license: MIT

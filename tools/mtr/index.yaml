@@ -1,7 +1,7 @@
 ---
 name: mtr
 author: Matt Kimball and Roger Wolff
-website: https://www.bitwizard.nl/mtr/
+homepage: https://www.bitwizard.nl/mtr/
 project: https://github.com/traviscross/mtr
 language: C
 license: GPL-2.0

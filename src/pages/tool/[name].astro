@@ -22,8 +22,8 @@ const lastUpdated = tool.last_updated instanceof Date
     <h1>{tool.name}</h1>
 
     <div class="tool-links">
-        {tool.website && <div>Website: <a href={tool.website} target="_blank" rel="noopener noreferrer">{tool.website}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
-        {tool.project && tool.project !== tool.website && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
+        {tool.homepage && <div>Website: <a href={tool.homepage} target="_blank" rel="noopener noreferrer">{tool.homepage}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
+        {tool.project && tool.project !== tool.homepage && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
         {tool.author && <div>Author: {tool.author}</div>}
         <div>
             Alternative to:{' '}
