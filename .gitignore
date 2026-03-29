@@ -10,3 +10,6 @@ node_modules/
 
 # Generated from content/tools/ at build time
 public/tool/
+
+# Settings local to the user.
+.claude/settings.local.json
