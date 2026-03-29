@@ -31,9 +31,9 @@ body: |
     ## Basic usage
 
     ```bash
-    echo "foo bar baz" | tuc -d ' ' -f 3,2,1    # reorder fields: baz bar foo
-    echo "foo bar baz" | tuc -d ' ' -f '{1}, {2} and {3}'  # format output
-    echo "foo bar baz" | tuc -d ' ' --json        # emit as JSON array
-    echo "a,b, c"     | tuc -e '[, ]+' -f 1,3    # regex delimiter
-    printf "a\nb\nc\nd\ne" | tuc -l 2:-2          # cut lines with negative index
+    echo "foo bar baz" | tuc -d ' ' -f 3,2,1    # Reorder fields: baz bar foo.
+    echo "foo bar baz" | tuc -d ' ' -f '{1}, {2} and {3}'  # Format output.
+    echo "foo bar baz" | tuc -d ' ' --json        # Emit as a JSON array.
+    echo "a,b, c"     | tuc -e '[, ]+' -f 1,3    # Use a regex delimiter.
+    printf "a\nb\nc\nd\ne" | tuc -l 2:-2          # Cut lines with a negative index.
     ```

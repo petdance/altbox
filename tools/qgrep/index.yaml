@@ -26,10 +26,10 @@ body: |
     ## Basic usage
 
     ```bash
-    qgrep init myproject ~/src/myproject   # create a new project
-    qgrep update myproject                  # build the initial index
-    qgrep search myproject "main\s*\("      # search with a regex
-    qgrep search myproject i "hello world"  # case-insensitive search
-    qgrep files myproject widget            # find files by name
-    qgrep watch myproject                   # keep index updated automatically
+    qgrep init myproject ~/src/myproject   # Create a new project.
+    qgrep update myproject                  # Build the initial index.
+    qgrep search myproject "main\s*\("      # Search with a regex.
+    qgrep search myproject i "hello world"  # Case-insensitive search.
+    qgrep files myproject widget            # Find files by name.
+    qgrep watch myproject                   # Keep the index updated automatically.
     ```

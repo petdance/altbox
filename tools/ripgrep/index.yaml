@@ -25,8 +25,8 @@ body: |
 
     ```
     rg pattern
-    rg -t py pattern        # search only Python files
-    rg -l pattern           # list only matching filenames
-    rg --no-ignore pattern  # ignore .gitignore rules
-    rg -i pattern           # case-insensitive search
+    rg -t py pattern        # Search only Python files.
+    rg -l pattern           # List only matching filenames.
+    rg --no-ignore pattern  # Ignore .gitignore rules.
+    rg -i pattern           # Case-insensitive search.
     ```

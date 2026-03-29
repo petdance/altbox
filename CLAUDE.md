@@ -102,3 +102,4 @@ body: |
 
 - 4-space indentation in all files
 - All fenced code blocks in tool `body` fields must have a language identifier (e.g., ` ```bash `, ` ```yaml `)
+- Inline comments in code blocks must be complete sentences: capital first letter and ending period (e.g., `# Search only Perl files.`)

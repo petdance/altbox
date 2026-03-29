@@ -30,7 +30,7 @@ body: |
 
     ```
     ack pattern
-    ack --perl pattern      # search only Perl files
-    ack -l pattern          # list only matching filenames
-    ack -i pattern          # case-insensitive search
+    ack --perl pattern      # Search only Perl files.
+    ack -l pattern          # List only matching filenames.
+    ack -i pattern          # Case-insensitive search.
     ```

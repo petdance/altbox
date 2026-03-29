@@ -33,9 +33,9 @@ body: |
     ## Basic usage
 
     ```bash
-    bingrep /bin/ls              # display binary info with color
-    bingrep --demangle /bin/ls   # demangle C++ symbol names
-    bingrep --hex /bin/ls        # hex table output
-    bingrep --ranges /bin/ls     # file offset range overview
-    bingrep --search "main" /bin/ls  # search for a pattern in ELF
+    bingrep /bin/ls              # Display binary info with color.
+    bingrep --demangle /bin/ls   # Demangle C++ symbol names.
+    bingrep --hex /bin/ls        # Hex table output.
+    bingrep --ranges /bin/ls     # File offset range overview.
+    bingrep --search "main" /bin/ls  # Search for a pattern in an ELF binary.
     ```

@@ -25,6 +25,6 @@ body: |
     ## Basic usage
 
     ```bash
-    tiptop                   # launch the monitor
-    tiptop --net eth0        # monitor a specific network interface
+    tiptop                   # Launch the monitor.
+    tiptop --net eth0        # Monitor a specific network interface.
     ```

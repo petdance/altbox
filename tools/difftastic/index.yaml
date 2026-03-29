@@ -38,8 +38,8 @@ body: |
 
     ```
     difft file1.js file2.js
-    difft --check-only --exit-code before.py after.py   # check without output
-    difft file_with_conflicts.js                        # understand merge conflicts
+    difft --check-only --exit-code before.py after.py   # Check without output.
+    difft file_with_conflicts.js                        # Understand merge conflicts.
     ```
 
     difftastic supports over 30 languages including C, C++, Go, Haskell,

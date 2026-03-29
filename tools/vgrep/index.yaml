@@ -36,14 +36,14 @@ body: |
     ## Basic usage
 
     ```bash
-    grep -rn "pattern" .  | vgrep   # pipe grep output into vgrep
-    git grep "pattern"    | vgrep   # works with git grep
-    rg "pattern"          | vgrep   # works with ripgrep
+    grep -rn "pattern" .  | vgrep   # Pipe grep output into vgrep.
+    git grep "pattern"    | vgrep   # Works with git grep.
+    rg "pattern"          | vgrep   # Works with ripgrep.
 
-    # Interactive shell commands
-    context 5             # show 5 lines of context around each match
-    refine <regex>        # filter current results by a new pattern
-    tree                  # show match counts grouped by directory
-    files                 # show total matches per file
-    3                     # open result #3 in $EDITOR
+    # Interactive shell commands:
+    context 5             # Show 5 lines of context around each match.
+    refine <regex>        # Filter current results by a new pattern.
+    tree                  # Show match counts grouped by directory.
+    files                 # Show total matches per file.
+    3                     # Open result #3 in $EDITOR.
     ```

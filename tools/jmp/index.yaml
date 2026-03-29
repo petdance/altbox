@@ -31,8 +31,8 @@ body: |
     ## Basic usage
 
     ```bash
-    jmp a               # jump to first directory starting with 'a'
-    jmp ".*src$"        # jump to directory ending with 'src'
-    jmp Projects api    # navigate into Projects, then api
-    jmp -h              # show help
+    jmp a               # Jump to the first directory starting with 'a'.
+    jmp ".*src$"        # Jump to a directory ending with 'src'.
+    jmp Projects api    # Navigate into Projects, then api.
+    jmp -h              # Show help.
     ```
