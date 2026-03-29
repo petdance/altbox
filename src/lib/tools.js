@@ -74,3 +74,8 @@ export function getSidebarWorksWith(tools) {
     tools.flatMap(t => t.workswith).forEach(w => { counts[w] = (counts[w] || 0) + 1 })
     return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }))
 }
+
+export function getArticles() {
+    const articlesPath = join(__dirname, '../../articles.yaml')
+    return yaml.load(readFileSync(articlesPath, 'utf8'))
+}
