@@ -86,3 +86,4 @@ tools.
 ## Code style
 
 - 4-space indentation in all files
+- All fenced code blocks in tool `body` fields must have a language identifier (e.g., ` ```bash `, ` ```yaml `)
