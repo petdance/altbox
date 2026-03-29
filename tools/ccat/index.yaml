@@ -1,0 +1,32 @@
+---
+name: ccat
+author: Owen Ou
+project: https://github.com/owenthereal/ccat
+language: Go
+license: MIT
+alternativeto: cat
+description: Colorizing cat with syntax highlighting for source code and configuration files.
+last_updated: 2026-03-29
+body: |
+    ccat is a drop-in replacement for the standard `cat` command that adds
+    syntax highlighting to file output. It automatically detects file type by
+    extension and applies appropriate colors, making it easier to read code
+    and configuration files directly in the terminal.
+
+    The tool supports syntax highlighting for many languages including
+    JavaScript, Java, Ruby, Python, Go, C, and JSON. It offers both dark and
+    light color scheme variants to suit different terminal backgrounds, and
+    can also produce HTML output with inline styles.
+
+    ## Basic usage
+
+    ```bash
+    # Display a file with syntax highlighting.
+    ccat main.go
+
+    # Output as HTML with inline styles.
+    ccat --html main.go
+
+    # Use the light color scheme.
+    ccat --bg=light config.yaml
+    ```

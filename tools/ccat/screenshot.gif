@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Record and share your terminal sessions, the simple way - asciinema.org</title>
+    <link rel="stylesheet" href="/assets/app-046e5e1ed2933c346d43e913623fdeee.css?vsn=d">
+    <link rel="shortcut icon" href="/images/favicon-2d62dafa447cf018340b7121007568e3.png?vsn=d">
+  </head>
+
+  <body class="simple-layout">
+    <div class="container">
+      <h1>Looking for GIF?</h1>
+
+<p>You can use <a href="https://github.com/asciinema/agg">agg</a> to do it
+  yourself. Once you have it installed run the following commands in your
+  terminal:</p>
+
+<pre><code>wget -O 21858.cast https://asciinema.org/a/21858.json
+agg 21858.cast 21858.gif</code></pre>
+    </div>
+  </body>
+</html>
