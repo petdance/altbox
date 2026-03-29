@@ -28,3 +28,7 @@ body: |
     {{screenshot: ncdudone-2.png, ncdu done scanning}}
 
     {{screenshot: ncduinfo-2.png, ncdu directory information}}
+
+    ## Articles
+
+    - [Check free disk space in Linux with ncdu](https://opensource.com/article/21/8/ncdu-check-free-disk-space-linux)
