@@ -1,0 +1,36 @@
+---
+name: colordiff
+author: Dave Ewart
+website: https://www.colordiff.org/
+project: https://github.com/daveewart/colordiff
+language: Perl
+license: GPL-2.0
+alternativeto: diff
+description: A wrapper for diff that adds color syntax highlighting to make changes easier to read.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.jpg
+      caption: colordiff showing colored unified diff output
+body: |
+    colordiff is a Perl wrapper for the standard `diff` command that adds ANSI
+    color highlighting to the output. Additions, deletions, and context lines each
+    appear in distinct colors, making it much easier to scan diffs at a glance
+    without changing any of diff's underlying behavior.
+
+    The tool supports all of diff's output formats, including unified diffs,
+    context diffs, side-by-side diffs, and specialized formats like `wdiff` and
+    `debdiff`. You can use it as a drop-in replacement for diff, or pipe existing
+    diff output through it.
+
+    {{screenshot: screenshot.jpg, colordiff showing colored unified diff output}}
+
+    Colors are fully configurable via a `~/.colordiffrc` file, with separate
+    configurations available for light and dark terminal backgrounds.
+
+    ## Basic usage
+
+    ```
+    colordiff file1.txt file2.txt
+    diff -u file1.txt file2.txt | colordiff
+    git diff | colordiff
+    ```
