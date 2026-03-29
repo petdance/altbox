@@ -1,0 +1,26 @@
+name: zenith
+author: Brian Vaughn
+project: https://github.com/bvaisvil/zenith
+language: Rust
+license: MIT
+alternativeto: top
+workswith: htop
+description: A terminal-based system monitoring tool with zoomable graphical charts for CPU, GPU, memory, disk, and network metrics.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: zenith system monitoring interface
+body: |
+    Zenith is a Rust-based terminal application that provides real-time graphical metrics for Unix-like systems. Unlike
+    traditional command-line monitoring tools like `top` and `htop` which display tables of metrics, zenith presents
+    zoomable charts for CPU, memory, disk, and network usage. The graphical approach makes it easy to see trends at a
+    glance and identify system bottlenecks visually rather than scanning through numeric columns.
+
+    The interface is highly interactive, with keyboard shortcuts to zoom into charts, scroll through historical data,
+    and switch between different monitoring views. You can expand or minimize sections to customize the layout, filter
+    processes like in `top`, and even adjust process priority or send signals to processes directly. For systems with
+    NVIDIA graphics cards, zenith can display GPU utilization metrics including per-process GPU usage. Additional
+    features include battery status display, CPU frequency information, and on Linux systems with elevated permissions,
+    delay accounting data to track process wait times.
+
+    {{screenshot: screenshot.png, zenith system monitoring interface}}
