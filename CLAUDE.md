@@ -78,6 +78,11 @@ file, caption}}` shortcodes into `<figure>` HTML elements.
 `getSidebarWorksWith()` from `tools.js`. These aggregate counts across all
 tools.
 
+## Repository
+
+- Repo: <https://github.com/petdance/altbox>
+- Issues: <https://github.com/petdance/altbox/issues> — issues labeled "tool" are candidates for addition to the site
+
 ## Code style
 
 - 4-space indentation in all files
