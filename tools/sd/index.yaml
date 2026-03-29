@@ -1,0 +1,48 @@
+name: sd
+author: chmln
+project: https://github.com/chmln/sd
+language: Rust
+license: MIT
+alternativeto: sed
+description: An intuitive find and replace CLI that makes text substitution easier and more readable than sed.
+last_updated: 2026-03-29
+body: |
+    sd is a modern, user-friendly alternative to sed that simplifies find-and-replace
+    operations on the command line. Instead of struggling with sed's complex syntax and
+    special character escaping rules, sd uses regex syntax familiar from JavaScript and
+    Python, making it accessible to most programmers. Unlike sed which handles multiple
+    operations, sd focuses solely on substitution, allowing for clearer, more intuitive
+    command syntax.
+
+    The tool offers several practical advantages over traditional sed. Find and replace
+    expressions are cleanly separated, making them easy to read and write. The -F flag
+    enables fixed-string matching without regex, eliminating the need to escape special
+    characters. Named and indexed capture groups ($1, $2, $dollars, $cents) provide
+    powerful pattern matching capabilities. The preview mode (-p flag) lets you see
+    exactly what changes will be made before applying them, and in-place file modification
+    works intuitively without awkward backup syntax.
+
+    Performance is another significant benefit: sd is approximately 2.35x faster than sed
+    for simple replacements and up to 11.93x faster for complex regex operations. Memory
+    usage is also minimal, with line-by-line mode using just 3MB peak memory. The tool
+    supports both line-by-line processing (default) and multi-line pattern matching with
+    the -A flag for advanced use cases.
+
+    ## Basic usage
+
+    ```bash
+    # Simple find and replace in a file.
+    sd 'old_text' 'new_text' file.txt
+
+    # Preview changes before applying them.
+    sd -p 'pattern' 'replacement' file.txt
+
+    # Use fixed strings (no regex) to avoid escaping special characters.
+    sd -F 'old.name' 'new.name' file.txt
+
+    # Replace with capture groups.
+    sd '(\w+) (\w+)' '$2 $1' file.txt
+
+    # Multi-line pattern matching.
+    sd -A 'line1\nline2' 'replacement' file.txt
+    ```

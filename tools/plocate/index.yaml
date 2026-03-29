@@ -1,0 +1,48 @@
+name: plocate
+author: Steinar H. Gunderson
+project: https://plocate.sesse.net/
+language: C++
+license: GPLv2+
+alternativeto: locate
+description: A much faster locate implementation using posting lists and asynchronous I/O.
+last_updated: 2026-03-29
+body: |
+    plocate is a drop-in replacement for the traditional locate command that uses modern
+    data structures and I/O techniques to search through millions of files in milliseconds.
+    While the original locate and its successor mlocate perform linear scans through the
+    entire database, plocate uses an inverted index based on trigrams (three-byte sequences)
+    to rapidly narrow down candidates to a tiny subset before returning results. This
+    approach provides 10-100x faster searches while using significantly less disk space for
+    the index.
+
+    The performance improvements are dramatic: plocate can complete a file search in mere
+    milliseconds where mlocate takes seconds. Beyond speed, plocate introduces a more
+    intuitive search behavior: when searching for multiple strings, it returns only files
+    matching all the search terms, rather than any file matching any term. The database
+    format is compatible with mlocate, making migration seamless. For maximum performance
+    on modern Linux systems with kernel 5.1+, plocate uses asynchronous I/O through
+    io_uring to minimize seek latency, especially beneficial on older hard drives.
+
+    plocate is suitable as a system-wide replacement for locate, and most Linux
+    distributions now ship it as their default locate implementation. Installation
+    automatically builds the initial database in /var/lib/plocate, and the database is
+    automatically updated through the system's scheduled tasks.
+
+    ## Basic usage
+
+    ```bash
+    # Search for a file by name (fastest search).
+    plocate filename
+
+    # Search for multiple terms (all must match).
+    plocate file pattern
+
+    # Limit results to a specific directory pattern.
+    plocate /home/user/file
+
+    # Use regular expressions (slower, but more flexible).
+    plocate -r 'pattern.*file'
+
+    # Count matching files.
+    plocate -c filename
+    ```
