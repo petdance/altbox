@@ -1,0 +1,35 @@
+---
+name: qgrep
+author: Arseny Kapoulkine
+project: https://github.com/zeux/qgrep
+language: C++
+license: MIT
+alternativeto: grep
+description: A fast code search tool that builds compressed, indexed databases for near-instant regex searches across large codebases.
+last_updated: 2026-03-29
+body: |
+    qgrep takes a different approach to code search than tools like
+    [ripgrep](/tool/ripgrep) or [ack](/tool/ack): instead of scanning files on
+    every query, it builds a persistent compressed database of your source
+    tree and searches that. The upfront indexing cost pays off with
+    near-instant results even across very large codebases.
+
+    You organize code into named projects, each pointing at one or more source
+    directories. Once indexed, searches run against the database rather than
+    the filesystem. The `watch` command keeps the database current by
+    monitoring for file changes in the background.
+
+    Search supports regex patterns, literal strings, case-insensitive matching,
+    and fuzzy matching. You can also search by file path or name rather than
+    content, and filter results with include/exclude patterns per project.
+
+    ## Basic usage
+
+    ```bash
+    qgrep init myproject ~/src/myproject   # create a new project
+    qgrep update myproject                  # build the initial index
+    qgrep search myproject "main\s*\("      # search with a regex
+    qgrep search myproject i "hello world"  # case-insensitive search
+    qgrep files myproject widget            # find files by name
+    qgrep watch myproject                   # keep index updated automatically
+    ```

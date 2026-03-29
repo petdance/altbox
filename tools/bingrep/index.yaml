@@ -1,0 +1,41 @@
+---
+name: bingrep
+author: m4b
+project: https://github.com/m4b/bingrep
+language: Rust
+license: MIT
+alternativeto:
+  - nm
+  - objdump
+description: Parses and colorizes binary files from various operating systems and architectures.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: bingrep displaying a colorized ELF symbol table
+body: |
+    bingrep parses binary executables and displays their contents —
+    sections, symbols, imports, and more — with colorized, human-readable
+    output. Where `nm` and `objdump` produce dense, monochrome text,
+    bingrep formats the same information into aligned tables with
+    color-coded addresses, offsets, and sizes.
+
+    {{screenshot: screenshot.png, bingrep displaying a colorized ELF symbol table}}
+
+    It supports a wide range of binary formats: ELF (32/64-bit, x86 and ARM),
+    Mach-O (32/64-bit, x86 and ARM), Unix/BSD archives, and PE files. Symbol
+    demangling is built in, making C++ binaries readable without piping through
+    a separate tool.
+
+    Additional output modes include a hex table view (`--hex`), a file offset
+    range overview (`--ranges`), and a search flag (`--search`) for locating
+    specific patterns within ELF binaries.
+
+    ## Basic usage
+
+    ```bash
+    bingrep /bin/ls              # display binary info with color
+    bingrep --demangle /bin/ls   # demangle C++ symbol names
+    bingrep --hex /bin/ls        # hex table output
+    bingrep --ranges /bin/ls     # file offset range overview
+    bingrep --search "main" /bin/ls  # search for a pattern in ELF
+    ```
