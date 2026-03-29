@@ -52,7 +52,7 @@ license: MIT
 alternativeto: grep        # or list; lowercase; drives /alternative-to/ routes
 workswith: fzf             # optional; or list; lowercase; drives /works-with/ routes
 description: One-line description.
-last_updated: 2026-02-15
+last_updated: 2026-02-15   # date this index.yaml was last updated, NOT the tool's release date
 screenshots:
     - file: screenshot.png
       caption: Caption text

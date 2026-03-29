@@ -32,7 +32,7 @@ license: <License>
 alternativeto: <standard tool this replaces, lowercase>
 workswith: <optional tool it integrates with, lowercase>
 description: <One-line description ending with a period.>
-last_updated: <YYYY-MM-DD of latest release>
+last_updated: <YYYY-MM-DD — today's date, when this index.yaml is being created>
 screenshots:
     - file: screenshot.png
       caption: <descriptive caption>
