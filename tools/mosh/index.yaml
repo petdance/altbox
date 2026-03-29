@@ -1,0 +1,28 @@
+name: mosh
+author: Keith Winstein
+project: https://github.com/mobile-shell/mosh
+website: https://mosh.org/
+language: C++
+license: GPLv3+
+alternativeto: ssh
+description: A remote terminal application that allows roaming and supports intermittent connectivity.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: mosh in action
+body: |
+    Mosh (mobile shell) is a replacement for interactive SSH that provides a better user experience when working over
+    unreliable, high-latency, or roaming network connections. Unlike SSH, which transmits a byte stream, Mosh maintains
+    a snapshot of the current screen state on both client and server, synchronizing only the state changes that matter.
+    This enables features like automatic roaming between networks, connection persistence across sleep/wake cycles, and
+    intelligent local echo that predicts keystrokes.
+
+    The key innovation of Mosh is its predictive model: the client runs a local replica of the server's behavior and
+    tries to guess how each keystroke will affect the screen, displaying predictions while waiting for confirmation from
+    the server. This makes interactions feel instantaneous even over high-latency connections. Mosh automatically
+    reconnects when network service is restored, and warns you if your connection drops, making it ideal for mobile
+    devices and unreliable networks.
+
+    Mosh is available for GNU/Linux, BSD, macOS, Solaris, Android, Chrome, and iOS.
+
+    {{screenshot: screenshot.png, mosh in action}}
