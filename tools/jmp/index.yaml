@@ -1,0 +1,38 @@
+---
+name: jmp
+author: Grant Holmes
+project: https://github.com/gholmes829/Jmp
+language: Python
+license: MIT
+alternativeto: cd
+description: Replaces cd with intelligent regex-based directory navigation using breadth-first search.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.gif
+      caption: jmp navigating directories with regex patterns
+body: |
+    jmp replaces the traditional `cd` command with a smarter navigator that
+    searches your filesystem using regex patterns. Instead of typing full paths,
+    you provide a pattern and jmp performs a breadth-first search to find and
+    jump to the best matching directory.
+
+    Navigation supports both simple prefix matching and full regex expressions.
+    You can chain multiple terms to drill down through nested paths — for example,
+    `jmp Projects Diviner core` navigates into a deeply nested subdirectory in
+    one command.
+
+    {{screenshot: screenshot.gif, jmp navigating directories with regex patterns}}
+
+    jmp also supports a blacklist to exclude directories from searches,
+    configurable search depth, and a system of aliases for frequently visited
+    paths. It has no external dependencies, relying only on the Python 3 standard
+    library.
+
+    ## Basic usage
+
+    ```
+    jmp a               # jump to first directory starting with 'a'
+    jmp ".*src$"        # jump to directory ending with 'src'
+    jmp Projects api    # navigate into Projects, then api
+    jmp -h              # show help
+    ```
