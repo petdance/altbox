@@ -1,0 +1,27 @@
+name: lazygit
+author: Jesse Duffield
+project: https://github.com/jesseduffield/lazygit
+language: Go
+license: MIT
+alternativeto: git
+description: A simple terminal UI for git commands.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: lazygit committing and pushing changes
+body: |
+    Lazygit is a TUI git that makes complex git operations accessible through keyboard-driven menus.  lazygit provides a
+    visual staging area, branch management view, and commit history browser.
+
+    The tool excels at operations that are cumbersome in raw git:
+    - Interactive rebasing with squashing and fixing commits
+    - Cherry-picking between branches
+    - Staging individual lines within files
+    - Amending old commits without manual rebasing
+
+    Lazygit also provides bisect support for binary search debugging, custom patch
+    building from old commits, worktree management for multiple branch workspaces, and
+    undo/redo functionality via the reflog. The color-coded commit graph visualization
+    makes it easy to understand repository history at a glance.
+
+    {{screenshot: screenshot.png, lazygit committing and pushing changes}}
