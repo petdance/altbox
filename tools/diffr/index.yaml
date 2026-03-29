@@ -1,0 +1,57 @@
+---
+name: diffr
+author: Nathan Moreau
+project: https://github.com/mookid/diffr
+language: Rust
+license: MIT
+alternativeto: diff
+workswith: git
+description: Word-level diff highlighting that enhances unified diff output with precise change visualization.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: diffr highlighting word-level changes across non-consecutive hunks
+body: |
+    diffr enhances unified diff output by computing word-level changes within
+    each hunk using Myers' longest common subsequence algorithm. Rather than
+    highlighting entire changed lines, it identifies precise insertions and
+    deletions at the token level and displays them with customizable colors,
+    making it much easier to see exactly what changed.
+
+    {{screenshot: screenshot.png, diffr highlighting word-level changes across non-consecutive hunks}}
+
+    The tool follows Unix philosophy: it reads a diff from stdin and writes
+    enhanced output to stdout, making it compatible with any diff pipeline.
+    It integrates naturally with Git by configuring it as a pager and diff
+    filter in `.gitconfig`.
+
+    ## Basic usage
+
+    ```bash
+    # Pipe git diff output through diffr.
+    git diff | diffr
+
+    # View a specific commit with word-level highlighting.
+    git show HEAD | diffr
+
+    # Add line numbers to the output.
+    git diff | diffr --line-numbers
+    ```
+
+    ## gitconfig setup
+
+    ```ini
+    [core]
+        pager = diffr
+
+    [interactive]
+        diffFilter = diffr
+    ```
+
+    ## Custom colors
+
+    ```bash
+    # Customize highlight colors for removed and added tokens.
+    git diff | diffr --colors refine-removed:background:200,0,0:foreground:white:bold \
+                     --colors refine-added:background:0,150,0:foreground:white:bold
+    ```
