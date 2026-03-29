@@ -1,10 +1,10 @@
-- title: "A list of new(ish) command line tools"
-  url: https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
-  date: 2022-04-12
-
 - title: "Linux commands: Drop these old utilities for modern alternatives"
   url: https://opensource.com/article/22/11/modern-linux-commands
   date: 2022-11-17
+
+- title: "A list of new(ish) command line tools"
+  url: https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
+  date: 2022-04-12
 
 - title: "An Illustrated Guide to Some Useful Command Line Tools"
   url: https://www.wezm.net/technical/2019/10/useful-command-line-tools/
