@@ -1,0 +1,40 @@
+---
+name: tealdeer
+author: tealdeer-rs community
+project: https://github.com/tealdeer-rs/tealdeer
+language: Rust
+license: MIT OR Apache-2.0
+alternativeto:
+    - man
+    - info
+description: A high-performance Rust implementation of tldr with offline support and syntax highlighting.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: tealdeer displaying a simplified command example
+links:
+    - title: Replace man pages with Tealdeer on Linux
+      url: https://opensource.com/article/21/6/tealdeer-linux
+body: |
+    tealdeer is a fast, standalone implementation of [tldr](/tool/tldr) written in Rust. It downloads and caches tldr
+    pages locally, allowing you to access simplified, example-based command documentation offline. Once you've
+    downloaded the pages for the first time, tealdeer will serve them quickly without requiring an internet connection.
+
+    The tool is fully compatible with the `tldr` command-line interface while offering additional features like advanced
+    syntax highlighting, configuration options, and exceptional execution speed. With typical query times around 13ms,
+    tealdeer is among the fastest tldr clients available, making it ideal for frequent lookups.
+
+    {{screenshot: screenshot.png, tealdeer displaying a simplified command example}}
+
+    ## Basic usage
+
+    ```bash
+    # View a tealdeer page for a command.
+    tldr tar
+
+    # Update the cached pages.
+    tldr --update
+
+    # Search for pages by keyword.
+    tldr -s extract
+    ```

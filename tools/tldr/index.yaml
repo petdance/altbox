@@ -1,0 +1,41 @@
+---
+name: tldr
+author: tldr-pages community
+project: https://github.com/tldr-pages/tldr
+language: Markdown
+license: CC BY 4.0
+alternativeto:
+    - man
+    - info
+description: Simplified, practical command-line help pages for common console commands.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: tldr displaying simplified help for a command
+body: |
+    tldr is a community-maintained collection of simplified help pages for console commands. Instead of overwhelming
+    yourself with man page documentation, tldr provides focused, practical examples that show you how to use the most
+    common features of a tool.
+
+    tldr pages are written in Markdown and available for commands across multiple platforms including Unix, Linux,
+    macOS, FreeBSD, NetBSD, OpenBSD, SunOS, Android, Windows, Cisco IOS, and DOS. The project supports multiple client
+    implementations (like [tealdeer](/tool/tealdeer)) and can be used from the web at at <https://tldr.inbrowser.app>
+    with offline PWA support.
+
+    {{screenshot: screenshot.png, tldr displaying simplified help for a command}}
+
+    ## Basic usage
+
+    ```bash
+    # View a tldr page for a command.
+    tldr tar
+
+    # View the page for a command with examples.
+    tldr grep
+
+    # Update the pages (with some clients).
+    tldr --update
+
+    # Search for pages by keyword.
+    tldr -s authentication
+    ```
