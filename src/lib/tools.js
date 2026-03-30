@@ -74,7 +74,7 @@ export function getSidebarItems(tools) {
 
 export function getSidebarLanguages(tools) {
     const counts = {}
-    tools.forEach(t => { counts[t.language] = (counts[t.language] || 0) + 1 })
+    tools.filter(t => t.language).forEach(t => { counts[t.language] = (counts[t.language] || 0) + 1 })
     return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }))
 }
 
