@@ -1,0 +1,42 @@
+name: cs
+author: Ben Boyter
+project: https://github.com/boyter/cs
+language: Go
+license: MIT
+alternativeto: grep
+description: A code search tool that understands code structure and ranks results by relevance without requiring an index.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: cs HTTP interface displaying code search results with syntax highlighting
+body: |
+    cs (Codespelunker) is a sophisticated code search tool that goes beyond simple pattern matching. It understands code
+    structure, distinguishing between code, comments, and strings, and ranks results by relevance using context-aware
+    signals like cyclomatic complexity and file location.
+
+    cs doesn't require an index and can search code on-the-fly with intelligent ranking. It uses BM25 relevance scoring
+    while automatically dampening test files and boosting matches based on location. The tool offers multiple
+    interfaces: a console output mode, a built-in TUI (Terminal User Interface), an HTTP server with syntax
+    highlighting, and even an MCP server for integration.
+
+    Advanced filtering options let you search specifically in code, comments, strings, declarations, or usages. You can
+    combine multiple search terms with boolean operators (AND, OR, NOT), use regex patterns, and leverage fuzzy matching
+    for flexible searching.
+
+    {{screenshot: screenshot.png, cs HTTP interface displaying code search results with syntax highlighting}}
+
+    ## Basic usage
+
+    ```bash
+    # Search for a term across code files.
+    cs myfunction
+
+    # Search only in code, excluding comments and strings.
+    cs --only-code pattern
+
+    # Start the interactive TUI interface.
+    cs -i searchterm
+
+    # Filter by language and search declarations only.
+    cs --only-declarations --lang go MyType
+    ```
