@@ -39,10 +39,21 @@ export function getAllTools() {
 
             // Resolve paths in body: {{screenshot: file, ...}} and ![alt](file)
             if (tool.body) {
+                // Build a map of screenshot files to their URLs for quick lookup
+                const screenshotUrls = {}
+                if (tool.screenshots) {
+                    tool.screenshots.forEach(s => {
+                        screenshotUrls[s.file.split('/').pop()] = s.url
+                    })
+                }
                 tool.body = tool.body
                     .replace(
-                        /\{\{screenshot:\s*([^/,][^,]*),/g,
-                        `{{screenshot: tool/${slug}/$1,`
+                        /\{\{screenshot:\s*([^/,][^,]*),\s*([^}]+)\}\}/g,
+                        (match, file, rest) => {
+                            const url = screenshotUrls[file]
+                            const suffix = url ? `, ${rest}, ${url}` : `, ${rest}`
+                            return `{{screenshot: tool/${slug}/${file}${suffix}}}`
+                        }
                     )
                     .replace(
                         /!\[([^\]]*)\]\(([^/h][^)]*)\)/g,

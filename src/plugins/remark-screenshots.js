@@ -1,6 +1,6 @@
 import { visit } from 'unist-util-visit'
 
-const SCREENSHOT_RE = /^\{\{screenshot:\s*([^,]+),\s*(.*?)\}\}$/
+const SCREENSHOT_RE = /^\{\{screenshot:\s*([^,]+),\s*([^,}]*?)(?:,\s*(.+?))?\}\}$/
 
 export function remarkScreenshots() {
     return (tree) => {
@@ -10,9 +10,14 @@ export function remarkScreenshots() {
                 if (match) {
                     const file = match[1].trim()
                     const caption = match[2].trim()
+                    const url = match[3] ? match[3].trim() : null
+                    const img = `<img src="/${file}" alt="${caption}"><figcaption>${caption}</figcaption>`
+                    const content = url
+                        ? `<a href="${url}" target="_blank" rel="noopener">${img}</a>`
+                        : img
                     parent.children[index] = {
                         type: 'html',
-                        value: `<figure class="screenshot"><img src="/${file}" alt="${caption}"><figcaption>${caption}</figcaption></figure>`,
+                        value: `<figure class="screenshot">${content}</figure>`,
                     }
                 }
             }

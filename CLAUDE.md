@@ -56,9 +56,11 @@ last_updated: 2026-02-15   # date this index.yaml was last updated, NOT the tool
 screenshots:
     - file: screenshot.png
       caption: Caption text
+      url: https://optional-link.example.com
 body: |
     Markdown content. Use {{screenshot: file, caption}} shortcode for inline screenshots.
-    Link to other tools as [ack](/tool/ack).
+    Add an optional url field to make the screenshot clickable. Link to other tools as
+    [ack](/tool/ack).
 ```
 
 Asset files (screenshots) go in `tools/<toolname>/` alongside the YAML. The
@@ -104,3 +106,5 @@ body: |
 - All fenced code blocks in tool `body` fields must have a language identifier (e.g., ` ```bash `, ` ```yaml `)
 - Inline comments in code blocks must be complete sentences: capital first letter and ending period (e.g., `# Search only Perl files.`)
 - Markdown should be word-wrapped to 120 characters
+- Do not use bold formatting in tool descriptions
+- Prefer bullet lists to long paragraphs in tool descriptions — these pages are meant to be skimmed
