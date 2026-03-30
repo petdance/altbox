@@ -1,0 +1,39 @@
+name: lolcate
+author: Nicolas Girard
+project: https://github.com/ngirard/lolcate-rs
+language: Rust
+license: GPL-3.0
+alternativeto: locate
+description: A high-performance filesystem indexing and search utility with flexible configuration and regex-based query capabilities.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: Architecture diagram showing the two-phase indexing and querying workflow
+body: |
+    lolcate is a modern, Rust-based replacement for the traditional locate/mlocate/updatedb tools.
+    It provides high-performance filesystem indexing with powerful search capabilities.
+
+    - Flexible configuration with pattern-based exclusions
+    - UTF-8 compliant regex search functionality
+    - Multiple independent databases
+    - Smart-case searching (case-insensitive for lowercase patterns)
+    - Predefined file type filters (images, video, documents, audio)
+    - Single binary executable with no external dependencies
+
+    {{screenshot: screenshot.png, Architecture diagram showing the two-phase indexing and querying workflow}}
+
+    ## Basic usage
+
+    ```bash
+    # Create a new database with custom configuration.
+    lolcate index -c config.toml
+
+    # Search for files matching a pattern.
+    lolcate search pattern
+
+    # Case-sensitive search using uppercase letters.
+    lolcate search MyPattern
+
+    # Search with regex patterns.
+    lolcate search '\.rs$'
+    ```
