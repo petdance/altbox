@@ -4,7 +4,6 @@ author: David Peter
 homepage:
 project: https://github.com/sharkdp/fd
 language: Rust
-license: MIT
 alternativeto: find
 description: Simple, fast, and user-friendly alternative to find.
 last_updated: 2026-03-15

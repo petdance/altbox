@@ -4,7 +4,6 @@ author: Thomas Hurst
 homepage:
 project: https://github.com/Freaky/cw
 language: Rust
-license: MIT
 alternativeto: wc
 description: A fast replacement for wc that counts words, lines, characters and bytes, with multi-threaded support.
 last_updated: 2026-03-15

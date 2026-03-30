@@ -3,7 +3,6 @@ name: bpytop
 author: Jakob P. Liljenberg
 project: https://github.com/aristocratos/bpytop
 language: Python
-license: Apache-2.0
 alternativeto: top
 description: A Python-based resource monitor with real-time graphs for CPU, memory, disk, network, and processes.
 last_updated: 2026-03-29

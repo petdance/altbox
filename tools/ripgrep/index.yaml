@@ -4,7 +4,6 @@ author: Andrew Gallant
 homepage: https://github.com/BurntSushi/ripgrep
 project: https://github.com/BurntSushi/ripgrep
 language: Rust
-license: MIT
 alternativeto: grep
 description: Extremely fast line-oriented search tool that respects .gitignore rules.
 last_updated: 2026-02-15

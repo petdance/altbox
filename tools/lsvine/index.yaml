@@ -4,7 +4,6 @@ author: AutofitCloud Technologies, Inc
 homepage:
 project: https://github.com/autofitcloud/lsvine
 language: Rust
-license: Apache-2.0
 alternativeto:
   - ls
   - tree

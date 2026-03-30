@@ -2,7 +2,6 @@ name: pdfgrep
 author: pdfgrep contributors
 project: https://gitlab.com/pdfgrep/pdfgrep
 language: C++
-license: GPLv2+
 alternativeto: grep
 description: A command-line utility to search text in PDF files.
 last_updated: 2026-03-29

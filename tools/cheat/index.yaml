@@ -3,7 +3,6 @@ name: cheat
 author: Chris Allen Lane
 project: https://github.com/cheat/cheat
 language: Go
-license: MIT
 alternativeto:
   - man
   - info

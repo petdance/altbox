@@ -4,7 +4,6 @@ author: Wilfred Hughes
 homepage: https://difftastic.wilfred.me.uk/
 project: https://github.com/Wilfred/difftastic
 language: Rust
-license: MIT
 alternativeto: diff
 description: A structural diff tool that understands code syntax and shows what actually changed, not just which lines changed.
 last_updated: 2026-03-16

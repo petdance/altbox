@@ -4,7 +4,6 @@ author: Dustin Kirkland
 homepage: http://byobu.org/
 project: https://launchpad.net/byobu
 language: Python
-license: GPL-3.0
 alternativeto: screen
 description: Text-based window manager and terminal multiplexer with enhanced keybindings and status notifications.
 last_updated: 2026-03-15

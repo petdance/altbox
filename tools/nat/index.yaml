@@ -7,7 +7,6 @@ author: Will
 homepage:
 project: https://github.com/willdoescode/nat
 language: C
-license: MIT
 last_updated: 2026-03-15
 screenshots:
     - file: example.png

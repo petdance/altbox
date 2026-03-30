@@ -4,7 +4,6 @@ author:
 homepage:
 project: https://github.com/ymattw/ydiff
 language: Python
-license: BSD-3
 alternativeto: diff
 description: View colored, incremental diff in workspace or from stdin, side by side and auto paged.
 last_updated: 2026-03-15

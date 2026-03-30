@@ -37,7 +37,6 @@ alternatives to standard Unix tools. All content lives in
 | `/tool/:name` | `src/pages/tool/[name].astro` |
 | `/alternative-to/:tool` | `src/pages/alternative-to/[tool].astro` |
 | `/language/:lang` | `src/pages/language/[lang].astro` |
-| `/license/:license` | `src/pages/license/[license].astro` |
 | `/works-with/:tool` | `src/pages/works-with/[tool].astro` |
 
 ### Tool YAML schema
@@ -48,7 +47,6 @@ author: Andrew Gallant
 homepage: https://...
 project: https://...       # Only if different from homepage
 language: Rust
-license: MIT
 alternativeto: grep        # or list; lowercase; drives /alternative-to/ routes
 workswith: fzf             # optional; or list; lowercase; drives /works-with/ routes
 description: One-line description.
@@ -76,7 +74,7 @@ file, caption}}` shortcodes into `<figure>` HTML elements.
 ### Sidebar
 
 `src/layouts/Layout.astro` builds the sidebar dynamically using
-`getSidebarItems()`, `getSidebarLanguages()`, `getSidebarLicenses()`, and
+`getSidebarItems()`, `getSidebarLanguages()`, and
 `getSidebarWorksWith()` from `tools.js`. These aggregate counts across all
 tools.
 

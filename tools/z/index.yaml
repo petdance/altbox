@@ -4,7 +4,6 @@ author:
 homepage:
 project: https://github.com/rupa/z
 language: Bash
-license: WTFPL
 alternativeto: cd
 description: Tracks your most used directories, based on "frecency".
 last_updated: 2026-03-22

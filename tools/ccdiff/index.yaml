@@ -4,7 +4,6 @@ author: H.Merijn Brand
 homepage: https://metacpan.org/pod/App::ccdiff
 project: https://github.com/Tux/App-ccdiff
 language: Perl
-license: Artistic-2.0
 alternativeto: diff
 description: A colored diff that also colors inside changed lines
 last_updated: 2026-03-22

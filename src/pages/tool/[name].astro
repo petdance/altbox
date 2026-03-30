@@ -31,8 +31,7 @@ const lastUpdated = tool.last_updated instanceof Date
                 <>{i > 0 ? ', ' : ''}<a href={`/alternative-to/${alt}`}>{alt}</a></>
             ))}
         </div>
-        <div>License: <a href={`/license/${tool.license.toLowerCase()}`}>{tool.license}</a></div>
-        <div>Language: <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a></div>
+        {tool.language && <div>Language: <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a></div>}
         {tool.workswith.length > 0 && (
             <div>
                 Works with:{' '}

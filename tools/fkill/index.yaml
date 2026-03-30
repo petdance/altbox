@@ -4,7 +4,6 @@ author: Sindre Sorhus
 homepage:
 project: https://github.com/sindresorhus/fkill-cli
 language: Node.js
-license: MIT
 alternativeto: kill
 description: Kill processes by pid, name, port, or interactively via a fuzzy-search UI.
 last_updated: 2026-03-15

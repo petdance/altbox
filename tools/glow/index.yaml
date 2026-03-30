@@ -4,7 +4,6 @@ author: Christian Muehlhaeuser, Toby Padilla, Christian Rocha
 homepage:
 project: https://github.com/charmbracelet/glow
 language: Go
-license: MIT
 alternativeto: cat
 description: Render Markdown on the CLI, with pizzazz! Can also fetch Markdown documents from the web.
 last_updated: 2026-03-15

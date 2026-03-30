@@ -4,7 +4,6 @@ author:
 homepage:
 project: https://github.com/eza-community/eza
 language: Rust
-license: EUPL-1.2
 alternativeto: ls
 description: file-listing tool with colors, handling for symlinks and Git, and more
 last_updated: 2026-03-15

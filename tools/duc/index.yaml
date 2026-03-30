@@ -3,7 +3,6 @@ author: Ico Doornekamp
 homepage: https://duc.zevv.nl/
 project: https://github.com/zevv/duc
 language: C
-license: LGPL-3.0
 alternativeto: du
 description: A collection of tools for indexing, inspecting, and visualizing disk usage.
 last_updated: 2026-03-15

@@ -4,7 +4,6 @@ author: John Taylor
 homepage:
 project: https://github.com/jftuga/duu
 language: Python
-license: MIT
 alternativeto: du
 description: Recursively display disk usage in kilobytes of the given directory.
 last_updated: 2026-03-15

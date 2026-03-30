@@ -25,8 +25,7 @@ const { slug, tools } = Astro.props
                 <h2><a href={`/tool/${tool.name}`}>{tool.name}</a></h2>
                 <p class="description">{tool.description}</p>
                 <div class="badges">
-                    <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>
-                    <a class="badge" href={`/license/${tool.license.toLowerCase()}`}>{tool.license} license</a>
+                    {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
                     {tool.workswith.map(w => (
                         <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
                     ))}

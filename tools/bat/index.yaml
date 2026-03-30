@@ -8,7 +8,6 @@ workswith:
   - JSON
   - Markdown
   - YAML
-license: MIT
 alternativeto: cat
 description: A cat clone with syntax highlighting, Git integration, and automatic paging.
 last_updated: 2026-03-15

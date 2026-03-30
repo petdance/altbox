@@ -7,7 +7,6 @@ author: blacknon
 homepage:
 project: https://github.com/blacknon/hwatch
 language: C
-license: MIT
 last_updated: 2026-03-15
 screenshots:
     - file: hwatch.gif

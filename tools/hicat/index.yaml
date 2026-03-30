@@ -2,7 +2,6 @@ name: hicat
 author: Rico Sta. Cruz
 project: https://github.com/rstacruz/hicat
 language: JavaScript
-license: MIT
 alternativeto: cat
 description: Display file contents with syntax highlighting and automatic language detection.
 last_updated: 2026-03-29

@@ -2,7 +2,6 @@ name: lolcate
 author: Nicolas Girard
 project: https://github.com/ngirard/lolcate-rs
 language: Rust
-license: GPL-3.0
 alternativeto: locate
 description: A high-performance filesystem indexing and search utility with flexible configuration and regex-based query capabilities.
 last_updated: 2026-03-29

@@ -11,7 +11,6 @@ author: Koki Sato
 homepage:
 project: https://github.com/koki-develop/gat
 language: Go
-license: MIT
 last_updated: 2026-03-15
 screenshots:
     - file: demo.gif

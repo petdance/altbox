@@ -4,7 +4,6 @@ author: Tom Hudson
 homepage:
 project: https://github.com/tomnomnom/gron
 language: Go
-license: BSD-3
 alternativeto: grep
 workswith: JSON
 description: Makes JSON greppable

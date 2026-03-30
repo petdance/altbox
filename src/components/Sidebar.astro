@@ -2,11 +2,10 @@
 interface Props {
     sidebarItems: any[]
     languages: any[]
-    licenses: any[]
     workswith: any[]
 }
 
-const { sidebarItems, languages, licenses, workswith } = Astro.props
+const { sidebarItems, languages, workswith } = Astro.props
 ---
 
 <nav class="sidebar" id="sidebar">
@@ -33,12 +32,6 @@ const { sidebarItems, languages, licenses, workswith } = Astro.props
     <ul>
         {languages.map(lang => (
             <li><a href={`/language/${lang.name.toLowerCase()}`}><strong>{lang.name}</strong> ({lang.count})</a></li>
-        ))}
-    </ul>
-    <h2>License</h2>
-    <ul>
-        {licenses.map(license => (
-            <li><a href={`/license/${license.name.toLowerCase()}`}><strong>{license.name}</strong> ({license.count})</a></li>
         ))}
     </ul>
 </nav>

@@ -4,7 +4,6 @@ author: Matt Kimball and Roger Wolff
 homepage: https://www.bitwizard.nl/mtr/
 project: https://github.com/traviscross/mtr
 language: C
-license: GPL-2.0
 alternativeto:
     - traceroute
     - ping

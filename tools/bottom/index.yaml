@@ -3,7 +3,6 @@ name: bottom
 author: Clement Tsang
 project: https://github.com/ClementTsang/bottom
 language: Rust
-license: MIT
 alternativeto: top
 description: A customizable, graphical process and system monitor for the terminal with widgets for CPU, memory, network, disk, and more.
 last_updated: 2026-03-29

@@ -4,7 +4,6 @@ author: Yoran Heling
 homepage: https://dev.yorhel.nl/ncdu
 project: https://g.blicky.net/ncdu.git/
 language: C
-license: MIT
 alternativeto: du
 description: ncurses disk usage analyzer, fast and easy to use in any minimal POSIX environment.
 last_updated: 2026-03-15

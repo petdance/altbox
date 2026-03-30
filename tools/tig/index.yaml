@@ -3,7 +3,6 @@ author: Jonas Fonseca
 project: https://github.com/jonas/tig
 homepage: https://jonas.github.io/tig/
 language: C
-license: GPL-2.0
 alternativeto: git
 description: A text-mode interface for Git that functions as a repository browser and staging assistant.
 last_updated: 2026-03-29

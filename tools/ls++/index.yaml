@@ -4,7 +4,6 @@ author: Magnus Woldrich
 homepage:
 project: https://github.com/trapd00r/ls--
 language: Perl
-license: GPL-2.0
 alternativeto: ls
 description: Colorized ls on steroids — a wrapper that lets you reorganize the order of columns.
 last_updated: 2026-03-15

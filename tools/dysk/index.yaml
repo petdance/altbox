@@ -6,7 +6,6 @@ homepage: https://dystroy.org/dysk/
 alternativeto: df
 author: Denys Séguret
 language: Rust
-license: MIT
 screenshots:
   - file: screenshot1.png
     caption: dysk in action

@@ -2,7 +2,6 @@ name: choose
 author: Ryan Geary
 project: https://github.com/theryangeary/choose
 language: Rust
-license: GPL-3.0
 alternativeto: cut
 description: A human-friendly and fast alternative to cut and awk for selecting fields from text using Python-like slice syntax.
 last_updated: 2026-03-29

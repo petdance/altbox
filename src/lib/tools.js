@@ -78,12 +78,6 @@ export function getSidebarLanguages(tools) {
     return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }))
 }
 
-export function getSidebarLicenses(tools) {
-    const counts = {}
-    tools.forEach(t => { counts[t.license] = (counts[t.license] || 0) + 1 })
-    return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }))
-}
-
 export function getSidebarWorksWith(tools) {
     const counts = {}
     tools.flatMap(t => t.workswith).forEach(w => { counts[w] = (counts[w] || 0) + 1 })

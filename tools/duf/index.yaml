@@ -4,7 +4,6 @@ author: Christian Muehlhaeuser
 homepage: https://github.com/muesli/duf
 project: https://github.com/muesli/duf
 language: Go
-license: MIT
 alternativeto:
     - du
     - df

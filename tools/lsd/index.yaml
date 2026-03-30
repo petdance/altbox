@@ -4,7 +4,6 @@ author: Magnus Woldrich
 homepage:
 project: https://github.com/lsd-rs/lsd
 language: Rust
-license: Apache-2.0
 alternativeto: ls
 description: The next generation ls command, with colour coding and special font icons.
 last_updated: 2026-03-15

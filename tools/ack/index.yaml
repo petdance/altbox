@@ -4,7 +4,6 @@ author: Andy Lester
 homepage: https://beyondgrep.com
 project: https://github.com/beyondgrep/ack3
 language: Perl
-license: Artistic
 alternativeto: grep
 description: A grep-like tool optimized for searching source code, skipping VCS dirs and binaries by default.
 last_updated: 2026-03-01

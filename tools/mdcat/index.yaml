@@ -5,7 +5,6 @@ homepage:
 project: https://github.com/lunaryorn/mdcat
 language: Rust
 workswith: Markdown
-license: MPL-2.0
 alternativeto: cat
 description: Renders Markdown to the terminal with syntax highlighting and inline images.
 last_updated: 2026-03-15

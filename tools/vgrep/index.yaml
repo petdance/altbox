@@ -3,7 +3,6 @@ name: vgrep
 author: Valentin Rothberg
 project: https://github.com/vrothberg/vgrep
 language: Go
-license: GPL-3.0
 alternativeto: grep
 workswith:
   - grep

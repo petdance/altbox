@@ -3,7 +3,6 @@ name: qgrep
 author: Arseny Kapoulkine
 project: https://github.com/zeux/qgrep
 language: C++
-license: MIT
 alternativeto: grep
 description: A fast code search tool that builds compressed, indexed databases for near-instant regex searches across large codebases.
 last_updated: 2026-03-29

@@ -2,7 +2,6 @@ name: cs
 author: Ben Boyter
 project: https://github.com/boyter/cs
 language: Go
-license: MIT
 alternativeto: grep
 description: A code search tool that understands code structure and ranks results by relevance without requiring an index.
 last_updated: 2026-03-29

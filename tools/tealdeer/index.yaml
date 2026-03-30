@@ -3,7 +3,6 @@ name: tealdeer
 author: tealdeer-rs community
 project: https://github.com/tealdeer-rs/tealdeer
 language: Rust
-license: MIT OR Apache-2.0
 alternativeto:
     - man
     - info

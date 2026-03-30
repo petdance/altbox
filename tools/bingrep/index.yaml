@@ -3,7 +3,6 @@ name: bingrep
 author: m4b
 project: https://github.com/m4b/bingrep
 language: Rust
-license: MIT
 alternativeto:
   - nm
   - objdump

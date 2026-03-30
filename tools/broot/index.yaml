@@ -9,7 +9,6 @@ alternativeto:
   - tree
 author: Denys Séguret
 language: Rust
-license: MIT
 screenshots:
   - file: screenshot.png
     caption: broot in action

@@ -3,7 +3,6 @@ name: diffr
 author: Nathan Moreau
 project: https://github.com/mookid/diffr
 language: Rust
-license: MIT
 alternativeto: diff
 workswith: git
 description: Word-level diff highlighting that enhances unified diff output with precise change visualization.

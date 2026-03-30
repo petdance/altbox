@@ -6,7 +6,6 @@ author: Tom Forbes
 homepage:
 project: https://github.com/orf/gping
 language: Rust
-license: MIT
 last_updated: 2026-03-15
 screenshots:
     - file: readme-example.gif

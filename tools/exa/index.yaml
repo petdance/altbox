@@ -4,7 +4,6 @@ author: Benjamin Sago
 homepage:
 project:
 language: Rust
-license: MIT
 alternativeto: ls
 description: A modern replacement for ls with colour, Git integration, and a tree view.
 last_updated: 2026-03-15

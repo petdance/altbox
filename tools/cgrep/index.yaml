@@ -3,7 +3,6 @@ author: Nicola Bonelli
 homepage: https://awgn.github.io/cgrep/
 project: https://github.com/awgn/cgrep
 language: Haskell
-license: GPL-2.0
 alternativeto: grep
 workswith:
   - JSON

@@ -2,7 +2,6 @@ name: plocate
 author: Steinar H. Gunderson
 project: https://plocate.sesse.net/
 language: C++
-license: GPLv2+
 alternativeto: locate
 description: A much faster locate implementation using posting lists and asynchronous I/O.
 last_updated: 2026-03-29

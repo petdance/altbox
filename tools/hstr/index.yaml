@@ -4,7 +4,6 @@ author: Martin Dvorak
 homepage:
 project: https://github.com/nicolargo/glances
 language: C
-license: Apache-2.0
 alternativeto: history
 description: Easily view, navigate and search your command history with shell history TUI suggest box for bash and zsh.
 last_updated: 2026-03-22

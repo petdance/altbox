@@ -4,7 +4,6 @@ author:
 homepage:
 project: https://github.com/so-fancy/diff-so-fancy
 language: Perl
-license: MIT
 alternativeto: diff
 description: Makes diffs human-readable instead of machine-readable, to help spot defects faster.
 last_updated: 2026-03-15

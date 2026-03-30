@@ -4,13 +4,13 @@ import { getAllTools } from '../../lib/tools.js'
 
 export function getStaticPaths() {
     const tools = getAllTools()
-    const langs = [...new Set(tools.map(t => t.language.toLowerCase()))]
+    const langs = [...new Set(tools.filter(t => t.language).map(t => t.language.toLowerCase()))]
     return langs.map(lang => ({
         params: { lang },
         props: {
             lang,
-            displayName: tools.find(t => t.language.toLowerCase() === lang).language,
-            tools: tools.filter(t => t.language.toLowerCase() === lang),
+            displayName: tools.find(t => t.language && t.language.toLowerCase() === lang).language,
+            tools: tools.filter(t => t.language && t.language.toLowerCase() === lang),
         },
     }))
 }
@@ -32,7 +32,6 @@ const { lang, displayName, tools } = Astro.props
                     {tool.alternativeto.map(alt => (
                         <a class="badge" href={`/alternative-to/${alt}`}>Alternative to {alt}</a>
                     ))}
-                    <a class="badge" href={`/license/${tool.license.toLowerCase()}`}>{tool.license} license</a>
                     {tool.workswith.map(w => (
                         <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
                     ))}

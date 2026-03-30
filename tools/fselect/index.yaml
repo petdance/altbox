@@ -2,7 +2,6 @@ name: fselect
 author: jhspetersson
 project: https://github.com/jhspetersson/fselect
 language: Rust
-license: MIT
 alternativeto: find
 description: A command-line utility for finding files using SQL-like queries.
 last_updated: 2026-03-29

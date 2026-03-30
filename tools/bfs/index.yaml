@@ -7,7 +7,6 @@ author: Tavian Barnes
 homepage: https://tavianator.com/projects/bfs.html
 project: https://github.com/tavianator/bfs
 language: C
-license: BSD Zero Clause
 last_updated: 2026-03-15
 screenshots:
     - file: bfs.svg

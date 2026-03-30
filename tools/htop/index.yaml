@@ -4,7 +4,6 @@ author: Hisham Muhammad
 homepage: https://htop.dev
 project: https://github.com/htop-dev/htop
 language: C
-license: GPL-2.0
 alternativeto: top
 description: An interactive process viewer with color display, scrolling, filtering, and mouse support.
 last_updated: 2026-03-29

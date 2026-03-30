@@ -4,7 +4,6 @@ author: Andy Boot
 homepage:
 project: https://github.com/bootandy/dust
 language: Rust
-license: Apache-2.0
 alternativeto: du
 description: A more intuitive version of du that shows which directories are using disk space.
 last_updated: 2026-03-15

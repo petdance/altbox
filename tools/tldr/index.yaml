@@ -2,8 +2,6 @@
 name: tldr
 author: tldr-pages community
 project: https://github.com/tldr-pages/tldr
-language: Markdown
-license: CC BY 4.0
 alternativeto:
     - man
     - info

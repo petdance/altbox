@@ -4,7 +4,6 @@ author: Ajeet D'Souza
 homepage:
 project: https://github.com/ajeetdsouza/zoxide
 language: Rust
-license: MIT
 alternativeto: cd
 description: zoxide is a smarter cd command, inspired by z and autojump.
 last_updated: 2026-03-22

@@ -4,7 +4,6 @@ author: Nicholas Marriott
 homepage: https://tmux.github.io/
 project: https://github.com/tmux/tmux
 language: C
-license: ISC
 alternativeto: screen
 description: Terminal multiplexer — run multiple terminals from a single screen, detach and reattach sessions.
 last_updated: 2026-03-15

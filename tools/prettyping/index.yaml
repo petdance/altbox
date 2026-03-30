@@ -4,7 +4,6 @@ author: Denilson Sá Maia
 homepage: http://denilson.sa.nom.br/prettyping/
 project: https://github.com/denilsonsa/prettyping
 language: Bash + awk
-license: MIT
 alternativeto: ping
 description: ping with colour-coded, graphical output and live statistics.
 last_updated: 2026-03-15

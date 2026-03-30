@@ -3,7 +3,6 @@ name: gtop
 author: Can Güney Aksakalli
 project: https://github.com/aksakalli/gtop
 language: JavaScript
-license: MIT
 alternativeto: top
 description: A Node.js system monitoring dashboard for the terminal with real-time graphs for CPU, memory, and network.
 last_updated: 2026-03-29

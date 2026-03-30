@@ -3,7 +3,6 @@ name: tuc
 author: Riccardo Attilio Galli
 project: https://github.com/riquito/tuc
 language: Rust
-license: GPL-3.0
 alternativeto: cut
 description: A more powerful field cutter with regex delimiters, negative indexes, and flexible output formatting.
 last_updated: 2026-03-29

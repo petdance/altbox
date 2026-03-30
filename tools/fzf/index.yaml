@@ -4,7 +4,6 @@ author: Junegunn Choi
 homepage:
 project: https://github.com/junegunn/fzf
 language: Go
-license: MIT
 alternativeto: find
 description: A general-purpose command-line fuzzy finder for files, history, processes, and more.
 last_updated: 2026-03-15

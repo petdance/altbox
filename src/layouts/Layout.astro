@@ -1,5 +1,5 @@
 ---
-import { getAllTools, getSidebarItems, getSidebarLanguages, getSidebarLicenses, getSidebarWorksWith } from '../lib/tools.js'
+import { getAllTools, getSidebarItems, getSidebarLanguages, getSidebarWorksWith } from '../lib/tools.js'
 import Sidebar from '../components/Sidebar.astro'
 import '../styles/global.css'
 
@@ -7,7 +7,6 @@ const { title } = Astro.props
 const tools = getAllTools()
 const sidebarItems = getSidebarItems(tools)
 const languages = getSidebarLanguages(tools)
-const licenses = getSidebarLicenses(tools)
 const workswith = getSidebarWorksWith(tools)
 ---
 
@@ -32,7 +31,6 @@ const workswith = getSidebarWorksWith(tools)
             <Sidebar
                 sidebarItems={sidebarItems}
                 languages={languages}
-                licenses={licenses}
                 workswith={workswith}
             />
             <main class="content">

@@ -4,7 +4,6 @@ author: Nicolas Hennion
 homepage:
 project: https://github.com/nicolargo/glances
 language: Python
-license: GPL-3.0
 alternativeto: top
 description: Cross-platform extensible monitoring tool
 last_updated: 2026-03-22

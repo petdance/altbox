@@ -4,7 +4,6 @@ author: Geoff Greer
 homepage: https://geoff.greer.fm/ag/
 project: https://github.com/ggreer/the_silver_searcher
 language: C
-license: Apache-2.0
 alternativeto: grep
 description: A code searching tool similar to ack, with a focus on speed.
 last_updated: 2026-03-15
