@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { getAllTools, getArticles } from '../lib/tools.js'
+import { getAllTools, getArticles, getSidebarItems } from '../lib/tools.js'
 
 const tools = getAllTools()
 const articles = getArticles()
+const originalTools = getSidebarItems(tools).map(item => item.name)
 ---
 
 <Layout>
@@ -19,14 +20,18 @@ const articles = getArticles()
     </p>
 
     <p>
-        Check the sidebar for different categories to browse for tools to fit your workflow.
+        Find alternatives to {
+            originalTools.map((tool, i) => (
+                <><a href={`/alternative-to/${tool}`}>{tool}</a>{i < originalTools.length - 1 && (i === originalTools.length - 2 ? ' and ' : ', ')}</>
+            ))
+        }.
     </p>
 
     <h2>Articles about alternative tools</h2>
 
     <ul>
         {articles.map(article => (
-            <li><a href={article.url}>{article.title}</a>{article.date && ` (${article.date.toISOString().split('T')[0]})`}</li>
+            <li><a href={article.url}>{article.title}</a>{article.date && <span style="font-size: 0.9em;"> ({article.date.toISOString().split('T')[0]})</span>}</li>
         ))}
     </ul>
 
