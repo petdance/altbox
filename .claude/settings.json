@@ -7,10 +7,13 @@
       "Bash(git mv:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
+      "Bash(make:*)",
       "Bash(mkdir:*)",
       "Bash(shuf:)",
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:github.com)",
+      "WebFetch(domain:github.io)",
+      "WebFetch(domain:gitlab.com)",
       "WebFetch(domain:lib.rs)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebSearch"

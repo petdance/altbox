@@ -1,0 +1,42 @@
+name: pdfgrep
+author: pdfgrep contributors
+project: https://gitlab.com/pdfgrep/pdfgrep
+language: C++
+license: GPLv2+
+alternativeto: grep
+description: A command-line utility to search text in PDF files.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.png
+      caption: pdfgrep displaying search results in a PDF file
+workswith:
+    - PDF
+body: |
+    pdfgrep is a command-line tool that brings grep-like functionality to PDF files. It allows you to search for text patterns across one or multiple PDF files using familiar grep syntax and options, making it easy to find information in PDF documents without needing to open them individually.
+
+    The tool supports many of the same options as GNU grep, including:
+    - Recursive directory searches with `-r`
+    - Case-insensitive matching with `-i`
+    - Line number display with `-n`
+    - Match counting with `-c`
+    - Regular expressions (both POSIX and Perl-compatible)
+    - Colored output for easy reading
+    - Handling of password-protected PDFs
+
+    {{screenshot: screenshot.png, pdfgrep displaying search results in a PDF file}}
+
+    ## Basic usage
+
+    ```bash
+    # Search for a pattern in a single PDF.
+    pdfgrep "pattern" document.pdf
+
+    # Search recursively in all PDFs in a directory.
+    pdfgrep -r "pattern" ./pdf-directory/
+
+    # Show page numbers and filenames with matches.
+    pdfgrep --with-filename --page-number "pattern" *.pdf
+
+    # Case-insensitive search with context lines.
+    pdfgrep -i --context 2 "pattern" document.pdf
+    ```
