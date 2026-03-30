@@ -1,0 +1,27 @@
+name: bgrep
+author: tmbinc
+project: https://github.com/tmbinc/bgrep
+language: C
+license: BSD
+alternativeto: grep
+description: Searches for binary patterns in files where standard grep cannot.
+last_updated: 2026-03-29
+body: |
+    bgrep is a binary search tool designed to overcome the limitations of the standard `grep(1)` command. While grep excels at searching for text patterns in files, it cannot search for binary strings or hexadecimal patterns. bgrep fills this gap, allowing developers and system administrators to search for specific byte sequences in any file.
+
+    The tool provides context options similar to grep, including `-B` to display bytes before matches, `-A` to display bytes after matches, and `-C` for combined context. This makes it easy to understand the context of where your binary patterns appear in files.
+
+    bgrep is written in C for performance and can be installed with a single command that pipes the source directly to gcc for compilation, making it quick to set up on any system.
+
+    ## Basic usage
+
+    ```bash
+    # Search for a hexadecimal pattern in a file.
+    bgrep 4d5a somefile.bin
+
+    # Display 16 bytes of context after each match.
+    bgrep -A 16 4d5a somefile.bin
+
+    # Search multiple files for a pattern.
+    bgrep de ad be ef file1.bin file2.bin
+    ```
