@@ -1,3 +1,4 @@
+---
 name: cheat
 author: Chris Allen Lane
 project: https://github.com/cheat/cheat
@@ -8,6 +9,9 @@ alternativeto:
   - info
 description: A command-line tool for creating and viewing interactive cheatsheets.
 last_updated: 2026-03-29
+links:
+    - title: The only Linux command you need to know
+      url: https://opensource.com/article/22/6/linux-cheat-command
 body: |
     cheat allows you to create and view interactive cheatsheets directly from the command line.
 
@@ -43,7 +47,3 @@ body: |
     # Filter by tag.
     cheat --tag 'compression'
     ```
-
-    ## Articles:
-
-    - [The only Linux command you need to know](https://opensource.com/article/22/6/linux-cheat-command)

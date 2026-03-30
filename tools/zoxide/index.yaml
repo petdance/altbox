@@ -8,6 +8,9 @@ license: MIT
 alternativeto: cd
 description: zoxide is a smarter cd command, inspired by z and autojump.
 last_updated: 2026-03-22
+links:
+    - title: Say good bye to cd and hello Zoxide - the better and smarter cd command!
+      url: https://dev.to/luxcih/say-good-bye-to-cd-and-hello-zoxide-the-better-and-smarter-cd-command-828
 screenshots:
   - file: tutorial.webp
 body: |
@@ -17,7 +20,3 @@ body: |
     zoxide works on all major shells.
 
     {{screenshot: tutorial.webp, Zoxide tutorial}}
-
-    ## Articles
-
-    - [Say good bye to cd and hello Zoxide - the better and smarter cd command!](https://dev.to/luxcih/say-good-bye-to-cd-and-hello-zoxide-the-better-and-smarter-cd-command-828)

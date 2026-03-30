@@ -8,6 +8,9 @@ license: MIT
 alternativeto: find
 description: Simple, fast, and user-friendly alternative to find.
 last_updated: 2026-03-15
+links:
+    - title: A Friendly Alternative to find
+      url: https://opensource.com/article/18/6/friendly-alternative-find
 screenshots:
     - file: screencast.svg
       caption: fd in action
@@ -31,9 +34,5 @@ body: |
     ## Demo
 
     {{screenshot: screencast.svg, fd in action}}
-
-    ## Articles
-
-    - [A Friendly Alternative to find](https://opensource.com/article/18/6/friendly-alternative-find)
 
     fd is from the same author as [bat](/tool/bat) and [diskus](/tool/diskus).

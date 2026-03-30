@@ -25,6 +25,10 @@ export function getAllTools() {
                 tool.workswith = []
             }
 
+            if (!tool.links) {
+                tool.links = []
+            }
+
             // Resolve screenshot file paths to web-accessible URLs
             if (tool.screenshots) {
                 tool.screenshots = tool.screenshots.map(s => ({
@@ -76,6 +80,6 @@ export function getSidebarWorksWith(tools) {
 }
 
 export function getArticles() {
-    const articlesPath = join(__dirname, '../../articles.yaml')
-    return yaml.load(readFileSync(articlesPath, 'utf8'))
+    const linksPath = join(__dirname, '../../links.yaml')
+    return yaml.load(readFileSync(linksPath, 'utf8'))
 }

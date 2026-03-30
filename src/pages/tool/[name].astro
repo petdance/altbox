@@ -45,4 +45,15 @@ const lastUpdated = tool.last_updated instanceof Date
     </div>
 
     <div class="body" set:html={bodyHtml} />
+
+    {tool.links && tool.links.length > 0 && (
+        <section class="links">
+            <h2>Links</h2>
+            <ul>
+                {tool.links.map(article => (
+                    <li><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></li>
+                ))}
+            </ul>
+        </section>
+    )}
 </Layout>

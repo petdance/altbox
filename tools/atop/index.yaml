@@ -8,6 +8,9 @@ license: GPL-2.0
 alternativeto: top
 description: Linux performance monitor that tracks CPU, disk, memory, and network usage per process.
 last_updated: 2026-03-15
+links:
+    - title: How to Perform Load Monitoring in Linux Using atop
+      url: https://www.maketecheasier.com/load-monitoring-linux-atop/
 screenshots:
     - file: screenshot.png
       caption: atop showing system resource usage
@@ -19,7 +22,3 @@ body: |
     - Tracks network activity per process
 
     {{screenshot: screenshot.png, atop showing system resource usage}}
-
-    ## Articles
-
-    - [How to Perform Load Monitoring in Linux Using atop](https://www.maketecheasier.com/load-monitoring-linux-atop/)

@@ -8,6 +8,9 @@ license: MIT
 alternativeto: du
 description: ncurses disk usage analyzer, fast and easy to use in any minimal POSIX environment.
 last_updated: 2026-03-15
+links:
+    - title: Check free disk space in Linux with ncdu
+      url: https://opensource.com/article/21/8/ncdu-check-free-disk-space-linux
 screenshots:
     - file: ncduscan-2.png
       caption: ncdu scanning
@@ -28,7 +31,3 @@ body: |
     {{screenshot: ncdudone-2.png, ncdu done scanning}}
 
     {{screenshot: ncduinfo-2.png, ncdu directory information}}
-
-    ## Articles
-
-    - [Check free disk space in Linux with ncdu](https://opensource.com/article/21/8/ncdu-check-free-disk-space-linux)

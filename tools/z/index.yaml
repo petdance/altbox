@@ -8,6 +8,9 @@ license: WTFPL
 alternativeto: cd
 description: Tracks your most used directories, based on "frecency".
 last_updated: 2026-03-22
+links:
+    - title: Thread on Hacker News
+      url: https://news.ycombinator.com/item?id=39001441
 body: |
     Tracks your most used directories, based on "frecency".
 
@@ -15,6 +18,3 @@ body: |
     given on the command line, in order.
 
     For example, z foo bar would match /foo/bar but not /bar/foo.
-
-    ## Articles
-    - [Thread on Hacker News](https://news.ycombinator.com/item?id=39001441)

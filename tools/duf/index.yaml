@@ -10,6 +10,9 @@ alternativeto:
     - df
 description: Disk usage/free utility with user-friendly, colorful output for Linux, BSD, macOS and Windows.
 last_updated: 2021-10-28
+links:
+    - title: How to Check Disk Usage on Linux With duf
+      url: https://www.makeuseof.com/check-disk-usage-linux-with-duf/
 screenshots:
     - file: screenshot.png
       caption: duf showing disk usage
@@ -24,7 +27,3 @@ body: |
     - JSON output support
 
     {{screenshot: screenshot.png, duf showing disk usage}}
-
-    ## Articles:
-
-    - [How to Check Disk Usage on Linux With duf](https://www.makeuseof.com/check-disk-usage-linux-with-duf/)
