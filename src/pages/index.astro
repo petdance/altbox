@@ -31,7 +31,7 @@ const originalTools = getSidebarItems(tools).map(item => item.name)
 
     <ul>
         {articles.map(article => (
-            <li><a href={article.url}>{article.title}</a>{article.date && <span style="font-size: 0.9em;"> ({article.date.toISOString().split('T')[0]})</span>}</li>
+            <li><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a>{article.date && <span style="font-size: 0.9em;"> ({article.date.toISOString().split('T')[0]})</span>}</li>
         ))}
     </ul>
 
@@ -43,6 +43,6 @@ const originalTools = getSidebarItems(tools).map(item => item.name)
 
     <p>If you have a favorite tool that isn't here, please email Andy or submit an
     issue on our GitHub page:
-    <a href="https://github.com/petdance/altbox">https://github.com/petdance/altbox</a></p>
+    <a href="https://github.com/petdance/altbox" target="_blank" rel="noopener noreferrer">https://github.com/petdance/altbox</a></p>
 
 </Layout>

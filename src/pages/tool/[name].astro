@@ -22,8 +22,8 @@ const lastUpdated = tool.last_updated instanceof Date
     <h1>{tool.name}</h1>
 
     <div class="tool-links">
-        {tool.homepage && <div>Website: <a href={tool.homepage} target="_blank" rel="noopener noreferrer">{tool.homepage}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
-        {tool.project && tool.project !== tool.homepage && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></div>}
+        {tool.homepage && <div>Website: <a href={tool.homepage} target="_blank" rel="noopener noreferrer">{tool.homepage}</a></div>}
+        {tool.project && tool.project !== tool.homepage && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}</a></div>}
         {tool.author && <div>Author: {tool.author}</div>}
         <div>
             Alternative to:{' '}
@@ -51,7 +51,7 @@ const lastUpdated = tool.last_updated instanceof Date
             <h2>Links</h2>
             <ul>
                 {tool.links.map(article => (
-                    <li><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}<span class="ext-icon" aria-label="opens in new tab">↗</span></a></li>
+                    <li><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a></li>
                 ))}
             </ul>
         </section>

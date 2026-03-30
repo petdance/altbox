@@ -10,7 +10,7 @@ serve:
 	npm run dev
 
 clean:
-	rm -fr dist
+	rm -fr dist public/tool
 
 rsync:
 	rsync -azu -e ssh --delete -v \
