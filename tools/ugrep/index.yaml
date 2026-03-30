@@ -1,0 +1,54 @@
+name: ugrep
+author: Genivia Research Labs
+project: https://github.com/Genivia/ugrep
+language: C++
+license: BSD 3-Clause
+alternativeto: grep
+description: A faster, more capable grep replacement with interactive TUI, Boolean search, fuzzy matching, and archive support.
+last_updated: 2026-03-29
+screenshots:
+    - file: screenshot.gif
+      caption: Interactive TUI query mode demonstrating real-time search refinement
+links:
+  - title: "Reddit thread: ugrep: new ultrafast C++ grep claims to be faster than ripgrep"
+    url: https://www.reddit.com/r/rust/comments/i6pfb2/ugrep_new_ultrafast_c_grep_claims_to_be_faster/
+workswith:
+  - PDF
+body: |
+    ugrep is a high-performance file pattern searcher that serves as a modern replacement for GNU/BSD grep.  It includes
+    an interactive text user interface for refining searches in real-time, Boolean search queries, fuzzy matching, and
+    the ability to search within compressed files and nested archives.
+
+    ugrep supports searching PDFs, documents, and e-books through filters, can display file contents in hexdump format
+    for binary analysis, and offers multiple output formats including JSON, XML, and CSV. The tool can sort results by
+    name, size, modification time, or match quality, and supports configuration files for personalized settings. It also
+    provides full Unicode extended regex pattern syntax with multi-line pattern matching without special command-line
+    options.
+
+    The interactive TUI mode allows you to refine your search queries in real-time, making it easy to explore large
+    codebases or find the exact pattern you need. The fuzzy search capability helps find approximate matches when you're
+    not sure of the exact pattern.
+
+    {{screenshot: screenshot.gif, vgrep displaying indexed search results in the terminal}}
+
+    ## Basic usage
+
+    ```bash
+    # Search for a pattern in files.
+    ugrep "pattern" file.txt
+
+    # Recursively search directories, case-insensitive.
+    ugrep -r -i "pattern" /path/to/directory
+
+    # Interactive query mode for real-time search refinement.
+    ugrep -Q
+
+    # Fuzzy search for approximate matches.
+    ugrep -Z "pattern" file.txt
+
+    # Boolean search with AND, OR, NOT operators.
+    ugrep -% "pattern1 | pattern2" file.txt
+
+    # Search within compressed files.
+    ugrep "pattern" archive.tar.gz
+    ```
