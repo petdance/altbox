@@ -1,0 +1,21 @@
+name: see
+author: Guilherme Prokisch
+project: https://github.com/guilhermeprokisch/see
+language: Rust
+alternativeto: cat
+workswith: less
+description: Terminal-based file viewer with syntax highlighting, Markdown rendering, and image display.
+last_updated: 2026-03-30
+screenshots:
+    - file: screenshot.png
+      caption: see displaying syntax-highlighted code in the terminal
+body: |
+    see is a file viewer that:
+    - renders code files with context-aware syntax highlighting powered by tree-sitter
+    - supports Markdown with formatted text and tables
+    - displays images when the terminal supports them
+    - includes clickable links in compatible terminal emulators.
+    - watches files for live updates
+    - has configurable themes for rendering options
+
+    {{screenshot: screenshot.png, see displaying syntax-highlighted code in the terminal}}
