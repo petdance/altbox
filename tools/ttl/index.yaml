@@ -1,0 +1,39 @@
+name: ttl
+author: lance
+project: https://github.com/lance0/ttl
+language: Rust
+alternativeto: traceroute
+description: Modern network diagnostic tool with real-time path monitoring and advanced traceroute features.
+last_updated: 2026-03-30
+screenshots:
+    - file: screenshot.png
+      caption: ttl showing real-time network path with hop statistics in terminal UI
+body: |
+    ttl is a modern replacement for traceroute that provides fast continuous path
+    monitoring with a real-time terminal user interface. It offers advanced network
+    diagnostics including ECMP detection, path MTU discovery, NAT identification,
+    and route flap alerts, along with rich data enrichment.
+
+    ## Features
+
+    - Real-time TUI: Interactive terminal interface with multiple theme options
+    - Multi-target tracing: Simultaneously trace paths to multiple destinations
+    - ECMP detection: Classify and enumerate equal-cost multi-path routes
+    - Path MTU discovery: Binary search to find maximum transmission unit
+    - NAT detection: Identify network address translation and transparent proxies
+    - Route monitoring: Detect and alert on route flaps and changes
+    - Data enrichment: Includes ASN lookup, GeoIP, reverse DNS, and IX detection
+    - MPLS parsing: Extract and display MPLS labels from ICMP extensions
+    - Multiple protocols: Support for ICMP, UDP, and TCP probes
+    - Export options: Save sessions in JSON, CSV, and text formats
+
+    {{screenshot: screenshot.png, ttl showing real-time network path with hop statistics in terminal UI}}
+
+    ## Basic usage
+
+    ```bash
+    ttl example.com                         # Trace path to example.com in real-time.
+    ttl -c 10 example.com                   # Send 10 probes to example.com.
+    ttl -p tcp example.com                  # Use TCP probes instead of ICMP.
+    ttl --mtu example.com                   # Discover path MTU to destination.
+    ```
