@@ -1,0 +1,30 @@
+name: trippy
+homepage: https://trippy.rs/
+project: https://github.com/fujiapple852/trippy
+language: Rust
+alternativeto:
+  - ping
+  - traceroute
+description: Network diagnostic tool combining traceroute and ping functionality with real-time visualization.
+last_updated: 2026-03-30
+screenshots:
+    - file: screenshot.gif
+      caption: trippy showing network path and latency statistics in terminal UI
+body: |
+    trippy is a terminal-based network diagnostic utility that merges the functionality
+    of traceroute and ping. It provides real-time visualization of network paths while
+    simultaneously gathering latency statistics, making it ideal for analyzing networking
+    issues and routing problems in a single tool.
+
+    ## Features
+
+    - Combined diagnostics: Traceroute and ping functionality in one tool
+    - Real-time visualization: Display network hops and latency metrics interactively
+    - Latency measurement: Gather comprehensive ping statistics for each hop
+    - Cross-platform support: Works on Linux, BSD, macOS, and Windows
+    - Terminal UI: Intuitive interface built with Ratatui framework
+    - Customizable themes: Multiple visual themes for different preferences
+    - Configurable analysis: Adjust parameters for specific network diagnostics
+    - Extensive documentation: Comprehensive guides and examples
+
+    {{screenshot: screenshot.gif, trippy showing network path and latency statistics in terminal UI}}
