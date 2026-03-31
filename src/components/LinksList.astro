@@ -1,0 +1,31 @@
+---
+interface Props {
+    links: Array<{
+        title: string
+        url: string
+        date?: string | Date
+    }>
+    title?: string
+}
+
+const { links, title = 'Links' } = Astro.props
+
+function formatDate(date?: string | Date) {
+    if (!date) return ''
+    if (date instanceof Date) {
+        return date.toISOString().split('T')[0]
+    }
+    return date
+}
+---
+
+{links.length > 0 && (
+    <>
+        <h2>{title}</h2>
+        <ul>
+            {links.map(link => (
+                <li><a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>{link.date && <span style="font-size: 0.9em;"> ({formatDate(link.date)})</span>}</li>
+            ))}
+        </ul>
+    </>
+)}

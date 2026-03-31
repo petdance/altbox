@@ -86,5 +86,12 @@ export function getSidebarWorksWith(tools) {
 
 export function getArticles() {
     const linksPath = join(__dirname, '../../links.yaml')
-    return yaml.load(readFileSync(linksPath, 'utf8'))
+    const links = yaml.load(readFileSync(linksPath, 'utf8'))
+    return links.home || []
+}
+
+export function getLinksForTool(toolName) {
+    const linksPath = join(__dirname, '../../links.yaml')
+    const links = yaml.load(readFileSync(linksPath, 'utf8'))
+    return links[toolName] || []
 }

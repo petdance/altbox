@@ -3,7 +3,6 @@ author: Brian Vaughn
 project: https://github.com/bvaisvil/zenith
 language: Rust
 alternativeto: top
-workswith: htop
 description: A terminal-based system monitoring tool with zoomable graphical charts for CPU, GPU, memory, disk, and network metrics.
 last_updated: 2026-03-29
 screenshots:

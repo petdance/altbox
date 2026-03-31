@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import { getAllTools } from '../../lib/tools.js'
+import LinksList from '../../components/LinksList.astro'
+import { getAllTools, getLinksForTool } from '../../lib/tools.js'
 
 export function getStaticPaths() {
     const tools = getAllTools()
@@ -12,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const { slug, tools } = Astro.props
+const links = getLinksForTool(slug)
 ---
 
 <Layout title={`Alternatives to the ${slug} command`}>
@@ -33,4 +35,6 @@ const { slug, tools } = Astro.props
             </li>
         ))}
     </ul>
+
+    <LinksList links={links} />
 </Layout>

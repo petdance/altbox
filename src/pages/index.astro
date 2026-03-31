@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import LinksList from '../components/LinksList.astro'
 import { getAllTools, getArticles, getSidebarItems } from '../lib/tools.js'
 
 const tools = getAllTools()
@@ -27,13 +28,7 @@ const originalTools = getSidebarItems(tools).map(item => item.name)
         }.
     </p>
 
-    <h2>Articles about alternative tools</h2>
-
-    <ul>
-        {articles.map(article => (
-            <li><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a>{article.date && <span style="font-size: 0.9em;"> ({article.date.toISOString().split('T')[0]})</span>}</li>
-        ))}
-    </ul>
+    <LinksList links={articles} title="Articles about alternative tools" />
 
     <h2>Feedback</h2>
 
