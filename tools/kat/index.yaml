@@ -1,0 +1,23 @@
+name: kat
+author: Marcos Oliveira
+project: https://github.com/terroo/kat
+language: C++
+alternativeto: cat
+description: Displays file contents with syntax highlighting
+last_updated: 2026-03-30
+screenshots:
+    - file: screenshot.png
+      caption: kat displaying syntax-highlighted code
+body: |
+    kat is an enhanced `cat` replacement that displays file contents with syntax
+    highlighting, making source code more readable in the terminal. It automatically
+    detects file types and applies color-coded syntax highlighting.
+
+    ## Features
+
+    - Syntax highlighting for C++, C, Java, Python, JavaScript, C#, Go, Bash/Shell, and Swift
+    - Automatic language detection based on file type
+    - Drop-in replacement for `cat` in your workflow
+    - Color-coded distinction between keywords, comments, and syntax elements
+
+    {{screenshot: screenshot.png, kat displaying syntax-highlighted code}}
