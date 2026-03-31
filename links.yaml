@@ -1,4 +1,7 @@
 home:
+  - title: "One Thing Well: A weblog about simple, useful software"
+    url: https://onethingwell.org/
+
   - title: "Linux commands: Drop these old utilities for modern alternatives"
     url: https://opensource.com/article/22/11/modern-linux-commands
     date: 2022-11-17
