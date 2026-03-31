@@ -5,7 +5,6 @@ Follow these steps:
 1. Research the tool by fetching its homepage and/or GitHub repo page at $ARGUMENTS. Gather:
    - Full author name
    - Implementation language
-   - License (check the repo's license file or GitHub license badge if not obvious)
    - A concise one-line description
    - Key features for the body (2–4 paragraphs or sections with usage examples)
    - The tool's slug/name (lowercase, no spaces) for the directory name
@@ -24,7 +23,6 @@ author: <Full Name>
 website: <homepage URL, omit if same as project>
 project: <GitHub or project URL>
 language: <Language>
-license: <License>
 alternativeto: <standard tool this replaces, lowercase>
 workswith: <optional tool it integrates with, lowercase>
 description: <One-line description ending with a period.>
