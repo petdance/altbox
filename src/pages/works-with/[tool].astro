@@ -16,21 +16,58 @@ const { slug, tools } = Astro.props
 
 <Layout title={`CLI tools that work with ${slug}`}>
     <div class="page-header">
-        <h1>CLI tools that work with <code>{slug}</code></h1>
+        <h1>Tools that work with <code>{slug}</code></h1>
     </div>
 
-    <ul class="tool-list">
+    <div class="tools-table">
         {tools.map(tool => (
-            <li class="tool-card">
-                <h2><a href={`/tool/${tool.name}`}>{tool.name}</a></h2>
-                <p class="description">{tool.description}</p>
-                <div class="badges">
-                    {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
-                    {tool.workswith.map(w => (
-                        <a class="badge" href={`/works-with/${w.toLowerCase()}`}>Works with {w}</a>
-                    ))}
+            <div class="tool-card">
+                <div class="tool-name">
+                    <a href={`/tool/${tool.name.toLowerCase()}`}>{tool.name}</a>
                 </div>
-            </li>
+                <div class="tool-info">
+                    <p class="description">{tool.description}</p>
+                    <div class="badges">
+                        {tool.alternativeto.map(alt => (
+                            <a class="badge" href={`/alternative-to/${alt}`}>Alternative to {alt}</a>
+                        ))}
+                        {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
+                    </div>
+                </div>
+            </div>
         ))}
-    </ul>
+    </div>
+
+    <style>
+        .tools-table {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .tool-card {
+            display: contents;
+        }
+
+        .tool-name {
+            font-weight: bold;
+        }
+
+        .tool-name a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family: var(--font-mono);
+        }
+
+        .tool-name a:hover {
+            text-decoration: underline;
+        }
+
+        .tool-info .description {
+            margin: 0 0 0.5rem 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+    </style>
 </Layout>
