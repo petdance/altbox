@@ -18,6 +18,8 @@ Follow these steps:
 
 The writing style should be geared more towards bullet lists than long paragraphs of lists of features.
 
+Don't use bolding.
+
 ```yaml
 ---
 name: <toolname>
