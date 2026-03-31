@@ -1,0 +1,27 @@
+name: enhancd
+author: Masaki ISHIYAMA
+project: https://github.com/babarot/enhancd
+language: Shell
+alternativeto: cd
+description: Enhanced cd command with fuzzy finding and directory history navigation.
+last_updated: 2026-03-30
+screenshots:
+    - file: screenshot.gif
+      caption: enhancd interactive directory selection with fuzzy finder
+body: |
+    enhancd is an enhanced `cd` command that integrates with interactive fuzzy finders
+    like fzf, peco, and fzy. It maintains a history of visited directories and makes
+    navigation more intuitive by allowing you to select from history or explore
+    directories interactively.
+
+    ## Features
+
+    - History-based navigation: Select previously visited directories from history
+    - Parent directory picker: Use `cd ..` to interactively select parent directories
+    - Subdirectory explorer: Use `cd .` to recursively browse subdirectories
+    - Recent directories: Use `cd -` to show the 10 most recently visited locations
+    - Directory filtering: Search visited history for matching directories
+    - Multi-shell support: Works with Bash, Zsh, and Fish shells
+    - Configurable filters: Integrate with fzf, peco, fzy, or other interactive filters
+
+    {{screenshot: screenshot.gif, enhancd interactive directory selection with fuzzy finder}}

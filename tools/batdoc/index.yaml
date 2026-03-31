@@ -1,0 +1,29 @@
+name: batdoc
+author: Damon
+project: https://github.com/daemonp/batdoc
+language: Rust
+alternativeto: cat
+description: Convert Office documents and PDFs to markdown for terminal display.
+last_updated: 2026-03-30
+body: |
+    batdoc is a command-line utility that converts Office documents and PDFs into
+    markdown format, making them easily viewable in the terminal. It automatically
+    detects file format based on file signatures rather than extensions.
+
+    ## Features
+
+    - Supports `.doc`, `.docx`, `.xls`, `.xlsx`, `.pptx`, and `.pdf` files
+    - Renders spreadsheets as markdown tables
+    - Extracts text from PDFs with page break indicators
+    - Embeds images inline as base64 data URIs
+    - Outputs syntax-highlighted markdown in terminal or plain text when piped
+    - No external dependencies or system libraries required
+
+    ## Basic usage
+
+    ```bash
+    batdoc document.docx                # Display Word document in terminal.
+    batdoc spreadsheet.xlsx             # View spreadsheet as markdown table.
+    batdoc slides.pptx                  # Extract text from PowerPoint presentation.
+    batdoc report.pdf | less            # View PDF content with pager.
+    ```
