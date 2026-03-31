@@ -16,9 +16,9 @@ const { slug, tools } = Astro.props
 const links = getLinksForTool(slug)
 ---
 
-<Layout title={`Alternatives to the ${slug} command`}>
+<Layout title={`${slug} alternatives`}>
     <div class="page-header">
-        <h1><code>{slug}</code> alternatives</h1>
+        <h1>{tools.length} <code>{slug}</code> alternatives</h1>
     </div>
 
     <div class="tools-table">
