@@ -1,0 +1,45 @@
+name: dog
+author: Benjamin Sago
+project: https://github.com/ogham/dog
+language: Rust
+alternativeto: dig
+description: Command-line DNS client with colored output and support for DNS-over-TLS and DNS-over-HTTPS.
+last_updated: 2026-03-30
+screenshots:
+    - file: screenshot.png
+      caption: dog outputting DNS query results with colored formatting
+body: |
+    dog is a command-line DNS client that brings modern features and usability to DNS querying. Like `dig`, it allows
+    you to query DNS records, but with a focus on user experience, colored output, and support for modern DNS protocols.
+
+    The tool supports multiple DNS query types (A, MX, NS, SOA, TXT, and more) and offers flexible protocol options
+    including standard UDP, TCP, DNS-over-TLS (DoT), and DNS-over-HTTPS (DoH). Query results can be formatted as JSON
+    for easy parsing and integration with other tools.
+
+    dog provides response timing information and customizable output formatting including a concise "short mode" for
+    simplified results.
+
+    {{screenshot: screenshot.png, dog outputting DNS query results with colored formatting}}
+
+    ## Basic usage
+
+    ```bash
+    # Query A records for a domain.
+    dog example.com
+
+    # Query specific record types.
+    dog example.com MX
+    dog example.com NS
+
+    # Use a custom nameserver.
+    dog example.com @8.8.8.8
+
+    # Output results as JSON.
+    dog example.com --json
+
+    # Use DNS-over-HTTPS.
+    dog example.com --https
+
+    # Use DNS-over-TLS.
+    dog example.com --tls
+    ```
