@@ -16,6 +16,8 @@ Follow these steps:
 
 3. Create the directory `tools/<slug>/` and write `tools/<slug>/index.yaml` using this schema:
 
+The writing style should be geared more towards bullet lists than long paragraphs of lists of features.
+
 ```yaml
 ---
 name: <toolname>
