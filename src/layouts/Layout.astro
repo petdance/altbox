@@ -3,7 +3,7 @@ import { getAllTools, getSidebarItems, getSidebarLanguages, getSidebarWorksWith 
 import Sidebar from '../components/Sidebar.astro'
 import '../styles/global.css'
 
-const { title } = Astro.props
+const { title, description, image, canonical, schema } = Astro.props
 const tools = getAllTools()
 const sidebarItems = getSidebarItems(tools)
 const languages = getSidebarLanguages(tools)
@@ -16,7 +16,18 @@ const workswith = getSidebarWorksWith(tools)
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title ? `${title} — altbox` : 'altbox — alternative CLI tools'}</title>
+        <meta name="description" content={description || 'altbox — discover alternative CLI tools for common Unix utilities'} />
+        <meta property="og:title" content={title ? `${title} — altbox` : 'altbox — alternative CLI tools'} />
+        <meta property="og:description" content={description || 'altbox — discover alternative CLI tools for common Unix utilities'} />
+        {image && <meta property="og:image" content={image} />}
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title ? `${title} — altbox` : 'altbox — alternative CLI tools'} />
+        <meta name="twitter:description" content={description || 'altbox — discover alternative CLI tools for common Unix utilities'} />
+        {image && <meta name="twitter:image" content={image} />}
+        {canonical && <link rel="canonical" href={canonical} />}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMB5JMFYJP"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -36,10 +47,10 @@ const workswith = getSidebarWorksWith(tools)
             />
             <main class="content">
                 <slot />
-                <div class="page-footer">
+                <footer class="page-footer">
                     Is this page out-of-date? Is there a tool that should be listed here?
                     Let us know in an issue at <a href="https://github.com/petdance/altbox/issues" target="_blank" rel="noopener noreferrer">https://github.com/petdance/altbox/issues</a>
-                </div>
+                </footer>
             </main>
         </div>
 

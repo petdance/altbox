@@ -16,43 +16,73 @@ const bodyHtml = await renderMarkdown(tool.body || '')
 const lastUpdated = tool.last_updated instanceof Date
     ? tool.last_updated.toISOString().slice(0, 10)
     : String(tool.last_updated)
+
+const toolTitle = `${tool.name}, alternative to CLI tool${tool.alternativeto.length > 1 ? 's' : ''} ${tool.alternativeto.join(', ')}`
+const description = `${tool.name} is an alternative to ${tool.alternativeto.join(', ')}. ${tool.description || ''}`
+
+const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: tool.name,
+    description: tool.description,
+    applicationCategory: 'Utility',
+    author: tool.author ? { '@type': 'Person', name: tool.author } : undefined,
+    programmingLanguage: tool.language,
+    url: `${Astro.site}tool/${tool.name}`,
+    dateModified: lastUpdated,
+    alternativeSoftware: tool.alternativeto.map(alt => ({
+        '@type': 'SoftwareApplication',
+        name: alt
+    })),
+    ...(tool.project && { downloadUrl: tool.project }),
+    ...(tool.homepage && { url: tool.homepage })
+}
 ---
 
-<Layout title={`${tool.name}, alternative to CLI tool${tool.alternativeto.length > 1 ? 's' : ''} ${tool.alternativeto.join(', ')}`}>
-    <h1>{tool.name}</h1>
+<Layout title={toolTitle} description={description} schema={schema}>
+    <article>
+        <h1>{tool.name}</h1>
 
-    <div class="tool-links">
-        {tool.homepage && <div>Website: <a href={tool.homepage} target="_blank" rel="noopener noreferrer">{tool.homepage}</a></div>}
-        {tool.project && tool.project !== tool.homepage && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}</a></div>}
-        {tool.author && <div>Author: {tool.author}</div>}
-        <div>
-            Alternative to:{' '}
-            {tool.alternativeto.map((alt, i) => (
-                <>{i > 0 ? ', ' : ''}<a href={`/alternative-to/${alt}`}>{alt}</a></>
-            ))}
-        </div>
-        {tool.language && <div>Language: <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a></div>}
-        {tool.workswith.length > 0 && (
-            <div>
-                Works with:{' '}
-                {tool.workswith.map((w, i) => (
-                    <>{i > 0 ? ', ' : ''}<a href={`/works-with/${w.toLowerCase()}`}>{w}</a></>
-                ))}
+        <section class="tool-info">
+            <div class="tool-links">
+                {tool.homepage && <div>Website: <a href={tool.homepage} target="_blank" rel="noopener noreferrer">{tool.homepage}</a></div>}
+                {tool.project && tool.project !== tool.homepage && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}</a></div>}
+                {tool.author && <div>Author: {tool.author}</div>}
+                <div>
+                    Alternative to:{' '}
+                    {tool.alternativeto.map((alt, i) => (
+                        <>{i > 0 ? ', ' : ''}<a href={`/alternative-to/${alt}`}>{alt}</a></>
+                    ))}
+                </div>
+                {tool.language && <div>Language: <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a></div>}
+                {tool.workswith.length > 0 && (
+                    <div>
+                        Works with:{' '}
+                        {tool.workswith.map((w, i) => (
+                            <>{i > 0 ? ', ' : ''}<a href={`/works-with/${w.toLowerCase()}`}>{w}</a></>
+                        ))}
+                    </div>
+                )}
+                <div>This page last updated: <time datetime={lastUpdated}>{lastUpdated}</time></div>
             </div>
-        )}
-        <div>This page last updated: {lastUpdated}</div>
-    </div>
-
-    <div class="body" set:html={bodyHtml} />
-
-    {tool.links && tool.links.length > 0 && (
-        <section class="links">
-            <h2>Links</h2>
-            <ul>
-                {tool.links.map(article => (
-                    <li><a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a></li>
-                ))}
-            </ul>
         </section>
-    )}
+
+        <section class="tool-description">
+            <div class="body" set:html={bodyHtml} />
+        </section>
+
+        {tool.links && tool.links.length > 0 && (
+            <section class="links">
+                <h2>Resources</h2>
+                <ul>
+                    {tool.links.map(resource => (
+                        <li>
+                            <a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.title}</a>
+                            {resource.date && <span class="resource-date"> — <time datetime={resource.date}>{resource.date}</time></span>}
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        )}
+    </article>
 </Layout>

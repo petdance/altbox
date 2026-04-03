@@ -19,9 +19,9 @@ const { lang, displayName, tools } = Astro.props
 ---
 
 <Layout title={`${displayName} tools`}>
-    <div class="page-header">
+    <header class="page-header">
         <h1>Alternative tools written in {displayName}</h1>
-    </div>
+    </header>
 
     <div class="tools-table">
         {tools.map(tool => (

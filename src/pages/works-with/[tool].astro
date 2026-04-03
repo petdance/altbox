@@ -15,9 +15,9 @@ const { slug, tools } = Astro.props
 ---
 
 <Layout title={`CLI tools that work with ${slug}`}>
-    <div class="page-header">
+    <header class="page-header">
         <h1>Tools that work with <code>{slug}</code></h1>
-    </div>
+    </header>
 
     <div class="tools-table">
         {tools.map(tool => (

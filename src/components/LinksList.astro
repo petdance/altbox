@@ -24,7 +24,7 @@ function formatDate(date?: string | Date) {
         <h2>{title}</h2>
         <ul>
             {links.map(link => (
-                <li><a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>{link.date && <span style="font-size: 0.9em;"> ({formatDate(link.date)})</span>}</li>
+                <li><a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>{link.date && <span style="font-size: 0.9em;"> (<time datetime={formatDate(link.date)}>{formatDate(link.date)}</time>)</span>}</li>
             ))}
         </ul>
     </>

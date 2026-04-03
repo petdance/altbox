@@ -17,9 +17,9 @@ const links = getLinksForTool(slug)
 ---
 
 <Layout title={`${slug} alternatives`}>
-    <div class="page-header">
+    <header class="page-header">
         <h1>{tools.length} <code>{slug}</code> alternatives</h1>
-    </div>
+    </header>
 
     <div class="tools-table">
         {tools.map(tool => (
