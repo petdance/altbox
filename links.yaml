@@ -15,6 +15,10 @@ home:
     url: https://itnext.io/10-cli-tools-that-made-the-biggest-impact-f8a2f4168434
     date: 2024-08-11
 
+  - title: "My list of CLI gems"
+    url: https://www.dlvhdr.me/posts/cli-tools
+    date: 2024-03-07
+
   - title: "Linux commands: Drop these old utilities for modern alternatives"
     url: https://opensource.com/article/22/11/modern-linux-commands
     date: 2022-11-17
@@ -25,6 +29,7 @@ home:
 
   - title: "My Favorite CLI Tools"
     url: https://switowski.com/blog/favorite-cli-tools/
+    date: 2020-06-18
 
   - title: "An Illustrated Guide to Some Useful Command Line Tools"
     url: https://www.wezm.net/technical/2019/10/useful-command-line-tools/
