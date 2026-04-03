@@ -3,7 +3,7 @@ Add a new tool to altbox from the URL $ARGUMENTS.
 Follow these steps:
 
 1. Research the tool by fetching its homepage and/or GitHub repo page at $ARGUMENTS. Gather:
-   - Full author name
+   - Full author name (for GitHub tools, fetch the author's GitHub profile to get their full name)
    - Implementation language
    - A concise one-line description
    - Key features for the body (2–4 paragraphs or sections with usage examples)
