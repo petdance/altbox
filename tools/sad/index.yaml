@@ -1,0 +1,28 @@
+name: sad
+author: ms-jpq
+project: https://github.com/ms-jpq/sad
+language: Rust
+alternativeto: sed
+workswith: fzf
+description: A batch file editor with interactive diff preview before applying changes.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.gif
+      caption: Previewing and selectively applying replacements with fzf integration
+body: |
+    sad is a batch file editor that brings sed-like power with interactive preview and safety. Instead of applying
+    changes blindly, sad displays a unified diff of all proposed modifications before committing, letting you review or
+    selectively approve individual changes.
+
+    Features include
+    - Integration with [fzf](/tool/fzf) for multi-select file filtering
+    - Support for regex patterns with various flags (case-insensitive, multiline, dot-all)
+    - Compatibility with diff colorizers like [delta](/tool/delta) and [diff-so-fancy](/tool/diff-so-fancy).
+
+    The string literal mode allows exact string matching without regex interpretation, and customizable diff context
+    helps focus on relevant changes.
+
+    sad works particularly well in pipelines and shell scripts where you need confidence that batch edits are correct
+    before applying them.
+
+    {{screenshot: screenshot.gif, Previewing and selectively applying replacements with fzf integration}}
