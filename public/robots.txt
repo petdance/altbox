@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dist/
+
+Sitemap: https://altbox.dev/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1
