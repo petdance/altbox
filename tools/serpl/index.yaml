@@ -1,0 +1,30 @@
+name: serpl
+author: Yassine Bridi
+project: https://github.com/yassinebridi/serpl
+language: Rust
+alternativeto: sed
+workswith: ripgrep
+description: TUI for interactive search and replace across folders with preview and batch operations.
+last_updated: 2026-04-03
+body: |
+    serpl brings the search-and-replace workflow of VS Code to the terminal with a full TUI.
+    Unlike traditional sed commands or simple script-based alternatives, serpl provides an interactive,
+    multi-pane interface that lets you preview matches, refine searches, and apply changes with confidence.
+
+    The tool supports multiple search modes to handle different use cases:
+    - **Simple text search** for straightforward literal matching
+    - **Case-sensitive and whole-word options** for precise control
+    - **Regex patterns** for complex search expressions
+    - **AST Grep patterns** for syntax-aware code manipulation
+
+    Replace operations are equally flexible, offering simple text replacement, case-preserving replacements to
+    maintain the original casing of matched text, and AST-based replacements for structural code changes.
+
+    The interface is divided into four panes: the search input field, replace input field, results list showing all
+    matches with file locations, and a preview pane displaying context around each match. Navigation follows vim-style
+    conventions (hjkl keys) with full keyboard customization support. You can review all proposed changes before
+    applying them in batch or selectively replace individual items.
+
+    serpl requires [ripgrep](/tool/ripgrep) for searching and optionally integrates with ast-grep for AST-based
+    operations, making it particularly useful for large-scale refactoring tasks where you want to see exactly what
+    will change before committing to the modifications.
