@@ -10,7 +10,7 @@ workswith:
   - YAML
 alternativeto: cat
 description: A cat clone with syntax highlighting, Git integration, and automatic paging.
-last_updated: 2026-03-15
+last_updated: 2026-04-03
 screenshots:
     - file: syntax-highlighting.png
       caption: bat syntax highlighting
@@ -18,6 +18,13 @@ screenshots:
       caption: bat Git integration
     - file: non-printing-characters.png
       caption: bat showing non-printable characters
+links:
+  - title: "Enhance Your CLI with bat: A Superior Replacement for cat"
+    url: https://medium.com/@alfor93/enhance-your-cli-with-bat-a-superior-replacement-for-cat-34d828b24b7c
+  - title: I Replaced cat With bat. You Might Want To Do The Same
+    url: https://idolinux.com/batcat-linux/
+  - title: Stop using cat
+    url: https://dev.to/nickytonline/stop-using-cat-35gd
 body: |
     ## Automatic paging
 

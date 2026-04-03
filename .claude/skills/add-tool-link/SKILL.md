@@ -10,7 +10,7 @@ Follow these steps:
 
 ```yaml
 links:
-    - title: <Article Title>
+    - title: "<Article Title>"
       url: <URL>
 ```
 
@@ -18,11 +18,13 @@ links:
 
 ```yaml
 links:
-    - title: <Article Title>
+    - title: "<Article Title>"
       url: <URL>
     - title: <Existing Article Title>
       url: <Existing URL>
 ```
+
+    Put the title in double quotes.
 
 4. Update the `last_updated:` field to today's date in YYYY-MM-DD format.
 

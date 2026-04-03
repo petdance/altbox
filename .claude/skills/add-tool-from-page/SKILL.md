@@ -16,7 +16,7 @@ Follow these steps:
    - If none on GitHub, check the tool's homepage for a screenshot
    - Get the direct image URL
 
-3. Create the directory `tools/<slug>/` and write `tools/<slug>/index.yaml` using this schema:
+3. Create the directory `tool/<slug>/` and write `tool/<slug>/index.yaml` using this schema:
 
     The writing style should be geared more towards bullet lists than long paragraphs of lists of features.
 
@@ -24,9 +24,9 @@ Follow these steps:
 
 4. Download the screenshot:
 
-   `curl -sL "<image URL>" -o tools/<slug>/screenshot.png`
+   `curl -sL "<image URL>" -o tool/<slug>/screenshot.png`
 
-   Verify it downloaded as a valid image with `file tools/<slug>/screenshot.png`.
+   Verify it downloaded as a valid image with `file tool/<slug>/screenshot.png`.
    If no suitable screenshot exists anywhere, skip the `screenshots` block and the `{{screenshot: ...}}` line in the body.
 
 5. Show the contents of the created YAML file and confirm the screenshot was saved.

@@ -42,6 +42,11 @@ home:
   - title: "One Thing Well: A weblog about simple, useful software"
     url: https://onethingwell.org/
 
+cat:
+  - title: "Hacker News thread on cat alternatives"
+    url: https://news.ycombinator.com/item?id=35442890
+    date: 2023-04-04
+
 cd:
   - title: "Z - Jump around (Hacker News)"
     url: https://news.ycombinator.com/item?id=39001441
