@@ -1,0 +1,25 @@
+name: sshs
+author: Nathanael Demacon
+project: https://github.com/quantumsheep/sshs
+language: Rust
+alternativeto: ssh
+description: TUI for managing and connecting to SSH hosts from your config file.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.gif
+      caption: sshs interface showing SSH host selection menu
+body: |
+    sshs provides an interactive terminal interface for browsing and connecting to SSH hosts. Instead
+    of typing SSH commands directly, users can navigate a menu of configured hosts from their SSH
+    configuration file and select the one they want to connect to.
+
+    ## Features
+
+    - Reads from the standard `~/.ssh/config` file
+    - Interactive menu interface for browsing SSH hosts
+    - Support for custom SSH config file locations via `--config` option
+    - Cross-platform support (Linux, macOS, Windows)
+    - Lightweight with minimal dependencies (requires only SSH)
+    - Available through multiple package managers (Homebrew, Chocolatey, Arch Linux, Alpine Linux, NetBSD, NixOS)
+
+    {{screenshot: screenshot.gif, sshs interface showing SSH host selection menu}}

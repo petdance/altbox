@@ -1,0 +1,28 @@
+name: gdu
+author: Daniel Milde
+project: https://github.com/dundee/gdu
+language: Go
+alternativeto: du
+description: A fast disk usage analyzer with an interactive terminal interface.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: gdu logo and interface representation
+body: |
+    gdu is a pretty fast disk usage analyzer written in Go. It provides an interactive console
+    interface for exploring directory hierarchies and understanding how storage space is being consumed.
+    The tool is optimized for SSD disks and can fully utilize parallel processing on modern systems.
+
+    ## Features
+
+    - Interactive mode with keyboard navigation for exploring directories
+    - Non-interactive mode for scripting and piping output
+    - Export to JSON format for later analysis
+    - Parallel processing to leverage multi-core systems
+    - Database storage options (SQLite or BadgerDB) to save and reload analysis results
+    - Flexible filtering by file type, age, and pattern matching
+    - Customization via YAML configuration files
+    - File type awareness with options to include/exclude specific formats
+    - Fast performance optimized for modern SSDs
+
+    {{screenshot: screenshot.png, gdu logo and interface representation}}

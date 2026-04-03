@@ -1,0 +1,32 @@
+name: erdtree
+author: Benji Nguyen
+project: https://github.com/solidiquis/erdtree
+language: Rust
+alternativeto:
+  - du
+  - tree
+description: A filesystem and disk-usage utility that respects .gitignore and supports multiple reporting metrics.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: Erdtree showing directory tree structure with colorized output and disk usage
+body: |
+    Erdtree is a modern filesystem and disk-usage utility that combines the functionality of du,
+    tree, find, wc, and ls. It is aware of .gitignore rules and hidden file conventions, making
+    it convenient for analyzing project structures.
+
+    ## Features
+
+    - Multiple reporting metrics (bytes, blocks, word-count, line-count)
+    - Respects .gitignore rules by default
+    - Excludes hidden files by default with optional inclusion
+    - Regex and glob-based file filtering
+    - Multiple layout options (regular tree, inverted tree, flat)
+    - Colorization via LS_COLORS and icon support
+    - Extended metadata display (owner, group, permissions on Unix)
+    - Flexible sorting (by name, size, or timestamp metrics)
+    - Symlink following with duplicate-counting protection
+    - Configuration files (TOML and legacy .erdtreerc formats)
+    - Cross-platform support with multi-threaded performance
+
+    {{screenshot: screenshot.png, Erdtree showing directory tree structure with colorized output and disk usage}}

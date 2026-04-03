@@ -1,0 +1,32 @@
+name: termscp
+author: Christian Visintin
+project: https://github.com/veeso/termscp
+language: Rust
+alternativeto:
+    - ftp
+    - scp
+description: A terminal-based file transfer and remote connection tool with support for multiple protocols.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.gif
+      caption: Termscp file explorer interface showing local and remote file management
+body: |
+    Termscp is a terminal-based file transfer application that combines the functionality of a file
+    manager with remote connection capabilities. It provides an interactive interface for managing
+    files locally and on remote servers across multiple platforms.
+
+    ## Features
+
+    - Protocol support for SFTP, SCP, FTP, FTPS, Kubernetes, S3, SMB, and WebDAV
+    - Create, remove, rename, search, view, and edit files on local and remote systems
+    - SSH key and password-based authentication for SFTP/SCP
+    - Themeable interface with customizable file explorer format
+    - Customizable text editor integration
+    - Desktop notifications for large file transfers
+    - Built-in bookmarks for quick access to frequent locations
+    - Password vault integration for secure credential storage
+    - Embedded terminal access within the interface
+    - File synchronization monitoring capabilities
+    - Cross-platform support (Linux, macOS, FreeBSD, NetBSD, Windows)
+
+    {{screenshot: screenshot.gif, Termscp file explorer interface showing local and remote file management}}
