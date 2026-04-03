@@ -5,10 +5,13 @@ project: https://github.com/nschloe/tiptop
 language: Python
 alternativeto: top
 description: A command-line system monitor that displays CPU, memory, network, and disk stats with real-time graphs in a modern terminal UI.
-last_updated: 2026-03-29
+last_updated: 2026-04-03
 screenshots:
     - file: screenshot.png
       caption: tiptop showing system resource graphs in the terminal
+links:
+    - title: tiptop - a command-line system monitor
+      url: https://www.reddit.com/r/Python/comments/tai103/tiptop_a_commandline_system_monitor/
 body: |
     tiptop is a modern system monitor in the spirit of `top`, built with the
     Textual framework for a rich terminal UI. Rather than rows of numbers, it

@@ -9,6 +9,9 @@ last_updated: 2026-04-03
 screenshots:
     - file: screenshot.gif
       caption: desed interactive debugger showing variable inspection and step-through execution
+links:
+  - title: I made Desed, a debugger for sed!
+    url: https://www.reddit.com/r/linux/comments/g6lybs/i_made_desed_a_debugger_for_sed/
 body: |
     desed is a terminal-based debugger for sed scripts that helps you understand and fix complex
     sed programs. It provides an interactive environment to step through sed execution, inspect

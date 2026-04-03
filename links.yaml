@@ -3,8 +3,13 @@ home:
     url: https://www.reddit.com/r/commandline/comments/1r8tljk/after_22_years_on_linux_i_finally_switched_to/
     date: 2026-02-19
 
-  - title: "One Thing Well: A weblog about simple, useful software"
-    url: https://onethingwell.org/
+  - title: "13 CLI Tools Every Developer Should Master in 2025"
+    url: https://www.tecmint.com/linux-cli-tools-for-developers/
+    date: 2025-02-06
+
+  - title: "10 CLI Tools That Made the Biggest Impact on Transforming My Terminal-Based Workflow"
+    url: https://itnext.io/10-cli-tools-that-made-the-biggest-impact-f8a2f4168434
+    date: 2024-08-11
 
   - title: "Linux commands: Drop these old utilities for modern alternatives"
     url: https://opensource.com/article/22/11/modern-linux-commands
@@ -24,6 +29,9 @@ home:
   - title: "CLI: improved"
     url: https://remysharp.com/2018/08/23/cli-improved
     date: 2018-08-23
+
+  - title: "One Thing Well: A weblog about simple, useful software"
+    url: https://onethingwell.org/
 
 cd:
   - title: "Z - Jump around (Hacker News)"

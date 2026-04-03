@@ -6,11 +6,15 @@ project: https://github.com/tmux/tmux
 language: C
 alternativeto: screen
 description: Terminal multiplexer — run multiple terminals from a single screen, detach and reattach sessions.
-last_updated: 2026-03-15
+last_updated: 2026-04-03
 screenshots: []
 links:
     - title: Testing Environment with Tmux
       url: https://mojolicious.io/blog/2019/04/15/testing-environment-with-tmux/
+    - title: A beginner's guide to tmux
+      url: https://www.redhat.com/en/blog/introduction-tmux-linux
+    - title: A Gentle Guide to Get Started with Tmux
+      url: https://pragmaticpineapple.com/gentle-guide-to-get-started-with-tmux/
 body: |
     tmux is a terminal multiplexer: it enables a number of terminals to be
     created, accessed, and controlled from a single screen. tmux may be

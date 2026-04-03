@@ -39,8 +39,3 @@ body: |
     - Automatic layout arrangement and pane management
 
     {{screenshot: screenshot.png, Zellij terminal workspace with multiple panes}}
-
-    ## Articles
-
-    - [Zellij Documentation](https://zellij.dev/documentation/)
-    - [Installation Guide](https://zellij.dev/documentation/installation)

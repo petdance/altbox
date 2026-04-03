@@ -6,6 +6,9 @@ language: C
 alternativeto: gzip
 description: Parallel replacement for gzip gzip that exploits multiple processors and cores when compressing data.
 last_updated: 2026-04-03
+links:
+  - title: Parallel gzip compression with pigz
+    url: https://rachaellappan.github.io/pigz/
 body: |
     pigz is a parallel implementation of gzip that takes advantage of modern multi-core systems to
     compress data much faster than traditional gzip while maintaining full compatibility with the gzip
