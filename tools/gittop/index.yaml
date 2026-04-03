@@ -1,0 +1,29 @@
+name: gittop
+author: Mahmud Ridwan
+project: https://github.com/hjr265/gittop
+language: Go
+alternativeto: git
+workswith: git
+description: TUI for visualizing Git repository statistics
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: GitTop summary view showing KPI cards and commit activity
+body: |
+    GitTop provides an interactive terminal interface for analyzing Git repository statistics and
+    activity patterns. It displays comprehensive metrics across seven specialized tabs, each offering
+    different insights into your repository.
+
+    ## Features
+
+    - Summary tab with KPI cards (total commits, active days, latest release) and activity charts
+    - Activity tab with heatmaps and distribution breakdowns by hour, weekday, and month
+    - Contributors tab showing ranked authors with per-contributor metrics
+    - Branches tab displaying commit counts, author statistics, and ahead/behind counts
+    - Files tab showing largest files, most-changed files, and language breakdown
+    - Releases tab with timeline visualization and release cadence analysis
+    - Commits tab with searchable log and integrated diff viewer
+    - Filtering by author, path, and branch
+    - Keyboard shortcuts for navigation (numbered tabs, vim-like scrolling)
+
+    {{screenshot: screenshot.png, GitTop summary view showing KPI cards and commit activity}}

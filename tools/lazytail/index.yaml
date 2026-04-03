@@ -1,0 +1,27 @@
+name: lazytail
+author: Mateusz Russak
+project: https://github.com/raaymax/lazytail
+language: Rust
+alternativeto: tail
+description: A fast terminal-based log viewer with live filtering, follow mode, and AI integration.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: LazyTail showing live log viewing with filtering and AI assistant panel
+body: |
+    LazyTail is a terminal-based log viewer that makes monitoring and analyzing logs faster and easier.
+    It combines efficient log searching with AI assistant integration for deeper analysis.
+
+    ## Features
+
+    - Multi-tab support for viewing multiple log files simultaneously
+    - Live filtering with regex or plain text pattern matching
+    - Follow mode that auto-scrolls to display the latest logs
+    - ANSI color support for rendering colored output
+    - Severity detection with automatic log level coloring
+    - Vim-style navigation for efficient control
+    - Stdin support for reading from piped input
+    - MCP server functionality for AI assistant integration (e.g., Claude)
+    - Web UI mode for browser-based access
+
+    {{screenshot: screenshot.png, LazyTail showing live log viewing with filtering and AI assistant panel}}

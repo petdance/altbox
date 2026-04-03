@@ -1,0 +1,22 @@
+name: hstx
+author: Owen Van Vooren
+project: https://github.com/owenvanvooren/hstx
+language: zsh
+alternativeto: history
+description: A terminal utility that captures command history into a SQLite database with fuzzy search and recipe management.
+last_updated: 2026-04-03
+body: |
+    hstx (history extended) enhances command history management by storing all your commands in a local
+    SQLite database and providing a powerful fuzzy-search interface to find and rerun them. It includes
+    a recipe system for saving frequently-used commands.
+
+    ## Features
+
+    - Fuzzy search across all command history from all sessions
+    - Command tagging for better organization and filtering
+    - Recipe system to save and quickly access frequently-used commands
+    - Local SQLite database with no cloud syncing
+    - Safe command execution (loads into prompt buffer for review before running)
+    - TUI for browsing and selecting saved recipes
+    - Works with macOS and zsh
+    - Automatic dependency management (fzf, sqlite3)
