@@ -1,0 +1,25 @@
+name: twf
+author: Willem Van Lint
+project: https://github.com/wvanlint/twf
+language: Go
+alternativeto:
+  - find
+  - tree
+description: A standalone tree view explorer with interactive file browsing and vim-like navigation.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: Interactive tree view with directory navigation and file selection
+body: |
+    twf is a tree view file explorer that works as a standalone tool across vim, shell, and other programs. It provides
+    an interactive hierarchical directory interface inspired by fzf, enabling visual navigation and file selection
+    through a keyboard-driven experience.
+
+    The tool features vim-like keybindings (j/k for navigation, o/O to expand/collapse directories) and integrates with
+    external tools for locating files. Configuration options include depth-based auto-expansion, custom keybindings,
+    graphics customization, and preview commands, making it adaptable to different workflows.
+
+    twf excels at interactive file browsing, directory exploration, and file selection for scripting, offering an
+    alternative to traditional tree command with interactive capabilities.
+
+    {{screenshot: screenshot.png, Interactive tree view with directory navigation and file selection}}
