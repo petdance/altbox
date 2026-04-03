@@ -6,7 +6,7 @@ Follow these steps:
    - Full author name (for GitHub tools, fetch the author's GitHub profile to get their full name)
    - Implementation language
    - A concise one-line description
-   - Key features for the body (2–4 paragraphs or sections with usage examples)
+   - Key features for the body (presented as bullet lists, not paragraphs)
    - The tool's slug/name (lowercase, no spaces) for the directory name
 
 2. Find a screenshot:
@@ -35,7 +35,14 @@ screenshots:
     - file: screenshot.png
       caption: <descriptive caption>
 body: |
-    <2–4 paragraphs of description and key features>
+    <One or two sentence intro>
+
+    ## Features
+
+    - <Feature 1>
+    - <Feature 2>
+    - <Feature 3>
+    - ...
 
     {{screenshot: screenshot.png, <caption>}}
 
