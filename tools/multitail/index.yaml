@@ -6,10 +6,15 @@ project: https://github.com/folkertvanheusden/multitail/
 language: C
 alternativeto: tail
 description: Monitor logfiles and command output in multiple windows in a terminal, with colorizing, filtering and merging.
-last_updated: 2026-03-15
+last_updated: 2026-04-03
 screenshots:
     - file: screenshot.png
       caption: multitail monitoring multiple log files
+links:
+    - title: MultiTail – What It Is and How It Can Make You a Better SysAdmin
+      url: https://idolinux.com/multitail-what-it-is-and-how-it-can-make-you-a-better-sysadmin/
+    - title: Multitail, one to control them all
+      url: https://tabernawp.com/en/multitail-one-to-control-them-all-2024-06-08.html
 body: |
     `multitail` lets you monitor logfiles and command output in multiple windows
     in a terminal, with support for colorizing, filtering and merging.

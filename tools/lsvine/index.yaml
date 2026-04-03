@@ -8,9 +8,12 @@ alternativeto:
   - ls
   - tree
 description: tree with less empty screen space, and ls * with vertical listing
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 screenshots:
   - file: screenshot.png
+links:
+  - title: lsvine - list contents of directories in a vine-like format
+    url: https://www.reddit.com/r/linux/comments/eksf2f/lsvine_list_contents_of_directories_in_a_vinelike/
 body: |
     I built lsvine to be like tree but with the first-level directories distributed horizontally (and dangling
     downwards, hence like a vine).
