@@ -1,0 +1,36 @@
+---
+name: desed
+author: Petr Šťastný
+project: https://github.com/SoptikHa2/desed
+language: Rust
+alternativeto: sed
+description: A terminal debugger for sed scripts with step-through execution and variable inspection.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.gif
+      caption: desed interactive debugger showing variable inspection and step-through execution
+body: |
+    desed is a terminal-based debugger for sed scripts that helps you understand and fix complex
+    sed programs. It provides an interactive environment to step through sed execution, inspect
+    variables, and test substitutions.
+
+    ## Features
+
+    - Step through sed scripts forward and backward
+    - Preview variable values in sed patterns
+    - Preview the effects of substitute commands before execution
+    - Set breakpoints to pause execution at specific points
+    - Hot reload code while debugging
+    - Interactive TUI with Vim-like controls
+
+    {{screenshot: screenshot.gif, desed interactive debugger showing variable inspection}}
+
+    ## Basic usage
+
+    ```bash
+    # Debug a sed script interactively.
+    desed script.sed
+
+    # Debug sed commands directly.
+    desed 's/pattern/replacement/'
+    ```
