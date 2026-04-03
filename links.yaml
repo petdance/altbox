@@ -1,4 +1,8 @@
 home:
+  - title: "After 22 years on Linux, I finally switched to more modern CLI tools"
+    url: https://www.reddit.com/r/commandline/comments/1r8tljk/after_22_years_on_linux_i_finally_switched_to/
+    date: 2026-02-19
+
   - title: "One Thing Well: A weblog about simple, useful software"
     url: https://onethingwell.org/
 
@@ -9,6 +13,9 @@ home:
   - title: "A list of new(ish) command line tools"
     url: https://jvns.ca/blog/2022/04/12/a-list-of-new-ish--command-line-tools/
     date: 2022-04-12
+
+  - title: "My Favorite CLI Tools"
+    url: https://switowski.com/blog/favorite-cli-tools/
 
   - title: "An Illustrated Guide to Some Useful Command Line Tools"
     url: https://www.wezm.net/technical/2019/10/useful-command-line-tools/
