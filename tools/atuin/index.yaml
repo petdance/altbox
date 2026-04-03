@@ -1,0 +1,29 @@
+name: atuin
+author: Ellie Huxtable
+homepage: https://atuin.sh/
+project: https://github.com/atuinsh/atuin
+language: Rust
+alternativeto: history
+description: A shell history database that replaces ctrl-r with intelligent search and encrypted sync.
+last_updated: 2026-04-03
+screenshots:
+    - file: demo.gif
+      caption: "Atuin demo"
+body: |
+    Atuin replaces your shell history with a SQLite database that records additional context for
+    each command. It provides a powerful full-screen search interface and optional end-to-end
+    encrypted synchronization across all your machines.
+
+    ## Features
+
+    - Full-screen history search UI with intelligent filtering
+    - SQLite-based storage recording exit codes, duration, timestamp, hostname, and working directory
+    - End-to-end encrypted sync across machines via Atuin server
+    - Cross-terminal and cross-session history access
+    - Statistical analysis of command history
+    - Support for zsh, bash, fish, nushell, xonsh, and PowerShell
+    - Rebindable keyboard shortcuts (ctrl-r and up arrow)
+    - Quick-jump navigation and multiple filter modes
+    - Works offline with optional sync
+
+    {{screenshot: demo.gif, Atuin demo}}
