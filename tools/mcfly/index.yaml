@@ -1,0 +1,24 @@
+name: mcfly
+author: Andrew Cantino
+project: https://github.com/cantino/mcfly
+language: Rust
+alternativeto: history
+description: A shell history search engine that replaces ctrl-r with intelligent context-aware suggestions.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: McFly interface showing intelligent history search results
+body: |
+    McFly replaces your default ctrl-r reverse history search with an intelligent search engine
+    that prioritizes results based on your current directory and recent command execution context.
+
+    ## Features
+
+    - Uses a neural network to rank and prioritize history suggestions in real time
+    - Tracks command exit status, timestamps, and execution directory in SQLite
+    - Context-aware filtering based on your working directory
+    - Wildcard matching with the `%` character for flexible searches
+    - Compatible with Zsh, Bash and Powershell
+    - Maintains compatibility with normal shell history files
+
+    {{screenshot: screenshot.png, McFly interface showing intelligent history search results}}
