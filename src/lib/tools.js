@@ -4,15 +4,15 @@ import { fileURLToPath } from 'url'
 import yaml from 'js-yaml'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const toolsDir = join(__dirname, '../../tools')
+const toolDir = join(__dirname, '../../tool')
 
 export function getAllTools() {
-    const dirs = readdirSync(toolsDir, { withFileTypes: true })
+    const dirs = readdirSync(toolDir, { withFileTypes: true })
         .filter(d => d.isDirectory())
     return dirs
         .map(dir => {
             const slug = dir.name
-            const indexPath = join(toolsDir, slug, 'index.yaml')
+            const indexPath = join(toolDir, slug, 'index.yaml')
             const tool = yaml.load(readFileSync(indexPath, 'utf8'))
 
             if (!Array.isArray(tool.alternativeto)) {

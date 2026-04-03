@@ -1,8 +1,8 @@
 default: build
 
 build:
-	find tools/ \( -name "*~" -o -name "*.edited" \) -exec rm -vf {} +
-	rsync -a --exclude='*.yaml' tools/ public/tool/
+	find tool/ \( -name "*~" -o -name "*.edited" \) -exec rm -vf {} +
+	rsync -a --exclude='*.yaml' tool/ public/tool/
 	npm run build
 	npx js-beautify --type html -r dist/**/*.html
 

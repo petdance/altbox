@@ -8,7 +8,7 @@ dist/
 package-lock.json
 node_modules/
 
-# Generated from content/tools/ at build time
+# Generated from tool/ at build time
 public/tool/
 
 # Settings local to the user.

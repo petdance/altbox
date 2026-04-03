@@ -19,11 +19,11 @@ Tests require building first (`make`), then `make test` runs `prove t/html.t`.
 
 **altbox** is an Astro-based static site cataloging CLI tools as
 alternatives to standard Unix tools. All content lives in
-`tools/<toolname>/index.yaml` files.
+`tool/<toolname>/index.yaml` files.
 
 ### Data flow
 
-1. `tools/<name>/index.yaml` — source of truth for each tool (metadata +
+1. `tool/<name>/index.yaml` — source of truth for each tool (metadata +
     markdown body)
 2. `src/lib/tools.js` — loads all YAMLs, normalizes arrays, rewrites
     relative asset paths to web-accessible `/tool/<slug>/` URLs
@@ -61,7 +61,7 @@ body: |
     [ack](/tool/ack).
 ```
 
-Asset files (screenshots) go in `tools/<toolname>/` alongside the YAML. The
+Asset files (screenshots) go in `tool/<toolname>/` alongside the YAML. The
 Makefile rsyncs them to `public/tool/` at build time (excluded from Git via
 .gitignore).
 
