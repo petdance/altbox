@@ -1,15 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cat:*)",
-      "Bash(find:*)",
-      "Bash(gh issue:*)",
-      "Bash(git mv:*)",
-      "Bash(grep:*)",
-      "Bash(ls:*)",
-      "Bash(make:*)",
-      "Bash(mkdir:*)",
-      "Bash(shuf:)",
+      "Bash(cat *)",
+      "Bash(find *)",
+      "Bash(curl *)",
+      "Bash(grep *)",
+      "Bash(ls *)",
+      "Bash(make *)",
+      "Bash(mkdir *)",
+      "Bash(shuf *)",
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:github.io)",
@@ -17,6 +16,8 @@
       "WebFetch(domain:lib.rs)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebSearch"
+    ],
+    "deny": [
     ]
   }
 }
