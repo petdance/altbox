@@ -18,7 +18,7 @@ const lastUpdated = tool.last_updated instanceof Date
     : String(tool.last_updated)
 ---
 
-<Layout title={tool.name}>
+<Layout title={`${tool.name}, alternative to CLI tool${tool.alternativeto.length > 1 ? 's' : ''} ${tool.alternativeto.join(', ')}`}>
     <h1>{tool.name}</h1>
 
     <div class="tool-links">
