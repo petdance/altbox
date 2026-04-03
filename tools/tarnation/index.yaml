@@ -1,0 +1,19 @@
+---
+name: tarnation
+author: Kenny Parsons
+project: https://github.com/kennyparsons/tarnation
+language: Shell
+alternativeto: tar
+description: A backup and restoration system using GNU Tar with incremental backup support.
+last_updated: 2026-04-03
+body: |
+    Tarnation provides a straightforward backup and restoration system built on GNU tar, with
+    support for incremental backups using snapshot files. It organizes backups in a directory
+    structure that mirrors the filesystem.
+
+    ## Features
+
+    - Compression using GNU tar
+    - Incremental backup capability with snapshot files
+    - Directory organization that mirrors the original filesystem structure
+    - Simplified restoration workflow with sequential unpacking of archives
