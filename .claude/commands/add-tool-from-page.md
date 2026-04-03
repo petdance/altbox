@@ -24,7 +24,7 @@ Don't use bolding.
 ---
 name: <toolname>
 author: <Full Name>
-website: <homepage URL, omit if same as project>
+homepage: <homepage URL, omit if same as project>
 project: <GitHub or project URL>
 language: <Language>
 alternativeto: <standard tool this replaces, lowercase>
@@ -54,7 +54,7 @@ body: |
 ```
 
    Notes:
-   - `website` and `project` can be the same URL; omit `website` if so (use only `project`)
+   - `homepage` and `project` can be the same URL; omit `homepage` if so (use only `project`)
    - `alternativeto` and `workswith` values must be lowercase
    - `workswith` is optional — omit if not applicable
    - Use 4-space indentation throughout
