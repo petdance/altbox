@@ -1,0 +1,37 @@
+name: dua
+author: Sebastian Thiel
+project: https://github.com/Byron/dua-cli
+language: Rust
+alternativeto: du
+description: Fast disk usage analyzer with interactive deletion support.
+last_updated: 2026-04-03
+body: |
+    dua is a disk usage analyzer that conveniently shows disk space usage of
+    directories. It operates in parallel by default for optimal performance,
+    with both CLI and interactive terminal UI modes.
+
+    ## Features
+
+    - Parallel processing optimized for SSD performance
+    - Interactive mode with multi-stage deletion safeguards
+    - Fast scanning of directory trees
+    - Configuration file support for keyboard customization
+    - Cross-platform support (macOS, Linux, Windows)
+    - Subcommand modes (aggregate, interactive)
+
+    ## Basic usage
+
+    ```bash
+    # Analyze current directory interactively.
+    dua i
+
+    # Show disk usage summary.
+    dua aggregate
+
+    # Analyze a specific directory.
+    dua i /path/to/dir
+    ```
+
+    ## Demo
+
+    - [Animated demo](https://asciinema.org/a/kDnXUOeqBxZVMoWuFNqzfpeey)

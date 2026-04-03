@@ -1,0 +1,31 @@
+name: gitui
+author: Stephan Dilly
+project: https://github.com/gitui-org/gitui
+language: Rust
+alternativeto: git
+description: Fast, keyboard-driven terminal UI for Git operations.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: GitUI interface showing file staging and commit workflow
+body: |
+    GitUI is a fast, responsive terminal user interface for Git that brings
+    graphical Git workflows directly to the command line.
+
+    ## Features
+
+    - Keyboard-driven with context-sensitive help
+    - File staging and unstaging at line and hunk levels
+    - Stash management (save, pop, apply, drop, inspect)
+    - Branch operations (create, rename, delete, checkout)
+    - Commit inspection and amendment with hook support
+    - Log browsing with search capabilities
+    - Push and fetch operations
+    - Submodule support
+    - GPG commit signing
+
+    {{screenshot: screenshot.png, GitUI interface showing file staging and commit workflow}}
+
+    ## Demo
+
+    - [Animated demo](https://raw.githubusercontent.com/gitui-org/gitui/master/demo.gif)
