@@ -1,0 +1,55 @@
+name: hurl
+author: Orange-OpenSource
+homepage: https://hurl.dev
+project: https://github.com/Orange-OpenSource/hurl
+language: Rust
+alternativeto: curl
+description: A command line tool that runs HTTP requests defined in a simple plain text format.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.png
+      caption: HTML report waterfall diagram showing HTTP request chains and test results
+body: |
+    hurl is a command line tool that executes HTTP requests defined in a simple, easy-to-read plain text
+    format. It enables testing, debugging, and scripting of HTTP APIs with support for chaining requests,
+    capturing response values, and asserting on response content.
+
+    ## Features
+
+    - Execute HTTP requests in plain text format
+    - Chain multiple requests together with variable passing between them
+    - Capture values from responses for use in subsequent requests
+    - Comprehensive testing assertions for status codes, headers, JSON/XML body content
+    - Support for REST, SOAP, GraphQL, and HTML APIs
+    - Built-in performance and load testing capabilities
+    - Multiple output formats including HTML, JSON, JUnit, and TAP for CI/CD integration
+    - Basic authentication and custom header support
+    - Form data and multipart file upload support
+    - Template variable substitution and environment variables
+
+    {{screenshot: screenshot.png, HTML report waterfall diagram showing request chains}}
+
+    ## Basic usage
+
+    ```bash
+    # Execute a simple HTTP request from a file.
+    hurl request.hurl
+
+    # Test with assertions on response status and body.
+    hurl --test api-test.hurl
+
+    # Generate an HTML report for CI/CD pipelines.
+    hurl --html report.html tests/*.hurl
+
+    # Execute requests with environment variables.
+    hurl --variable base_url=http://localhost:8000 test.hurl
+    ```
+
+    ## Request format
+
+    hurl requests are written in a simple format that's easy to read and version control:
+
+    ```
+    GET http://httpbin.org/get
+    HTTP 200
+    ```
