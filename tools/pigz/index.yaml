@@ -1,0 +1,44 @@
+name: pigz
+author: Mark Adler
+homepage: https://zlib.net/pigz/
+project: https://github.com/madler/pigz
+language: C
+alternativeto: gzip
+description: Parallel replacement for gzip gzip that exploits multiple processors and cores when compressing data.
+last_updated: 2026-04-03
+body: |
+    pigz is a parallel implementation of gzip that takes advantage of modern multi-core systems to
+    compress data much faster than traditional gzip while maintaining full compatibility with the gzip
+    format and command-line interface.
+
+    ## Features
+
+    - Parallel compression using multiple processors and cores
+    - Full gzip compatibility with identical format
+    - Portable across Unix-style operating systems
+    - Drop-in replacement for gzip with compatible command-line options
+    - Supports stdin and stdout for piping
+    - Leverages zlib for compression
+    - Threading support via pthread libraries
+
+    ## Basic usage
+
+    ```bash
+    # Compress a file with all available cores.
+    pigz file.txt
+
+    # Compress with a specific number of threads.
+    pigz -p 4 file.txt
+
+    # Decompress a gzip file.
+    pigz -d file.txt.gz
+
+    # Compress and pipe to another process.
+    cat data.txt | pigz | ssh remote 'cat | pigz -d > data.txt'
+    ```
+
+    ## Performance
+
+    pigz is significantly faster than gzip on multi-core systems because it divides the input into chunks
+    and compresses them in parallel. On systems with many cores, this can provide substantial speedup
+    compared to single-threaded gzip.
