@@ -1,0 +1,43 @@
+name: skim
+author:
+project: https://github.com/skim-rs/skim
+language: Rust
+alternativeto:
+  - find
+workswith: grep
+description: A fuzzy finder written in Rust with interactive filtering and multi-select capabilities.
+last_updated: 2026-04-03
+screenshots:
+    - file: screenshot.svg
+      caption: Interactive mode showing search results with filtering
+      url: https://asciinema.org/a/pIfwazaM0mTHA8F7qRbjrqOnm
+body: |
+    Skim is a powerful fuzzy finder, similar to [fzf](/tool/fzf) written in Rust for fast, interactive filtering in
+    terminal environments.
+
+    ## Features
+
+    - Multiple search modes: fuzzy, prefix, suffix, exact, inverse matching
+    - Multi-select with TAB key
+    - Regex mode support (Ctrl-R toggle)
+    - Preview window for result inspection
+    - ANSI color code parsing
+    - Customizable key bindings and colors
+    - Integration with grep, ack, ag, ripgrep
+    - Shell bindings for Bash, Zsh, Fish
+    - Vim/Neovim plugin support
+
+    {{screenshot: screenshot.svg, Interactive mode showing search results with filtering}}
+
+    ## Basic usage
+
+    ```bash
+    # Search for files in the current directory.
+    find . -type f | sk
+
+    # Search in command history using a pipe.
+    history | sk
+
+    # Use skim with grep to search file contents.
+    grep -r "pattern" . | sk
+    ```
