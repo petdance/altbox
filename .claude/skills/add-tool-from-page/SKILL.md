@@ -70,6 +70,21 @@ Notes:
    - Use 4-space indentation throughout
    - All fenced code blocks must have a language identifier (e.g. ```bash)
    - Inline comments in code blocks must be complete sentences with a capital first letter and ending period (e.g. `# Search only Perl files.`)
+   - Use actual headings for grouping content. For example:
+
+        ## Notable options
+        - `--highlight`: Background color changes instead of foreground
+        - `--line-numbers`: Add line numbering to output
+        - `--recursive`: Compare subdirectories
+        - `--whole-file`: Display entire files rather than just changed sections
+        - `--color-map`: Customize color scheme for different diff elements
+
+        ## Availability
+        Available on Linux, macOS, and Windows.
+
+   - Do not use bold formatting anywhere in the body — not in list items, not in headings, not inline.
+   - For availability/installation, do not list install commands or package managers. Just state which operating systems
+     the tool runs on (e.g., "Available on Linux, macOS, and Windows.").
 
 ## Terms
 
