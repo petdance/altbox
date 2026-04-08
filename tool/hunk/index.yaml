@@ -1,0 +1,29 @@
+---
+name: hunk
+author: Modem
+project: https://github.com/modem-dev/hunk
+language: TypeScript
+alternativeto: diff
+description: Review-first terminal diff viewer designed for inspecting agent-authored changesets.
+last_updated: 2026-04-07
+screenshots:
+    - file: screenshot.png
+      caption: hunk showing a stacked diff view with sidebar navigation and inline annotations
+body: |
+    hunk is a terminal diff viewer built around the workflow of reviewing changes made by AI coding
+    agents — opening changesets in a structured review UI rather than raw diff text.
+
+    ## Features
+
+    - Multi-file review stream with sidebar navigation
+    - Inline AI and agent annotations displayed beside the code
+    - Split, stack, and responsive auto layouts
+    - Watch mode for auto-reloading file and Git-backed reviews
+    - Keyboard, mouse, pager, and git difftool support
+    - Syntax highlighting and runtime view toggles
+
+    {{screenshot: screenshot.png, hunk showing a stacked diff view with sidebar navigation and inline annotations}}
+
+    ## Availability
+
+    Available on macOS and Linux.
