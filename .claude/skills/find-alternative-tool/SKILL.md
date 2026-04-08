@@ -1,3 +1,7 @@
+---
+allowed-tools: WebFetch, WebSearch, Bash
+---
+
 # Find alternative tools for a given CLI tool
 
 Search the web for alternative tools to the one specified in $ARGUMENTS. The goal is to discover new tools that could be
@@ -51,6 +55,12 @@ patterns like "<tool> alternative", "<tool> similar tools", "alternatives to <to
 ## Tips
 
 - Check if tools already exist in altbox by looking at the existing tools.
+
 - Prioritize tools with good documentation and active communities.
+
 - Look for tools mentioned in comparisons or listicles about alternatives.
+
 - If the input tool doesn't have clear alternatives, let the user know.
+
+- I'm not looking for libraries. I'm looking for standalone CLI tools. The tool must run on a Unix-like OS. If it runs
+    on Windows, fine, but I don't want any Windows-only tools.
