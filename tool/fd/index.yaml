@@ -1,6 +1,7 @@
 ---
 name: fd
 author: David Peter
+authornote: Also author of [bat](/tool/bat) and [diskus](/tool/diskus)
 homepage:
 project: https://github.com/sharkdp/fd
 language: Rust
@@ -33,5 +34,3 @@ body: |
     ## Demo
 
     {{screenshot: screencast.svg, fd in action}}
-
-    fd is from the same author as [bat](/tool/bat) and [diskus](/tool/diskus).

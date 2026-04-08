@@ -1,6 +1,7 @@
 ---
 name: bat
 author: David Peter
+authornote: Also author of [fd](/tool/fd) and [diskus](/tool/diskus)
 homepage:
 project: https://github.com/sharkdp/bat
 language: Rust
@@ -26,9 +27,6 @@ links:
   - title: Stop using cat
     url: https://dev.to/nickytonline/stop-using-cat-35gd
 body: |
-    ## Automatic paging
-
-    `bat` can pipe its own output to `less` if the output is too large for one screen.
 
     ## Syntax highlighting
 
@@ -49,4 +47,9 @@ body: |
 
     {{screenshot: non-printing-characters.png, bat showing non-printable characters}}
 
-    bat is from the same author as [fd](/tool/fd) and [diskus](/tool/diskus).
+    ## Automatic paging
+
+    `bat` can pipe its own output to `less` if the output is too large for one screen.
+
+    ## Author
+

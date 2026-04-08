@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 
 const { tool } = Astro.props
 const bodyHtml = await renderMarkdown(tool.body || '')
+const authorNoteHtml = (await renderMarkdown(tool.authornote || '')).replace(/^<p>|<\/p>\s*$/g, '')
 const lastUpdated = tool.last_updated instanceof Date
     ? tool.last_updated.toISOString().slice(0, 10)
     : String(tool.last_updated)
@@ -42,12 +43,14 @@ const schema = {
 <Layout title={toolTitle} description={description} schema={schema}>
     <article>
         <h1>{tool.name}</h1>
+        {tool.description && <h2 class="tool-description-heading">{tool.description}</h2>}
 
         <section class="tool-info">
             <div class="tool-links">
                 {tool.homepage && <div>Website: <a href={tool.homepage} target="_blank" rel="noopener noreferrer">{tool.homepage}</a></div>}
                 {tool.project && tool.project !== tool.homepage && <div>Project: <a href={tool.project} target="_blank" rel="noopener noreferrer">{tool.project}</a></div>}
                 {tool.author && <div>Author: {tool.author}</div>}
+                {tool.authornote && <p class="author-note" set:html={authorNoteHtml} />}
                 <div>
                     Alternative to:{' '}
                     {tool.alternativeto.map((alt, i) => (

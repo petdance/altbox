@@ -1,6 +1,7 @@
 ---
 name: diskus
 author: David Peter
+authornote: Also author of [bat](/tool/bat) and [fd](/tool/fd)
 project: https://github.com/sharkdp/diskus
 language: Rust
 alternativeto: du
@@ -21,8 +22,6 @@ body: |
     By default diskus reports disk usage (counting actual blocks allocated,
     including directory entries). Pass `--apparent-size` to count only file
     content bytes instead, matching the behavior of `du --apparent-size`.
-
-    diskus is from the same author as [bat](/tool/bat) and [fd](/tool/fd).
 
     ## Basic usage
 

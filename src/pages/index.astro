@@ -6,6 +6,14 @@ import { getAllTools, getArticles, getSidebarItems } from '../lib/tools.js'
 const tools = getAllTools()
 const articles = getArticles()
 const originalTools = getSidebarItems(tools).map(item => item.name)
+const recentTools = [...tools]
+    .filter(t => t.last_updated)
+    .sort((a, b) => new Date(b.last_updated) - new Date(a.last_updated))
+    .slice(0, 5)
+
+function formatDate(d) {
+    return d instanceof Date ? d.toISOString().slice(0, 10) : String(d)
+}
 ---
 
 <Layout>
@@ -27,6 +35,33 @@ const originalTools = getSidebarItems(tools).map(item => item.name)
             ))
         }.
     </p>
+
+    <h2>Recently added/updated</h2>
+
+    <table class="recently-updated">
+        <thead>
+            <tr>
+                <th>Tool</th>
+                <th>Description</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {recentTools.map(tool => (
+                <tr>
+                    <td>
+                        <a href={`/tool/${tool.name}`}>{tool.name}</a>
+                    </td>
+                    <td>
+                        {tool.description}
+                    </td>
+                    <td>
+                        <time datetime={formatDate(tool.last_updated)}>{formatDate(tool.last_updated)}</time>
+                    </td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
 
     <LinksList links={articles} title="Related links" />
 

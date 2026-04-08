@@ -149,6 +149,24 @@ pre code {
     font-size: 0.875rem;
 }
 
+/* Tool description subheading below the tool name h1 */
+h2.tool-description-heading {
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* Author note below author line */
+.author-note {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
 /* Tool links (homepage/project/author below h1) */
 .tool-links {
     margin-bottom: 1.25rem;
@@ -229,6 +247,45 @@ figure.screenshot figcaption {
     font-size: 0.85rem;
     color: var(--muted);
     font-style: italic;
+}
+
+/* Recently updated table */
+table.recently-updated {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+table.recently-updated th {
+    text-align: left;
+    padding: 0.4rem 0.75rem;
+    border-bottom: 2px solid var(--border);
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+}
+
+table.recently-updated td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+table.recently-updated td:first-child {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+table.recently-updated td:last-child {
+    white-space: nowrap;
+    color: var(--muted);
+    font-size: 0.875rem;
 }
 
 /* Page footer */
