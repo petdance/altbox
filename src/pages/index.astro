@@ -54,6 +54,17 @@ function formatDate(d) {
                     </td>
                     <td>
                         {tool.description}
+                        {(tool.language || tool.alternativeto.length > 0 || tool.workswith.length > 0) && (
+                            <div class="badges">
+                                {tool.alternativeto.map(a => (
+                                    <a class="badge" href={`/alternative-to/${a}`}>Alternative to {a}</a>
+                                ))}
+                                {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
+                                {tool.workswith.map(w => (
+                                    <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
+                                ))}
+                            </div>
+                        )}
                     </td>
                     <td>
                         <time datetime={formatDate(tool.last_updated)}>{formatDate(tool.last_updated)}</time>

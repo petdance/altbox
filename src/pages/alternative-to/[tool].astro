@@ -3,6 +3,10 @@ import Layout from '../../layouts/Layout.astro'
 import LinksList from '../../components/LinksList.astro'
 import { getAllTools, getLinksForTool } from '../../lib/tools.js'
 
+function formatDate(d) {
+    return d instanceof Date ? d.toISOString().slice(0, 10) : String(d)
+}
+
 export function getStaticPaths() {
     const tools = getAllTools()
     const slugs = [...new Set(tools.flatMap(t => t.alternativeto))]
@@ -21,57 +25,38 @@ const links = getLinksForTool(slug)
         <h1>{tools.length} <code>{slug}</code> alternatives</h1>
     </header>
 
-    <div class="tools-table">
-        {tools.map(tool => (
-            <div class="tool-card">
-                <div class="tool-name">
-                    <a href={`/tool/${tool.name.toLowerCase()}`}>{tool.name}</a>
-                </div>
-                <div class="tool-info">
-                    <p class="description">{tool.description}</p>
-                    <div class="badges">
-                        {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
-                        {tool.workswith.map(w => (
-                            <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        ))}
-    </div>
-
-    <style>
-        .tools-table {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 1rem 2rem;
-            margin: 2rem 0;
-        }
-
-        .tool-card {
-            display: contents;
-        }
-
-        .tool-name {
-            font-weight: bold;
-        }
-
-        .tool-name a {
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-family: var(--font-mono);
-        }
-
-        .tool-name a:hover {
-            text-decoration: underline;
-        }
-
-        .tool-info .description {
-            margin: 0 0 0.5rem 0;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-    </style>
+    <table class="recently-updated">
+        <thead>
+            <tr>
+                <th>Tool</th>
+                <th>Description</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {tools.map(tool => (
+                <tr>
+                    <td>
+                        <a href={`/tool/${tool.name.toLowerCase()}`}>{tool.name}</a>
+                    </td>
+                    <td>
+                        {tool.description}
+                        {(tool.language || tool.workswith.length > 0) && (
+                            <div class="badges">
+                                {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
+                                {tool.workswith.map(w => (
+                                    <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
+                                ))}
+                            </div>
+                        )}
+                    </td>
+                    <td>
+                        {tool.last_updated && <time datetime={formatDate(tool.last_updated)}>{formatDate(tool.last_updated)}</time>}
+                    </td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
 
     <LinksList links={links} />
 </Layout>
