@@ -1,0 +1,31 @@
+---
+name: hishtory
+author: David Dworken
+project: https://github.com/ddworken/hishtory
+language: Go
+alternativeto: history
+description: Shell history that stores context with each command and syncs across machines with end-to-end encryption.
+last_updated: 2026-04-07
+screenshots:
+    - file: demo.gif
+      caption: hishtory's TUI showing history entries with directory, exit code, and duration context
+body: |
+    hishtory replaces your shell history with a richer system that records not just the command, but
+    the directory it ran in, whether it succeeded, how long it took, and which machine ran it.
+
+    ## Features
+
+    - Stores context for each command: directory, exit code, duration, hostname, and user
+    - Syncs history encrypted across all your machines
+    - Search via Ctrl+R — filter by exit code, hostname, date range, and more
+    - Customizable TUI with configurable columns, color schemes, and key bindings
+    - Supports self-hosted sync server, S3-compatible storage, or fully offline mode
+    - Delete or redact individual history entries
+    - Import existing shell history or export to JSON
+    - Optional AI integration for command suggestions
+
+    {{screenshot: demo.gif, hishtory's TUI showing history entries with directory, exit code, and duration context}}
+
+    ## Availability
+
+    Available on Linux and macOS, with support for bash, zsh, and fish.
