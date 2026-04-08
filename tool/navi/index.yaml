@@ -1,0 +1,32 @@
+---
+name: navi
+author: Denis Isidoro
+project: https://github.com/denisidoro/navi
+language: Rust
+alternativeto: man
+workswith: fzf
+description: Interactive cheatsheet tool that lets you browse and execute commands with prompted argument values.
+last_updated: 2026-04-07
+screenshots:
+    - file: screenshot.svg
+      caption: navi interactive cheatsheet browser with argument prompts
+      url: https://asciinema.org/a/406461
+body: |
+    navi lets you browse through cheatsheets interactively and execute commands directly from the
+    terminal, with argument values prompted as you go — so you stop memorizing flags and start
+    just running commands.
+
+    ## Features
+
+    - Browse and search cheatsheets with [fzf](/tool/fzf) or [skim](/tool/skim) as the fuzzy search engine
+    - Argument values are prompted inline, reducing copy-paste and typos
+    - Works as a shell widget (similar to Ctrl+R history search)
+    - Write your own `.cheat` files or import from community repos, tldr, and cheat.sh
+    - Compatible with tmux, shell aliases, and scripting
+    - Teaches new commands as you discover them through browsing
+
+    {{screenshot: screenshot.svg, navi interactive cheatsheet browser with argument prompts}}
+
+    ## Availability
+
+    Available on Linux and macOS.

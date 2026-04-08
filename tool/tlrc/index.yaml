@@ -1,0 +1,31 @@
+---
+name: tlrc
+author: tldr pages
+project: https://github.com/tldr-pages/tlrc
+language: Rust
+alternativeto: man
+workswith: tldr
+description: The official tldr client written in Rust, replacing the older Node.js reference client.
+last_updated: 2026-04-07
+screenshots:
+    - file: screenshot.png
+      caption: tlrc showing a tldr page with syntax-highlighted examples
+body: |
+    tlrc is the official Rust-based client for tldr pages, the community-maintained collection of
+    simplified command reference pages. It supersedes the older Node.js client as the canonical
+    fast implementation.
+
+    ## Features
+
+    - Fast local cache for instant lookups
+    - Configurable via TOML for colors, formatting, and indentation
+    - Multiple language support for non-English tldr pages
+    - Auto-update functionality for the cached page database
+    - Raw markdown output mode
+    - Shell completions and a man page included
+
+    {{screenshot: screenshot.png, tlrc showing a tldr page with syntax-highlighted examples}}
+
+    ## Availability
+
+    Available on Linux, macOS, and Windows.

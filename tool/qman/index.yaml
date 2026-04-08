@@ -1,0 +1,34 @@
+---
+name: qman
+author: Pantelis Panayiotou
+project: https://github.com/plp13/qman
+language: C
+alternativeto: man
+description: Modern terminal man page viewer with hyperlinks, table of contents, and browser-like navigation.
+last_updated: 2026-04-07
+screenshots:
+    - file: screenshot.png
+      caption: qman displaying a man page with hyperlinks and table of contents
+body: |
+    qman is a drop-in replacement for `man` that renders pages in the same terminal but adds
+    hyperlinks, browser-style navigation history, a per-page table of contents, and incremental
+    search — without requiring any GUI.
+
+    ## Features
+
+    - Hyperlinked navigation between man pages, URLs, email addresses, and local files
+    - Per-page table of contents for quick section jumping
+    - Incremental search within pages
+    - Navigation history (back/forward like a web browser)
+    - Mouse support
+    - Index of all installed man pages organized by section
+    - Compatible with `man` command-line options (`-k`, `-f`)
+    - `less`-compatible keyboard controls
+    - Customizable color themes
+    - Works with mandb, mandoc, FreeBSD, and macOS man systems
+
+    {{screenshot: screenshot.png, qman displaying a man page with hyperlinks and table of contents}}
+
+    ## Availability
+
+    Available on Linux, FreeBSD, and macOS.
