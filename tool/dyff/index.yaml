@@ -1,0 +1,30 @@
+---
+name: dyff
+author: Matthias Diester
+project: https://github.com/homeport/dyff
+language: Go
+alternativeto: diff
+description: Diff tool for YAML files that shows changes by their location in the document structure.
+last_updated: 2026-04-07
+screenshots:
+    - file: screenshot.png
+      caption: dyff showing differences between two deployment manifests
+body: |
+    dyff compares YAML (and sometimes JSON) files and shows what changed using path-based references
+    rather than raw line numbers, making it much easier to understand structural changes in config files.
+
+    ## Features
+
+    - References differences by location using Spruce dot-style (`some.path.in.the.file`) or go-patch
+      syntax (`/some/path/in/the/file`)
+    - Color-coded output with indent helpers for readability
+    - Accepts local files, remote URIs, or standard input
+    - Preserves hash key ordering when processing YAML
+    - Automatically detects input format (YAML or JSON)
+    - Integrates with `kubectl diff` and git difftool
+
+    {{screenshot: screenshot.png, dyff showing differences between two deployment manifests}}
+
+    ## Availability
+
+    Available on Linux, macOS, and Windows.
