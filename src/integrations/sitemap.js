@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs'
 import { join } from 'path'
-import { getAllTools, getSidebarItems, getSidebarLanguages, getSidebarWorksWith } from '../lib/tools.js'
+import { getAllTools, getSidebarItems } from '../lib/tools.js'
 
 function escapeXml(str) {
     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;')
@@ -9,65 +9,40 @@ function escapeXml(str) {
 function generateSiteMap(site) {
     const tools = getAllTools()
     const sidebarItems = getSidebarItems(tools)
-    const languages = getSidebarLanguages(tools)
-    const workswith = getSidebarWorksWith(tools)
 
     const baseUrl = site || 'https://altbox.dev'
     const today = new Date().toISOString().split('T')[0]
 
     const entries = [
-        { loc: '/', priority: 1.0, changefreq: 'monthly', lastmod: today },
+        { loc: '/', lastmod: today },
     ]
 
-    // Tool pages - highest priority, update based on last_updated
+    // Tool pages - update based on last_updated
     tools.forEach(tool => {
         const lastmod = tool.last_updated instanceof Date
             ? tool.last_updated.toISOString().split('T')[0]
             : String(tool.last_updated)
-        entries.push({
-            loc: `/tool/${tool.name}/`,
-            priority: 0.8,
-            changefreq: 'yearly',
-            lastmod,
-        })
+        entries.push({ loc: `/tool/${tool.name}/`, lastmod })
     })
 
-    // Alternative-to pages
+    // Alternative-to pages — lastmod is the most recent last_updated among tools on that page,
+    // so the sitemap reflects when the page content actually changed.
     sidebarItems.forEach(item => {
-        entries.push({
-            loc: `/alternative-to/${item.name}/`,
-            priority: 0.6,
-            changefreq: 'monthly',
-            lastmod: today,
-        })
+        const dates = tools
+            .filter(t => t.alternativeto.includes(item.name))
+            .map(t => t.last_updated instanceof Date
+                ? t.last_updated.toISOString().split('T')[0]
+                : String(t.last_updated))
+        const lastmod = dates.length ? dates.sort().at(-1) : today
+        entries.push({ loc: `/alternative-to/${item.name}/`, lastmod })
     })
 
-    // Language pages
-    languages.forEach(lang => {
-        entries.push({
-            loc: `/language/${lang.name.toLowerCase()}/`,
-            priority: 0.5,
-            changefreq: 'monthly',
-            lastmod: today,
-        })
-    })
-
-    // Works-with pages
-    workswith.forEach(item => {
-        entries.push({
-            loc: `/works-with/${item.name.toLowerCase()}/`,
-            priority: 0.5,
-            changefreq: 'monthly',
-            lastmod: today,
-        })
-    })
 
     // Generate XML
     const urls = entries.map(entry => {
         return `  <url>
     <loc>${baseUrl}${escapeXml(entry.loc)}</loc>
     <lastmod>${entry.lastmod}</lastmod>
-    <priority>${entry.priority}</priority>
   </url>`
     }).join('\n')
 
