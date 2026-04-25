@@ -4,7 +4,7 @@ build:
 	find tool/ \( -name "*~" -o -name "*.edited" \) -exec rm -vf {} +
 	rsync -a --exclude='*.yaml' tool/ public/tool/
 	npm run build
-	npx js-beautify --type html -r dist/**/*.html
+	#npx js-beautify --type html -r dist/**/*.html
 
 serve:
 	npm run dev
