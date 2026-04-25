@@ -1,0 +1,29 @@
+---
+name: dusage
+author: Mihai Galos
+project: https://github.com/mihaigalos/dusage
+language: Rust
+alternativeto: df
+description: Disk and inode usage display with visual bargraphs and color-coded filesystem groups.
+last_updated: 2026-04-24
+screenshots:
+    - file: screenshot.png
+      caption: dusage showing disk usage with bargraphs per mount point
+body: |
+    dusage is a Rust-based `df` replacement that displays disk and inode usage side by side
+    in a single bargraph, with color-coded grouping of mount points.
+
+    ## Features
+
+    - Visual bargraph overlaying inode usage (background) and disk usage (foreground)
+    - Filesystem grouping for organized, easy-to-scan output
+    - Special coloring for `/`, `/boot`, and `/mnt` mount points
+    - Inode view comparable to `df -i`
+    - log2ram support, displayed last for Raspberry Pi visibility
+    - Copy-friendly output mode via `--copy-friendly`
+
+    {{screenshot: screenshot.png, dusage showing disk usage with bargraphs per mount point}}
+
+    ## Availability
+
+    Available on Linux and NetBSD.

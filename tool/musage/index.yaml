@@ -1,0 +1,25 @@
+---
+name: musage
+author: Mihai Galos
+project: https://github.com/mihaigalos/musage
+language: Rust
+alternativeto: free
+description: Memory usage display with a visual bargraph showing RAM and cache.
+last_updated: 2026-04-24
+screenshots:
+    - file: screenshot.png
+      caption: musage showing RAM and cache usage as a bargraph
+body: |
+    musage is a Rust-based `free` replacement that visualizes RAM and cache usage in a
+    single bargraph, using background and foreground colors to distinguish the two.
+
+    ## Features
+
+    - Visual bargraph with cache usage in the background and RAM usage in the foreground
+    - At-a-glance memory overview without parsing raw numbers
+
+    {{screenshot: screenshot.png, musage showing RAM and cache usage as a bargraph}}
+
+    ## Availability
+
+    Available on Linux.
