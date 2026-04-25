@@ -1,0 +1,30 @@
+---
+name: dfc
+author: Robin Hahling
+project: https://github.com/Rolinh/dfc
+language: C
+alternativeto: df
+description: Reports filesystem space usage with color bargraphs and export to HTML, JSON, or CSV.
+last_updated: 2026-04-24
+screenshots:
+    - file: screenshot.png
+      caption: dfc showing mounted filesystems with color bargraphs
+body: |
+    dfc is a C-based `df` replacement that adds color and bargraphs to filesystem space
+    usage output, and can export results in multiple formats.
+
+    ## Features
+
+    - Color-coded bargraphs per mount point in terminal output
+    - Export to HTML, JSON, and CSV formats
+    - Filtering options to narrow displayed filesystems
+    - Display of mount options alongside usage data
+    - Configurable via `$XDG_CONFIG_HOME/dfc/dfcrc`
+    - Internationalization support
+    - No runtime dependencies beyond the standard C library
+
+    {{screenshot: screenshot.png, dfc showing mounted filesystems with color bargraphs}}
+
+    ## Availability
+
+    Available on Linux, macOS, and BSD systems.

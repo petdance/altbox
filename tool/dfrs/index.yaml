@@ -1,0 +1,27 @@
+---
+name: dfrs
+author: Levente Polyak
+project: https://github.com/anthraxx/dfrs
+language: Rust
+alternativeto: df
+description: Displays filesystem space usage with color bargraphs alongside the numbers.
+last_updated: 2026-04-24
+screenshots:
+    - file: screenshot.png
+      caption: dfrs showing mounted filesystems with usage bargraphs
+body: |
+    dfrs is a Rust-based `df` replacement that adds color-coded bargraphs to the standard
+    filesystem space usage output for quicker at-a-glance reading.
+
+    ## Features
+
+    - Bargraph per mount point showing used vs. available space
+    - Color-coded output for fast visual scanning
+    - Human-readable sizes by default
+    - Shows all mounted filesystems when called with no arguments, or specific paths when given
+
+    {{screenshot: screenshot.png, dfrs showing mounted filesystems with usage bargraphs}}
+
+    ## Availability
+
+    Available on Linux.
