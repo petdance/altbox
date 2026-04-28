@@ -59,11 +59,15 @@ body: |
     - <Feature 3>
     - ...
 
-    {{screenshot: screenshot.png, <caption>}}
+    {{screenshot: screenshot.png, "<caption>"}}
 ```
 
 Notes:
 
+   - Always quote screenshot captions with double quotes in the `{{screenshot:}}` shortcode (e.g.
+     `{{screenshot: screenshot.png, "My caption"}}`). The shortcode parser splits on commas, so an
+     unquoted caption containing commas will have everything after the first comma mistakenly treated
+     as a URL. Quoting avoids this regardless of caption content.
    - `homepage` and `project` can be the same URL; omit `homepage` if so (use only `project`)
    - `alternativeto` and `workswith` values must be lowercase
    - `workswith` is optional — omit if not applicable

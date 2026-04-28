@@ -24,7 +24,7 @@ body: |
     - Import existing shell history or export to JSON
     - Optional AI integration for command suggestions
 
-    {{screenshot: demo.gif, hishtory's TUI showing history entries with directory, exit code, and duration context}}
+    {{screenshot: demo.gif, "hishtory's TUI showing history entries with directory, exit code, and duration context"}}
 
     ## Availability
 

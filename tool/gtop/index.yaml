@@ -15,7 +15,7 @@ body: |
     graphs alongside an interactive process table — all in a single
     dashboard view.
 
-    {{screenshot: screenshot.gif, gtop showing CPU, memory, network, and process stats}}
+    {{screenshot: screenshot.gif, "gtop showing CPU, memory, network, and process stats"}}
 
     The process table can be sorted interactively by PID, CPU usage, or
     memory consumption using single-key shortcuts. gtop runs on Linux,

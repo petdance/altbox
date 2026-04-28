@@ -16,7 +16,7 @@ body: |
     temperature sensors, and a process list — all updating live and laid out
     in a customizable grid.
 
-    {{screenshot: screenshot.gif, bottom showing CPU, memory, network, disk, and process widgets}}
+    {{screenshot: screenshot.gif, "bottom showing CPU, memory, network, disk, and process widgets"}}
 
     The process table supports searching by name or regex, sorting by any
     column, tree view for parent/child relationships, and sending signals
