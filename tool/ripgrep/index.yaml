@@ -1,12 +1,12 @@
 ---
 name: ripgrep
 author: Andrew Gallant
-homepage: https://github.com/BurntSushi/ripgrep
+homepage: https://ripgrep.dev/
 project: https://github.com/BurntSushi/ripgrep
 language: Rust
 alternativeto: grep
 description: Extremely fast line-oriented search tool that respects .gitignore rules.
-last_updated: 2026-02-15
+last_updated: 2026-04-28
 screenshots:
     - file: screenshot.png
       caption: ripgrep searching a codebase
