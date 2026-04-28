@@ -1,0 +1,66 @@
+---
+name: lla
+author: Mohamed Achaq
+homepage: https://lla.chaqchase.com
+project: https://github.com/chaqchase/lla
+language: Rust
+alternativeto: ls
+description: Modern ls replacement with multiple specialized views, a plugin system, and built-in git integration.
+last_updated: 2026-04-28
+workswith:
+    - git
+screenshots:
+    - file: screenshot.png
+      caption: Long format view with per-file permissions and metadata
+    - file: screenshot2.png
+      caption: Git view with per-file commit history and change status
+body: |
+    lla is a modern `ls` replacement built in Rust with a focus on extensibility. It adds
+    specialized views for git repos, timelines, and disk usage, plus a plugin system that
+    lets you attach custom metadata to any listing.
+
+    ## Views
+
+    - Default: clean, distraction-free listing
+    - Long format (`-l`): permissions, size, date, owner, and icons
+    - Tree (`-t`): hierarchical directory exploration with configurable depth
+    - Table (`-T`): structured grid optimized for comparison
+    - Grid (`-g`): compact multi-column layout
+    - Git (`-G`): per-file commit hash, author, time, and change status
+    - Timeline (`--timeline`): files grouped chronologically
+    - Size map (`-S`): visual disk usage breakdown
+    - Diff (`lla diff`): compare two directories or files, or diff against a git ref
+
+    {{screenshot: screenshot.png, "Long format view with per-file permissions and metadata"}}
+
+    ## Git integration
+
+    - Git view shows last commit info (hash, author, time, status) for every file
+    - Diff mode supports local-to-local and working-tree-vs-git comparisons
+    - Respects `.gitignore` via `--respect-gitignore`
+
+    {{screenshot: screenshot2.png, "Git view with per-file commit history and change status"}}
+
+    ## Filtering and search
+
+    - Boolean filter logic: OR, AND, NOT, XOR across filename patterns
+    - Regex support and content search inside files
+    - Range-based filters for size and modification time
+    - Reusable named filter presets
+
+    ## Plugin system
+
+    - 16+ first-party plugins covering git status, code complexity, tags, clipboard ops, and more
+    - Plugins can add extra columns to any view via the `field:<name>` column syntax
+    - Managed with `lla install`, `lla use`, and `lla update`
+
+    ## Other features
+
+    - Jump navigation: bookmarked and recently visited directories with an interactive prompt
+    - Machine-readable output: JSON, NDJSON, and CSV
+    - Theme manager and configurable column order
+    - Smart sorting: multiple criteria, natural number order, dirs-first
+
+    ## Availability
+
+    Available on Linux, macOS, and NetBSD.
