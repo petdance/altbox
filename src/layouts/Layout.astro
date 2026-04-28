@@ -20,6 +20,7 @@ const workswith = getSidebarWorksWith(tools)
         <meta property="og:title" content={title ? `${title} — altbox` : 'altbox — alternative CLI tools'} />
         <meta property="og:description" content={description || 'altbox — discover alternative CLI tools for common Unix utilities'} />
         {image && <meta property="og:image" content={image} />}
+        {canonical && <meta property="og:url" content={canonical} />}
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title ? `${title} — altbox` : 'altbox — alternative CLI tools'} />

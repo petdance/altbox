@@ -18,8 +18,11 @@ const lastUpdated = tool.last_updated instanceof Date
     ? tool.last_updated.toISOString().slice(0, 10)
     : String(tool.last_updated)
 
-const toolTitle = `${tool.name}, alternative to CLI tool${tool.alternativeto.length > 1 ? 's' : ''} ${tool.alternativeto.join(', ')}`
+const toolTitle = `${tool.name} — alternative to ${tool.alternativeto.join(', ')}`
 const description = `${tool.name} is an alternative to ${tool.alternativeto.join(', ')}. ${tool.description || ''}`
+const ogImage = tool.screenshots && tool.screenshots.length > 0
+    ? `https://altbox.dev/${tool.screenshots[0].file}`
+    : undefined
 
 const schema = {
     '@context': 'https://schema.org',
@@ -29,18 +32,20 @@ const schema = {
     applicationCategory: 'Utility',
     author: tool.author ? { '@type': 'Person', name: tool.author } : undefined,
     programmingLanguage: tool.language,
-    url: `${Astro.site}tool/${tool.name}`,
+    url: `https://altbox.dev/tool/${tool.name}/`,
     dateModified: lastUpdated,
     alternativeSoftware: tool.alternativeto.map(alt => ({
         '@type': 'SoftwareApplication',
         name: alt
     })),
     ...(tool.project && { downloadUrl: tool.project }),
-    ...(tool.homepage && { url: tool.homepage })
+    ...(tool.homepage && { sameAs: tool.homepage })
 }
+
+const canonical = `https://altbox.dev/tool/${tool.name}/`
 ---
 
-<Layout title={toolTitle} description={description} schema={schema}>
+<Layout title={toolTitle} description={description} schema={schema} canonical={canonical} image={ogImage}>
     <article>
         <h1>{tool.name}</h1>
         {tool.description && <h2 class="tool-description-heading">{tool.description}</h2>}

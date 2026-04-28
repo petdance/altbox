@@ -37,6 +37,29 @@ function generateSiteMap(site) {
         entries.push({ loc: `/alternative-to/${item.name}/`, lastmod })
     })
 
+    // Language pages — lastmod is the most recent last_updated among tools in that language.
+    const languages = [...new Set(tools.filter(t => t.language).map(t => t.language.toLowerCase()))]
+    languages.forEach(lang => {
+        const dates = tools
+            .filter(t => t.language && t.language.toLowerCase() === lang)
+            .map(t => t.last_updated instanceof Date
+                ? t.last_updated.toISOString().split('T')[0]
+                : String(t.last_updated))
+        const lastmod = dates.length ? dates.sort().at(-1) : today
+        entries.push({ loc: `/language/${lang}/`, lastmod })
+    })
+
+    // Works-with pages — lastmod is the most recent last_updated among tools on that page.
+    const workswith = [...new Set(tools.flatMap(t => t.workswith).map(w => w.toLowerCase()))]
+    workswith.forEach(slug => {
+        const dates = tools
+            .filter(t => t.workswith.map(w => w.toLowerCase()).includes(slug))
+            .map(t => t.last_updated instanceof Date
+                ? t.last_updated.toISOString().split('T')[0]
+                : String(t.last_updated))
+        const lastmod = dates.length ? dates.sort().at(-1) : today
+        entries.push({ loc: `/works-with/${slug}/`, lastmod })
+    })
 
     // Generate XML
     const urls = entries.map(entry => {

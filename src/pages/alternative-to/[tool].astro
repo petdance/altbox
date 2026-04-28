@@ -18,9 +18,27 @@ export function getStaticPaths() {
 
 const { slug, tools } = Astro.props
 const links = getLinksForTool(slug)
+const description = `${tools.length} alternative${tools.length === 1 ? '' : 's'} to ${slug} for the command line.`
+const canonical = `https://altbox.dev/alternative-to/${slug}/`
+const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${slug} alternatives`,
+    description,
+    itemListElement: tools.map((tool, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+            '@type': 'SoftwareApplication',
+            name: tool.name,
+            description: tool.description,
+            url: `https://altbox.dev/tool/${tool.name}/`,
+        },
+    })),
+}
 ---
 
-<Layout title={`${slug} alternatives`}>
+<Layout title={`${slug} alternatives`} description={description} canonical={canonical} schema={schema}>
     <header class="page-header">
         <h1>{tools.length} <code>{slug}</code> alternatives</h1>
     </header>

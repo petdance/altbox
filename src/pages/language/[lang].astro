@@ -16,9 +16,11 @@ export function getStaticPaths() {
 }
 
 const { lang, displayName, tools } = Astro.props
+const description = `${tools.length} alternative command-line tool${tools.length === 1 ? '' : 's'} written in ${displayName}.`
+const canonical = `https://altbox.dev/language/${lang}/`
 ---
 
-<Layout title={`${displayName} tools`}>
+<Layout title={`${displayName} tools`} description={description} canonical={canonical}>
     <header class="page-header">
         <h1>Alternative tools written in {displayName}</h1>
     </header>

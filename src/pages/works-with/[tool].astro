@@ -12,9 +12,11 @@ export function getStaticPaths() {
 }
 
 const { slug, tools } = Astro.props
+const description = `${tools.length} command-line tool${tools.length === 1 ? '' : 's'} that work with ${slug}.`
+const canonical = `https://altbox.dev/works-with/${slug.toLowerCase()}/`
 ---
 
-<Layout title={`CLI tools that work with ${slug}`}>
+<Layout title={`CLI tools that work with ${slug}`} description={description} canonical={canonical}>
     <header class="page-header">
         <h1>Tools that work with <code>{slug}</code></h1>
     </header>
