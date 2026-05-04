@@ -22,10 +22,16 @@ screenshots:
 links:
   - title: "Enhance Your CLI with bat: A Superior Replacement for cat"
     url: https://medium.com/@alfor93/enhance-your-cli-with-bat-a-superior-replacement-for-cat-34d828b24b7c
+    published: 2024-09-25
+    fetched: 2026-05-03
   - title: I Replaced cat With bat. You Might Want To Do The Same
     url: https://idolinux.com/batcat-linux/
+    published: 2026-02-09
+    fetched: 2026-05-03
   - title: Stop using cat
     url: https://dev.to/nickytonline/stop-using-cat-35gd
+    published: 2026-03-02
+    fetched: 2026-05-03
 body: |
 
     ## Syntax highlighting

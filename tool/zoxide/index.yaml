@@ -6,12 +6,20 @@ project: https://github.com/ajeetdsouza/zoxide
 language: Rust
 alternativeto: cd
 description: zoxide is a smarter cd command, inspired by z and autojump.
-last_updated: 2026-04-03
+last_updated: 2026-05-03
 links:
+    - title: "The Ultimate Guide to Zoxide Commands: Navigating Your Terminal at Light Speed"
+      url: https://zoxide.org/blog/zoxide-commands/
+      published: 2025-12-06
+      fetched: 2026-05-03
     - title: zoxide tips and tricks
       url: https://batsov.com/articles/2025/06/12/zoxide-tips-and-tricks/
+      published: 2025-06-12
+      fetched: 2026-05-03
     - title: Say good bye to cd and hello Zoxide - the better and smarter cd command!
       url: https://dev.to/luxcih/say-good-bye-to-cd-and-hello-zoxide-the-better-and-smarter-cd-command-828
+      published: 2024-04-14
+      fetched: 2026-05-03
 screenshots:
   - file: tutorial.webp
 body: |

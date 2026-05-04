@@ -99,7 +99,7 @@ const canonical = `https://altbox.dev/tool/${tool.name}/`
                     {tool.links.map(resource => (
                         <li>
                             <a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.title}</a>
-                            {resource.date && <span class="resource-date"> — <time datetime={resource.date}>{resource.date}</time></span>}
+                            {resource.published && (() => { const d = resource.published instanceof Date ? resource.published.toISOString().slice(0, 10) : String(resource.published); return <span class="resource-date"> <small>(Published <time datetime={d}>{d.replaceAll('-', '‑')}</time>)</small></span> })()}
                         </li>
                     ))}
                 </ul>
