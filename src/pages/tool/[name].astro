@@ -12,6 +12,16 @@ export async function getStaticPaths() {
 }
 
 const { tool } = Astro.props
+
+const allTools = getAllTools()
+const altOtherCounts = {}
+for (const t of allTools) {
+    if (t.name === tool.name) continue
+    for (const alt of t.alternativeto) {
+        altOtherCounts[alt] = (altOtherCounts[alt] || 0) + 1
+    }
+}
+
 const bodyHtml = await renderMarkdown(tool.body || '')
 const authorNoteHtml = (await renderMarkdown(tool.authornote || '')).replace(/^<p>|<\/p>\s*$/g, '')
 const lastUpdated = tool.last_updated instanceof Date
@@ -58,9 +68,12 @@ const canonical = `https://altbox.dev/tool/${tool.name}/`
                 {tool.authornote && <p class="author-note" set:html={authorNoteHtml} />}
                 <div>
                     Alternative to:{' '}
-                    {tool.alternativeto.map((alt, i) => (
-                        <>{i > 0 ? ', ' : ''}<a href={`/alternative-to/${alt}`}>{alt}</a></>
-                    ))}
+                    {tool.alternativeto.map((alt, i) => {
+                        const n = altOtherCounts[alt] || 0
+                        return (
+                            <>{i > 0 ? ', ' : ''}<a href={`/alternative-to/${alt}`}>{alt}</a>{n > 0 && <> (<a href={`/alternative-to/${alt}`}>See {n} {n === 1 ? 'other' : 'others'}</a>)</>}</>
+                        )
+                    })}
                 </div>
                 {tool.language && <div>Language: <a href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a></div>}
                 {tool.workswith.length > 0 && (
