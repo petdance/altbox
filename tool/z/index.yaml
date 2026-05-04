@@ -10,6 +10,8 @@ last_updated: 2026-03-22
 links:
     - title: Thread on Hacker News
       url: https://news.ycombinator.com/item?id=39001441
+      published: 2024-01-17
+      fetched: 2026-05-03
 body: |
     Tracks your most used directories, based on "frecency".
 

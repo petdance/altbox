@@ -12,18 +12,31 @@ screenshots:
 links:
   - title: Zellij Replaced Tmux, Screen, and My Entire Terminal Workflow
     url: https://www.maketecheasier.com/zellij-terminal-multiplexer/
-  - title: Zellij – A Terminal Workspace for Linux Developers
-    url: https://www.ubuntumint.com/zellij-linux-terminal-workspace/
-  - title: Alacritty + Zellij is a godsend
-    url: https://www.reddit.com/r/rust/comments/1bysz27/alacritty_zellij_is_a_godsend/
-  - title: "How Zellij Makes Me a Better Software Developer: Advanced Use Cases and Tips"
-    url: https://rrmartins.substack.com/p/how-zellij-makes-me-a-better-software-developer-advanced-use-cases-and-tips-311208bfb8cb
-  - title: Why Zellij?
-    url: https://poor.dev/blog/why-zellij/
+    published: 2026-02-11
+    fetched: 2026-05-03
   - title: Switching from Tmux to Zellij
     url: https://bulimov.me/post/2025/03/22/tmux-zellij/
+    published: 2025-03-22
+    fetched: 2026-05-03
+  - title: "How Zellij Makes Me a Better Software Developer: Advanced Use Cases and Tips"
+    url: https://rrmartins.substack.com/p/how-zellij-makes-me-a-better-software-developer-advanced-use-cases-and-tips-311208bfb8cb
+    published: 2024-12-31
+    fetched: 2026-05-03
+  - title: Why Zellij?
+    url: https://poor.dev/blog/why-zellij/
+    published: 2024-10-30
+    fetched: 2026-05-03
   - title: Why I switched to Zellij
     url: https://microblog.desipenguin.com/post/zellij/
+    published: 2024-02-24
+    fetched: 2026-05-03
+  - title: Zellij – A Terminal Workspace for Linux Developers
+    url: https://www.ubuntumint.com/zellij-linux-terminal-workspace/
+    published: 2022-08-24
+    fetched: 2026-05-03
+  - title: Alacritty + Zellij is a godsend
+    url: https://www.reddit.com/r/rust/comments/1bysz27/alacritty_zellij_is_a_godsend/
+    fetched: 2026-05-03
 body: |
     Zellij is a terminal workspace designed for developers who want the power of a terminal multiplexer with an emphasis
     on ease of use. It provides a modern alternative to [tmux](/tool/tmux) and [screen](/alternative-to/screen/) with
