@@ -6,12 +6,13 @@ homepage:
 project: https://github.com/sharkdp/bat
 language: Rust
 workswith:
-  - JSON
-  - Markdown
-  - YAML
+    - fzf
+    - JSON
+    - Markdown
+    - YAML
 alternativeto: cat
 description: A cat clone with syntax highlighting, Git integration, and automatic paging.
-last_updated: 2026-04-03
+last_updated: 2026-05-03
 screenshots:
     - file: syntax-highlighting.png
       caption: bat syntax highlighting
@@ -20,19 +21,39 @@ screenshots:
     - file: non-printing-characters.png
       caption: bat showing non-printable characters
 links:
-  - title: "Enhance Your CLI with bat: A Superior Replacement for cat"
-    url: https://medium.com/@alfor93/enhance-your-cli-with-bat-a-superior-replacement-for-cat-34d828b24b7c
-    published: 2024-09-25
-    fetched: 2026-05-03
-  - title: I Replaced cat With bat. You Might Want To Do The Same
-    url: https://idolinux.com/batcat-linux/
-    published: 2026-02-09
-    fetched: 2026-05-03
-  - title: Stop using cat
-    url: https://dev.to/nickytonline/stop-using-cat-35gd
-    published: 2026-03-02
-    fetched: 2026-05-03
+    - title: "Stop using cat"
+      url: https://dev.to/nickytonline/stop-using-cat-35gd
+      published: 2026-03-02
+      fetched: 2026-05-03
+    - title: "I Replaced cat With bat. You Might Want To Do The Same"
+      url: https://idolinux.com/batcat-linux/
+      published: 2026-02-09
+      fetched: 2026-05-03
+    - title: "8 Facts That Make the Linux bat Command Better Than cat"
+      url: https://www.howtogeek.com/facts-that-make-bat-better-than-cat/
+      published: 2025-10-19
+      fetched: 2026-05-03
+    - title: "Enhance Your CLI with bat: A Superior Replacement for cat"
+      url: https://medium.com/@alfor93/enhance-your-cli-with-bat-a-superior-replacement-for-cat-34d828b24b7c
+      published: 2024-09-25
+      fetched: 2026-05-03
+    - title: "Drop the Linux cat command for bat"
+      url: https://www.redhat.com/en/blog/linux-bat-command
+      published: 2022-10-26
+      fetched: 2026-05-03
 body: |
+    ## Basic usage
+
+    ```bash
+    bat README.md                          # Display a file with syntax highlighting.
+    bat src/*.rs                           # Display multiple files at once.
+    bat -n main.rs                         # Show line numbers only.
+    bat -A /etc/hosts                      # Show non-printable characters.
+    curl -s https://example.com | bat -l html  # Pipe from stdin with explicit language.
+    ```
+
+    `bat` detects the language from the file extension or shebang line. When piped to another
+    process, `bat` falls back to plain output like `cat`.
 
     ## Syntax highlighting
 
@@ -55,7 +76,58 @@ body: |
 
     ## Automatic paging
 
-    `bat` can pipe its own output to `less` if the output is too large for one screen.
+    `bat` pipes its own output to a pager (e.g. `less`) when output is too large for one screen.
+    To disable paging, set `--paging=never` — useful when aliasing `cat`:
 
-    ## Author
+    ```bash
+    alias cat='bat --paging=never'
+    ```
 
+    ## Integrations
+
+    - [fzf](/tool/fzf) — use `bat` as a syntax-highlighted file previewer:
+
+      ```bash
+      fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"
+      ```
+
+    - [fd](/tool/fd) — preview search results with `bat`:
+
+      ```bash
+      fd '\.rs$' -X bat
+      ```
+
+    - [ripgrep](/tool/ripgrep) — `batgrep` (from bat-extras) displays ripgrep results via `bat`:
+
+      ```bash
+      batgrep needle src/
+      ```
+
+    - `man` — colorize man pages by setting `MANPAGER`:
+
+      ```bash
+      export MANPAGER="bat -plman"
+      ```
+
+    - `tail -f` — monitor log files with syntax highlighting:
+
+      ```bash
+      tail -f /var/log/syslog | bat --paging=never -l log
+      ```
+
+    ## bat-extras
+
+    [bat-extras](https://github.com/eth-p/bat-extras) is a collection of shell scripts that integrate `bat` with other
+    tools, including `batgrep` ([ripgrep](/tool/ripgrep)), `batman` (man pages), `batdiff` (git diff), and
+    `prettybat` (code formatting).
+
+    ## Debian/Ubuntu note
+
+    On older Ubuntu/Debian releases the executable is named `batcat` due to a package name conflict.
+    Create an alias or symlink to use it as `bat`:
+
+    ```bash
+    alias bat="batcat"
+    # Or create a symlink:
+    mkdir -p ~/.local/bin && ln -s /usr/bin/batcat ~/.local/bin/bat
+    ```

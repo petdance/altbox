@@ -6,10 +6,19 @@ project: https://github.com/BurntSushi/ripgrep
 language: Rust
 alternativeto: grep
 description: Extremely fast line-oriented search tool that respects .gitignore rules.
-last_updated: 2026-04-28
+last_updated: 2026-05-03
 screenshots:
     - file: screenshot.png
       caption: ripgrep searching a codebase
+links:
+    - title: "Why I switched to ripgrep from grep"
+      url: https://medium.com/towards-data-engineering/why-i-switched-to-ripgrep-from-grep-3a4f3ad6d9ce
+      published: 2026-01-08
+      fetched: 2026-05-03
+    - title: "Fast Searching with ripgrep"
+      url: https://mariusschulz.com/blog/fast-searching-with-ripgrep
+      published: 2020-03-19
+      fetched: 2026-05-03
 body: |
     ripgrep is a line-oriented search tool that recursively searches your
     current directory for a regex pattern. By default, `rg` will respect
