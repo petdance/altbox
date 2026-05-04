@@ -1,11 +1,9 @@
 ---
-name: add-tool-link
+name: add-tool-from-page
 description: Add a new tool to altbox from the URL $ARGUMENTS.
 tools:
     - WebFetch
     - WebSearch
-    - Glob
-    - Grep
     - Bash
     - Read
     - Write

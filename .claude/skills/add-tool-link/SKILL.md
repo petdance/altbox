@@ -4,8 +4,6 @@ description: Adds an article link to a tool's index.yaml in altbox, fetching the
 tools:
     - WebFetch
     - WebSearch
-    - Glob
-    - Grep
     - Bash
     - Read
     - Edit

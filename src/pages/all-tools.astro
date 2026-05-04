@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { getAllTools } from '../lib/tools.js'
+
+const tools = getAllTools().sort((a, b) => a.name.localeCompare(b.name))
+
+function formatDate(d) {
+    return d instanceof Date ? d.toISOString().slice(0, 10) : String(d)
+}
+---
+
+<Layout canonical="https://altbox.dev/all-tools">
+    <header class="page-header">
+        <h1>All tools ({tools.length})</h1>
+    </header>
+
+    <table class="recently-updated">
+        <thead>
+            <tr>
+                <th>Tool</th>
+                <th>Description</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {tools.map(tool => (
+                <tr>
+                    <td>
+                        <a href={`/tool/${tool.name}`}>{tool.name}</a>
+                    </td>
+                    <td>
+                        {tool.description}
+                        {(tool.language || tool.alternativeto.length > 0 || tool.workswith.length > 0) && (
+                            <div class="badges">
+                                {tool.alternativeto.map(a => (
+                                    <a class="badge" href={`/alternative-to/${a}`}>Alternative to {a}</a>
+                                ))}
+                                {tool.language && <a class="badge" href={`/language/${tool.language.toLowerCase()}`}>{tool.language}</a>}
+                                {tool.workswith.map(w => (
+                                    <a class="badge" href={`/works-with/${w}`}>Works with {w}</a>
+                                ))}
+                            </div>
+                        )}
+                    </td>
+                    <td>
+                        {tool.last_updated && (
+                            <time datetime={formatDate(tool.last_updated)}>{formatDate(tool.last_updated)}</time>
+                        )}
+                    </td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</Layout>

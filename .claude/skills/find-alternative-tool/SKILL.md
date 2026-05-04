@@ -4,8 +4,6 @@ description: Find alternative tools for a given CLI tool
 tools:
     - WebFetch
     - WebSearch
-    - Glob
-    - Grep
     - Bash
     - Read
 ---

@@ -6,10 +6,19 @@ project: https://github.com/nicolargo/glances
 language: Python
 alternativeto: top
 description: Cross-platform extensible monitoring tool
-last_updated: 2026-03-22
+last_updated: 2026-05-03
 screenshots:
   - file: screenshot.png
     caption: Glances in action
+links:
+    - title: "Glances – An Advanced Real Time System Monitoring Tool for Linux"
+      url: https://www.tecmint.com/glances-linux-monitoring/
+      published: 2023-07-31
+      fetched: 2026-05-03
+    - title: "Glances – A real-time monitoring tool for Linux"
+      url: https://cloudcone.com/docs/article/glances-a-real-time-monitoring-tool-for-linux/
+      published: 2021-06-18
+      fetched: 2026-05-03
 body: |
     Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of
 
