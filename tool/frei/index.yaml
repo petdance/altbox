@@ -1,0 +1,28 @@
+---
+name: frei
+author: alexcoder04
+project: https://github.com/alexcoder04/frei
+language: Go
+alternativeto: free
+description: Modern replacement for the free command with colored bar charts and multiple output formats.
+last_updated: 2026-05-03
+screenshots:
+    - file: screenshot.png
+      caption: frei showing RAM and swap usage as colored bar charts
+body: |
+    frei is a Go rewrite of the Unix `free` command that displays memory and swap usage
+    as colored bar charts in the style of htop.
+
+    ## Features
+
+    - Displays RAM and swap usage from `/proc/meminfo` as colored bar charts
+    - Uses the same color scheme as htop for visual consistency
+    - Multiple output formats: chart, table, charttable, plain text, and JSON
+    - `-h` flag for human-readable number formatting
+    - Correctly distinguishes between "free" and "available" memory
+
+    {{screenshot: screenshot.png, "frei showing RAM and swap usage as colored bar charts"}}
+
+    ## Availability
+
+    Available on Linux. Pre-compiled binaries for i386, amd64, and ARM; also available on the AUR.
