@@ -1,8 +1,14 @@
 ---
-allowed-tools: WebFetch, WebSearch, Bash
+name: find-alternative-tool
+description: Find alternative tools for a given CLI tool
+tools:
+    - WebFetch
+    - WebSearch
+    - Glob
+    - Grep
+    - Bash
+    - Read
 ---
-
-# Find alternative tools for a given CLI tool
 
 Search the web for alternative tools to the one specified in $ARGUMENTS. The goal is to discover new tools that could be
 added to altbox.

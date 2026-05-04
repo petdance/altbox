@@ -3,6 +3,9 @@ name: add-tool-link
 description: Adds an article link to a tool's index.yaml in altbox, fetching the title and publication date from the URL.
 tools:
     - WebFetch
+    - WebSearch
+    - Glob
+    - Grep
     - Bash
     - Read
     - Edit
@@ -37,16 +40,21 @@ links:
       fetched: <YYYY-MM-DD>
 ```
 
-   If the `links:` section already exists, add the new entry at the top of the list:
+   If the `links:` section already exists, insert the new entry in descending `published:` date order. Entries without a `published:` date go at the end. For example, if the new article was published 2025-06-01:
 
 ```yaml
 links:
-    - title: "<Article Title>"
+    - title: "<New Article Title>"
       url: <URL>
-      published: <YYYY-MM-DD>
+      published: 2025-06-01
       fetched: <YYYY-MM-DD>
-    - title: <Existing Article Title>
-      url: <Existing URL>
+    - title: "<Older Article Title>"
+      url: <URL>
+      published: 2024-03-15
+      fetched: <YYYY-MM-DD>
+    - title: "<Undated Article Title>"
+      url: <URL>
+      fetched: <YYYY-MM-DD>
 ```
 
    Put the title in double quotes. If the publication date cannot be found, omit the `published:` field.

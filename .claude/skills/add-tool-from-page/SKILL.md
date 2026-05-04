@@ -1,4 +1,16 @@
-# Add a new tool to altbox from the URL $ARGUMENTS.
+---
+name: add-tool-link
+description: Add a new tool to altbox from the URL $ARGUMENTS.
+tools:
+    - WebFetch
+    - WebSearch
+    - Glob
+    - Grep
+    - Bash
+    - Read
+    - Write
+    - Edit
+---
 
 Follow these steps:
 
