@@ -1,0 +1,46 @@
+name: doggo
+author: Karan Sharma
+homepage: https://doggo.mrkaran.dev/
+project: https://github.com/mr-karan/doggo
+language: Go
+alternativeto: dig
+description: A command-line DNS client with colorized tabular output and support for modern DNS protocols including DoH, DoT, DoQ, and DNSCrypt.
+last_updated: 2026-05-06
+screenshots:
+    - file: screenshot.png
+      caption: doggo DNS query output with colorized tabular formatting
+body: |
+    doggo is a modern command-line DNS client inspired by [dog](/tool/dog), written in Go. It provides
+    human-readable, color-coded tabular output and supports a wide range of DNS transport protocols beyond
+    standard UDP/TCP.
+
+    - Supports DoH, DoT, DoQ, TCP, UDP, and DNSCrypt
+    - JSON output for scripting and parsing
+    - Reverse DNS lookups
+    - EDNS support: Client Subnet (ECS), NSID, Cookies, Padding, Extended DNS Errors
+    - Internationalized Domain Names (IDN) with automatic punycode conversion
+    - Multiple resolvers with customizable query strategies
+    - Shell completions for zsh and fish
+    - Web interface at doggo.mrkaran.dev for browser-based queries
+    - Response time (RTT) measurement
+
+    {{screenshot: screenshot.png, doggo DNS query output with colorized tabular formatting}}
+
+    ## Basic usage
+
+    ```bash
+    # Simple DNS lookup.
+    doggo example.com
+
+    # Query MX records using a specific nameserver.
+    doggo MX github.com @9.9.9.9
+
+    # Query over DNS-over-HTTPS.
+    doggo example.com @https://cloudflare-dns.com/dns-query
+
+    # JSON output for scripting.
+    doggo example.com --json | jq '.responses[0].answers[].address'
+
+    # Reverse DNS lookup.
+    doggo --reverse 8.8.8.8 --short
+    ```
