@@ -1,0 +1,41 @@
+name: lz4
+author: Yann Collet
+homepage: http://www.lz4.org
+project: https://github.com/lz4/lz4
+language: C
+alternativeto: gzip
+description: Extremely fast lossless compression algorithm prioritizing speed over ratio.
+last_updated: 2026-05-08
+body: |
+    lz4 is a lossless compression algorithm focused on compression and decompression speed
+    rather than compression ratio. It achieves compression speeds over 500 MB/s per core and
+    decompression speeds in multiple GB/s, often reaching RAM speed limits on multi-core systems.
+
+    ## Features
+
+    - Compression speed >500 MB/s per core; decompression up to ~5 GB/s
+    - LZ4_HC high-compression mode trades speed for better ratios while keeping decompression fast
+    - Tunable acceleration factor to trade compression ratio for even faster speeds
+    - Dictionary compression support compatible with zstd dictionaries
+    - Streaming support for arbitrarily large files via the LZ4 frame format
+    - Widely used in Linux kernel, Redis, MySQL, Hadoop, and other infrastructure
+
+    ## Basic usage
+
+    ```bash
+    # Compress a file.
+    lz4 file.txt
+
+    # Decompress a file.
+    lz4 -d file.txt.lz4
+
+    # Use high-compression mode.
+    lz4 -9 file.txt
+
+    # Pipe compression.
+    tar cf - dir/ | lz4 > archive.tar.lz4
+    ```
+
+    ## Availability
+
+    Available on Linux, macOS, and Windows.

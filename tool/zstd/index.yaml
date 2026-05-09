@@ -1,0 +1,53 @@
+name: zstd
+author: Yann Collet
+homepage: http://www.zstd.net
+project: https://github.com/facebook/zstd
+language: C
+alternativeto: gzip
+description: Fast real-time compression algorithm with better ratios and speeds than gzip.
+last_updated: 2026-05-08
+screenshots:
+    - file: graph.png
+      caption: zstd compression speed vs ratio compared to other algorithms
+body: |
+    zstd (Zstandard) is a fast lossless compression algorithm developed at Meta, targeting
+    real-time compression with better compression ratios than gzip. It provides a wide range
+    of compression levels to trade speed for ratio, while keeping decompression fast at all levels.
+
+    ## Features
+
+    - Compression speed of ~500 MB/s and decompression of ~1500 MB/s at default settings
+    - Compression levels from -5 (fastest) to 19 (best ratio), plus ultra modes up to 22
+    - Multi-threaded compression support
+    - Dictionary training mode for dramatically better ratios on small files
+    - Can read and write `.gz`, `.xz`, and `.lz4` files in addition to `.zst`
+    - Standardized format documented in RFC 8878
+    - Drop-in replacement for gzip in most shell workflows (`zstd`, `unzstd`, `zstdcat`)
+
+    {{screenshot: graph.png, "zstd compression speed vs ratio compared to other algorithms"}}
+
+    ## Dictionary training
+
+    Compression algorithms learn from past data to compress future data, but struggle with small
+    inputs that have no prior context. zstd's training mode solves this by analyzing a set of sample
+    files and producing a dictionary that encodes patterns common to that data type.
+
+    - Train on a directory of representative samples to build a reusable dictionary
+    - Dictionaries are most effective on files under a few KB; gains diminish on larger files
+    - The same dictionary must be present for both compression and decompression
+    - Deploy one dictionary per data type for maximum benefit (e.g. one for JSON, one for logs)
+
+    ```bash
+    # Build a dictionary from sample files.
+    zstd --train samples/* -o mydata.dict
+
+    # Compress using the dictionary.
+    zstd -D mydata.dict file.json
+
+    # Decompress using the dictionary.
+    zstd -D mydata.dict --decompress file.json.zst
+    ```
+
+    ## Availability
+
+    Available on Linux, macOS, and Windows.
