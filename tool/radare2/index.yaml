@@ -1,0 +1,54 @@
+name: radare2
+author: pancake
+homepage: https://radare.org/
+project: https://github.com/radareorg/radare2
+language: C
+alternativeto: objdump
+description: A libre reverse engineering framework and command-line toolset for analyzing, debugging, and patching binaries.
+last_updated: 2026-05-08
+screenshots:
+    - file: screenshot.png
+      caption: radare2 disassembly and hex view in the terminal
+body: |
+    radare2 (r2) is a full-featured reverse engineering framework built for Unix geeks. It started as a
+    hex editor and grew into a complete binary analysis platform covering disassembly, debugging, patching,
+    scripting, and emulation — all from the command line.
+
+    ## Features
+
+    - Disassembly and analysis for dozens of architectures (x86, ARM, MIPS, RISC-V, WASM, and more)
+    - Built-in debugger with local and remote (GDB/WinDbg) support
+    - Hex editor with block-level diffing and patching
+    - Binary format support: ELF, PE, Mach-O, DEX, Java class, and many more
+    - Scripting via embedded JavaScript or r2pipe (Python, Ruby, Go, Rust, and more)
+    - ASCII-art and graph-based function flow visualization
+    - Plugin ecosystem via the `r2pm` package manager, including Ghidra decompiler integration
+    - Can analyze local files, kernel memory, and remote processes
+
+    {{screenshot: screenshot.png, "radare2 disassembly and hex view in the terminal"}}
+
+    ## Basic usage
+
+    ```bash
+    # Open a binary for analysis.
+    r2 /bin/ls
+
+    # Analyze all functions.
+    r2 -A /bin/ls
+
+    # Print a hex dump of 32 bytes.
+    > px 32
+
+    # List all functions.
+    > afl
+
+    # Disassemble a function.
+    > pdf @ sym.main
+
+    # Show ASCII-art call graph.
+    > agf
+    ```
+
+    ## Availability
+
+    Available on Linux, macOS, Windows, and BSD.

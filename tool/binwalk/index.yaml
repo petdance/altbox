@@ -1,0 +1,46 @@
+name: binwalk
+author: ReFirm Labs
+project: https://github.com/ReFirmLabs/binwalk
+language: Rust
+alternativeto: objdump
+description: A firmware analysis tool for identifying and extracting files embedded inside binary images.
+last_updated: 2026-05-08
+screenshots:
+    - file: screenshot.png
+      caption: binwalk scanning a firmware image and identifying embedded file signatures
+    - file: animated.svg
+      caption: binwalk animated demo
+body: |
+    binwalk scans binary files to identify and optionally extract embedded data — file systems,
+    compressed archives, kernels, and other payloads that have been packed into a single firmware
+    image. Originally written in Python, v3 was rewritten in Rust for speed and accuracy.
+
+    ## Features
+
+    - Signature scanning across a wide range of file and data types
+    - Automatic extraction of identified components
+    - Entropy analysis to detect unknown compression or encryption
+    - Recursive extraction to unpack nested archives
+    - Support for common firmware formats (SquashFS, JFFS2, LZMA, gzip, and more)
+    - Integrates as a Rust library for custom tooling
+
+    {{screenshot: screenshot.png, "binwalk scanning a firmware image and identifying embedded file signatures"}}
+
+    {{screenshot: animated.svg, "binwalk animated demo"}}
+
+    ## Basic usage
+
+    ```bash
+    # Scan a firmware image for embedded files.
+    binwalk firmware.bin
+
+    # Extract all identified files.
+    binwalk --extract firmware.bin
+
+    # Show entropy graph to detect encrypted regions.
+    binwalk --entropy firmware.bin
+    ```
+
+    ## Availability
+
+    Available on Linux and macOS.
