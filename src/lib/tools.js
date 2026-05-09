@@ -1,10 +1,8 @@
 import { readFileSync, readdirSync } from 'fs'
-import { join, dirname } from 'path'
-import { fileURLToPath } from 'url'
+import { join } from 'path'
 import yaml from 'js-yaml'
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const toolDir = join(__dirname, '../../tool')
+const toolDir = join(process.cwd(), 'tool')
 
 export function getAllTools() {
     const dirs = readdirSync(toolDir, { withFileTypes: true })
@@ -85,13 +83,13 @@ export function getSidebarWorksWith(tools) {
 }
 
 export function getArticles() {
-    const linksPath = join(__dirname, '../../links.yaml')
+    const linksPath = join(process.cwd(), 'links.yaml')
     const links = yaml.load(readFileSync(linksPath, 'utf8'))
     return links.home || []
 }
 
 export function getLinksForTool(toolName) {
-    const linksPath = join(__dirname, '../../links.yaml')
+    const linksPath = join(process.cwd(), 'links.yaml')
     const links = yaml.load(readFileSync(linksPath, 'utf8'))
     return links[toolName] || []
 }

@@ -6,9 +6,9 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-"dependencies": {
-    "@astrojs/sitemap": "^3.0.0",
-    "astro": "^5.0.0",
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.3.1",
     "js-yaml": "^4.1.0",
     "rehype-stringify": "^10.0.0",
     "remark-parse": "^11.0.0",
