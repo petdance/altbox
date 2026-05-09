@@ -9,7 +9,7 @@ const originalTools = getSidebarItems(tools).map(item => item.name)
 const recentTools = [...tools]
     .filter(t => t.last_updated)
     .sort((a, b) => new Date(b.last_updated) - new Date(a.last_updated))
-    .slice(0, 5)
+    .slice(0, 10)
 
 function formatDate(d) {
     return d instanceof Date ? d.toISOString().slice(0, 10) : String(d)
