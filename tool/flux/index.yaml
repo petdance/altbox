@@ -1,0 +1,30 @@
+name: flux
+author: Vito Hacker
+project: https://github.com/VG-dev1/flux
+language: Rust
+alternativeto: ps
+description: Search, monitor, and kill processes with real-time resource tracking and port discovery.
+last_updated: 2026-05-09
+screenshots:
+    - file: screenshot.png
+      caption: flux showing processes with CPU, memory, and port information
+body: |
+    flux is a TUI process manager focused on quickly finding, monitoring, and killing processes
+    without the visual clutter of tools like htop or btop. It adds port discovery so you can
+    immediately see which process owns a given port.
+
+    ## Features
+
+    - Real-time CPU, memory, and disk usage per process
+    - Port-aware process listing — see which ports each process is listening on
+    - Batch kill by selection (Space) or filter pattern (--nuke)
+    - Choose termination signal (SIGTERM, SIGKILL, etc.)
+    - Sort by CPU, memory, PID, name, or disk
+    - Context-aware coloring highlights high resource consumers
+    - Keyboard navigation with j/k or arrow keys
+
+    {{screenshot: screenshot.png, "flux showing processes with CPU, memory, and port information"}}
+
+    ## Availability
+
+    Available on Linux and macOS.

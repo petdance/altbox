@@ -1,0 +1,30 @@
+name: pspy
+author: Dominic Breuker
+project: https://github.com/DominicBreuker/pspy
+language: Go
+alternativeto: ps
+description: Monitor Linux processes in real time without root permissions.
+last_updated: 2026-05-09
+screenshots:
+    - file: screenshot.gif
+      caption: pspy capturing processes and cron jobs in real time
+body: |
+    pspy watches `/proc` and uses inotify filesystem watchers to detect processes — including
+    short-lived ones — without requiring root privileges. It's particularly useful for spotting
+    cron jobs, scripts run by other users, and other ephemeral commands that `ps` would miss.
+
+    ## Features
+
+    - No root required — works entirely from user space
+    - Catches short-lived processes that disappear before `ps` can see them
+    - Combines procfs polling with inotify triggers for efficiency
+    - Watches configurable directories recursively or non-recursively
+    - Colored output to distinguish UIDs and process types
+    - Configurable scan intervals for tuning CPU usage vs. detection speed
+    - Ships as a static binary with no runtime dependencies
+
+    {{screenshot: screenshot.gif, "pspy capturing processes and cron jobs in real time"}}
+
+    ## Availability
+
+    Available on Linux.

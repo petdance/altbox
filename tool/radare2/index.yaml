@@ -3,7 +3,9 @@ author: pancake
 homepage: https://radare.org/
 project: https://github.com/radareorg/radare2
 language: C
-alternativeto: objdump
+alternativeto:
+    - nm
+    - objdump
 description: A libre reverse engineering framework and command-line toolset for analyzing, debugging, and patching binaries.
 last_updated: 2026-05-08
 screenshots:

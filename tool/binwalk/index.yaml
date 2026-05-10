@@ -2,7 +2,9 @@ name: binwalk
 author: ReFirm Labs
 project: https://github.com/ReFirmLabs/binwalk
 language: Rust
-alternativeto: objdump
+alternativeto:
+    - nm
+    - objdump
 description: A firmware analysis tool for identifying and extracting files embedded inside binary images.
 last_updated: 2026-05-08
 screenshots:
