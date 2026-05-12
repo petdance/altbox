@@ -1,0 +1,42 @@
+name: scc
+author: Ben Boyter
+project: https://github.com/boyter/scc
+language: Go
+alternativeto: wc
+description: Fast code counter with complexity analysis and COCOMO cost estimates.
+last_updated: 2026-05-09
+body: |
+    scc (Sloc, Cloc and Code) counts lines of code across 322+ languages and goes further than
+    cloc or tokei by estimating cyclomatic complexity per file and producing COCOMO development
+    cost estimates. It is optimized for multi-core CPUs and benchmarks faster than tokei.
+
+    ## Features
+
+    - Counts code, comment, and blank lines across 322+ languages
+    - Approximates cyclomatic complexity via branch detection
+    - COCOMO and LOCOMO (LLM-based) cost estimation
+    - Duplicate file detection to measure DRYness
+    - Detects and flags minified and auto-generated files
+    - Multiple output formats: tabular, JSON, CSV, HTML, SQL, OpenMetrics
+    - Respects .gitignore, .ignore, and custom .sccignore files
+    - Can run as a Model Context Protocol server for LLM integration
+
+    ## Basic usage
+
+    ```bash
+    # Count lines in current directory.
+    scc
+
+    # Count lines in a specific path.
+    scc src/
+
+    # Show complexity estimates.
+    scc --by-file
+
+    # Output as JSON.
+    scc --format json
+    ```
+
+    ## Availability
+
+    Available on Linux, macOS, and Windows.

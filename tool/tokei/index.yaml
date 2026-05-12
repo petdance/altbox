@@ -1,0 +1,37 @@
+name: tokei
+author: XAMPPRocky
+project: https://github.com/XAMPPRocky/tokei
+language: Rust
+alternativeto: wc
+description: Count lines of code by language, quickly and accurately.
+last_updated: 2026-05-09
+body: |
+    tokei counts files, lines, code, comments, and blank lines across 150+ programming languages.
+    It is significantly faster than cloc and handles edge cases like nested comments and comments
+    inside strings correctly.
+
+    ## Features
+
+    - Breaks down results by language with code, comment, and blank line counts
+    - Supports 150+ languages and file extensions
+    - Handles nested comments and comments inside strings accurately
+    - Multiple output formats: JSON, YAML, CBOR for use in scripts and pipelines
+    - Works as a library for embedding in Rust projects
+    - Respects .gitignore and similar ignore files
+
+    ## Basic usage
+
+    ```bash
+    # Count lines in current directory.
+    tokei
+
+    # Count lines in a specific directory.
+    tokei src/
+
+    # Output as JSON.
+    tokei --output json
+    ```
+
+    ## Availability
+
+    Available on Linux, macOS, and Windows.

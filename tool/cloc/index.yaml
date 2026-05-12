@@ -1,0 +1,41 @@
+name: cloc
+author: Albert Danial
+project: https://github.com/AlDanial/cloc
+language: Perl
+alternativeto: wc
+description: Count blank lines, comment lines, and code lines across 400+ programming languages.
+last_updated: 2026-05-09
+body: |
+    cloc (Count Lines of Code) analyzes source code and reports blank lines, comment lines, and
+    code lines broken down by language. It runs on files, directories, archives (tar, zip, etc.),
+    and git commits, with no dependencies beyond the Perl standard library.
+
+    ## Features
+
+    - Recognizes 400+ languages automatically
+    - Compares two codebases with --diff to show added, removed, and modified lines
+    - Accepts directories, single files, zip/tar archives, and git refs as input
+    - Multiple output formats: plain text, CSV, JSON, XML, SQL, YAML, Markdown
+    - Can strip comments and blank lines from source files
+    - User-definable custom language definitions
+    - Ships as a single self-contained Perl script with no external dependencies
+
+    ## Basic usage
+
+    ```bash
+    # Count lines in current directory.
+    cloc .
+
+    # Count lines in a git commit.
+    cloc HEAD
+
+    # Diff two directories.
+    cloc --diff old/ new/
+
+    # Output as JSON.
+    cloc --json .
+    ```
+
+    ## Availability
+
+    Available on Linux, macOS, Windows, and BSD.
